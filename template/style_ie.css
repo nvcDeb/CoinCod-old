@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+/* ---------- IE CSS ---------- */
+
+/*---------- SHARE CONTENT ----------*/
+
+.container{ /* header/footer width */
+	width: 1010px;
+	margin:0pt auto;
+}
+
+/*---------- SHARE CONTENT END ----------*/
+
+
+/* ---------- NAVIGATION MENU ---------- */
+
+.top_nav a{ /* (menu ++) design */
+	padding: 7px 20px 7px 20px;
+}
+
+.top_nav a:hover{ /* (menu ++) mouseover design */
+	padding: 5px 19px 5px 19px;
+	border: 2px solid #636363;
+	background: url(template_image/menu_hover_bg.png) repeat-x;
+}
+
+.top_nav a:active{ /* (menu ++) on click design */	
+	padding: 5px 19px 5px 19px;
+	border: 2px solid #2d2d2d;
+	background: url(template_image/menu_active_bg.png) repeat-x;
+}
+
+/* ---------- NAVIGATION MENU END ---------- */
+
+
+	
+/*---------- BID/LOGIN/ADMIN BUTTON ----------*/
+
+.button {
+	min-width: 100px;
+	}
+	
+/*----------- BID/LOGIN/ADMIN BUTTON End ----------*/
+
+
+
+/*--------------- FOOTER ----------------*/
+
+#main_content{ /* body */
+	padding-bottom: 193px;
+}
+
+#footer_wrap {  /* footer position / sticky footer */
+	margin-top: -193px; /* negative value of footer height */
+	height: 193px;
+} 
+
+#footer_wrap li{ /* upper menu sub menu design */
+	margin-top: 8px;
+}
+
+#footer_wrap a{
+	line-height: 12px;
+	font-size: 13px;
+	}
+
+/*----------- Footer End ----------*/
