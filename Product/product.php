@@ -148,14 +148,13 @@ function LeadingZero(Time) {
 							else if($userid > 0 && $auctiontime <0)
 							{
 								echo '<div class="bid_button">
-						      		  <input name="endbid'.$productID.'" class="button" type="submit" value="Bid End " />
+						      		  <input name="endbid'.$productID.'" class="button" type="submit" value="Bid Ended" />
 						      		  </div>';
 							}
 					
                     echo'<span class="bid_spot">Highest Bidder</br>'.$highest_user.' </br>
                     	<!--This is the spot for you to put the bid function<div>Bid<div>-->
                     	</span>
-						<span id="auto_bidder">Auto Bidder</br></span>
                   </div>
             	  </li>    
                   </ul>';	

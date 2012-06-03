@@ -73,7 +73,7 @@ function LeadingZero(Time) {
 						</a>
 					</div>
 					<div class="logout">
-						<a href="../Logout"><div class="logout_button">Log Out</div>
+						<a href="../CoinCod/Logout"><div class="logout_button">Log Out</div>
 						</a>
 					</div><div class="token_left">
 						</br><img src="template/template_image/header/token_left.png" border="0" width="30%"> '.$token.'
@@ -271,7 +271,6 @@ function LeadingZero(Time) {
                     echo'<span class="bid_spot">Highest Bidder</br>'.$highest_user.' </br>
                     	<!--This is the spot for you to put the bid function<div>Bid<div>-->
                     	</span>
-						<span id="auto_bidder"></br></span>
                   </div>
             	  </li>    
                   </ul>';	
@@ -358,7 +357,7 @@ function LeadingZero(Time) {
      <div id="lower_footer_wrap">
 	 	<div class="container">
 			<div class="logo_image">
-				<a href="../Auction"><img src="template/template_image/logo2.png" width="80px" border="0"></a>
+				<a href="../CoinCod"><img src="template/template_image/logo2.png" width="80px" border="0"></a>
 			</div>  <!--end div logo_image-->	
 	 		<div class="payment_image">
 	 			<p/><a href="http://www.netbuilder.com/"><img src="template/template_image/payment.png" width="700" border="0"></a>
