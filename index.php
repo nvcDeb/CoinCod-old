@@ -325,7 +325,7 @@ function LeadingZero(Time) {
                 		<a href="">Like Us at Facebook</a>
                 	</li>
                 	<li>
-                		<a href="">Follow Us at Twitter</a>
+                		<a href="https://twitter.com/#!/NexVend">Follow Us at Twitter</a>
                 	</li>
                 	<li>
                 		<a href="">Plus One at Google+</a>
