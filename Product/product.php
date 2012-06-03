@@ -148,7 +148,7 @@ function LeadingZero(Time) {
 							else if($userid > 0 && $auctiontime <0)
 							{
 								echo '<div class="bid_button">
-						      		  <input name="endbid'.$productID.'" class="button" type="submit" value="Bid End " />
+						      		  <input name="endbid'.$productID.'" class="button" type="submit" value="Bid Ended" />
 						      		  </div>';
 							}
 					
