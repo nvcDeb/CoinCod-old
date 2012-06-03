@@ -35,7 +35,7 @@ if(($user_login != 1) && ($valid_userlogin == 1))
 		}
 		else
 		{
-			header("location:../../Auction"); 
+			header("location:../../CoinCod"); 
 			exit();
 		}
     } 
