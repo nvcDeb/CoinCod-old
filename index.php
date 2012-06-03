@@ -271,7 +271,6 @@ function LeadingZero(Time) {
                     echo'<span class="bid_spot">Highest Bidder</br>'.$highest_user.' </br>
                     	<!--This is the spot for you to put the bid function<div>Bid<div>-->
                     	</span>
-						<span id="auto_bidder"></br></span>
                   </div>
             	  </li>    
                   </ul>';	
