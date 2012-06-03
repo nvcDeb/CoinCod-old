@@ -23,7 +23,7 @@
 						</a>
 					</div>
 					<div class="logout">
-						<a href="../Logout"><div class="logout_button">Log Out</div>
+						<a href="../CoinCod/Logout"><div class="logout_button">Log Out</div>
 						</a>
 					</div><div class="token_left">
 						</br><img src="../template/template_image/header/token_left.png" border="0" width="30%"> '.$token.'
