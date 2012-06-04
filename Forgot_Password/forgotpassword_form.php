@@ -26,7 +26,6 @@
 				<td>Please enter your email so that we can send you an email for you to reset your password:</td>
 				</tr>
 				<tr>
-				<!--<fieldset>-->
 				<td>Email address: 
 				<input type="text" id="emails" name="emails" class="inputtext"/>
 					<script type="text/javascript">
@@ -35,7 +34,6 @@
 						emails.add(Validate.Email )
 					</script>
 				</td>
-				<!--</fieldset>-->
 				</tr>
 				<tr>
 				<td><input type="submit" name="button" class="form_button" value="RESET PASSWORD" /></td> 
