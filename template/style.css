@@ -366,7 +366,7 @@ td,td.label{
 /*---------- FORGOT PASSWORD form PAGE ----------*/	
 
 .forgot { /* text and form align */
-	text-align: center;
+	text-align: left;
 	}
 	
 .forgot fieldset{ /* remove the border of the form */
