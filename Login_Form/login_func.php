@@ -60,7 +60,7 @@ if(($user_login == 1) && ($valid_userlogin != 1))
 if (($user_login != 1) && ($valid_userlogin != 1))
 {
 
-  	echo '<div class="f_login">Looks like your account cannot be found in our server. Please try again later. If this problem persist kindly send us an email at <a href="mailto:support@coincod.com">support@coincod.com.</a> Thank you.</div>';
+  	echo '<div class="f_login">Looks like your account cannot be found in our server. Please try again later. If this problem persists kindly send us an email at <a href="mailto:support@coincod.com">support@coincod.com.</a> Thank you.</div>';
 
 }
 
