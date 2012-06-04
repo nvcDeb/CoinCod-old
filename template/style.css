@@ -276,9 +276,8 @@ td,td.label{
 	border-radius: 30px;
 	border: 1px solid #666666;
 	background: #e3e8fd;
-	/*position: absolute;*/
 	padding: 0px 150px 10px 150px;
-	margin-bottom: 20px;
+	margin: 20px 170px 250px;
 	text-align: justify;
 	font-family: Trebuchet MS;
 	font-size: 14px;
