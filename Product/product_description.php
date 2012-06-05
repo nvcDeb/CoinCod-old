@@ -83,7 +83,7 @@ function LeadingZero(Time) {
 		
 	?>
     <title><?php echo $product_brand; echo $product_model; ?></title>
-    <div id="main_content">
+    <div id="content_container">
 	<div class="auction_container">
 	<div id="product">
 		<div class="name">
