@@ -16,7 +16,7 @@
             </div>  <!--end div login-->	
 	
 			<div id="search">
-            	<form method="GET" action="<?php echo $_SERVER['PHP_SELF'];?>" name="searchForm">
+				<form action="../Search" enctype="multipart/form-data" name="searchForm" id="myForm" method="GET">
          			<input type="text" name="search" value="<?php echo isset($searchTerms)?htmlspecialchars($searchTerms):''; ?>" />
          			<input type="submit" name="submit" class="form_button" value="Search" />
       			</form>

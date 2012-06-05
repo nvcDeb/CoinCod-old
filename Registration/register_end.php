@@ -12,10 +12,12 @@
 		?>
 	<div id="content_container">
 		<div class="auction_container"><br />
-      		OK Registration Successful! one last step to verify your email identity:<br />
-			We just sent an Activation link to your email<br /><br />
-			Please check your email inbox and click on the Activation <br />
-			Link inside the message. After email activation you can log in.
+      		Congratulations! Your registration is successful!<br /> 
+			There is one last step to bring you closer to the wonderful experience that we are going to bring you.<br />
+			Before that, you need to verify your email identity:<br />
+			We have just sent an activation link to your email<br /><br />
+			Please check your email inbox, there should be an activation link attached to the email.<br />
+			Click on the link inside the email. After clicking the activation email you can log in.
         </div>
 	</div>
 </div>

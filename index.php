@@ -73,7 +73,7 @@ function LeadingZero(Time) {
 						</a>
 					</div>
 					<div class="logout">
-						<a href="../CoinCod/Logout"><div class="logout_button">Log Out</div>
+						<a href="../Logout"><div class="logout_button">Log Out</div>
 						</a>
 					</div><div class="token_left">
 						</br><img src="template/template_image/header/token_left.png" border="0" width="30%"> '.$token.'
@@ -112,10 +112,15 @@ function LeadingZero(Time) {
 				?>
 				</div>	<!--end div login-->
 	
-				<div id="search">
-					<iframe style="width:300px; height:35px; margin:5px;" frameborder=0 allowtransparency=yes scrolling=no src="http://search.digitalpoint.com/iframe.php?site=www.google.com&y=1">
-					</iframe>
-				</div>	<!--end div search-->
+				<div id="search"> 
+				<form action="Search" enctype="multipart/form-data" name="searchForm" id="myForm" method="GET">
+         			<input type="text" name="search" value="<?php echo isset($searchTerms)?htmlspecialchars($searchTerms):''; ?>" />
+         			<input type="submit" name="submit" class="form_button" value="Search" />
+      			</form>
+				<!--<iframe style="width:300px; height:35px; margin:5px;" frameborder=0 allowtransparency=yes scrolling=no src="http://search.digitalpoint.com/iframe.php?site=www.google.com&y=1">
+				</iframe>-->
+                <?php include "../Search/search.php"; ?>
+			</div>  <!--end div search-->
 
 				<div id="logo">
 					<a href="../CoinCod"></a>
@@ -271,6 +276,7 @@ function LeadingZero(Time) {
                     echo'<span class="bid_spot">Highest Bidder</br>'.$highest_user.' </br>
                     	<!--This is the spot for you to put the bid function<div>Bid<div>-->
                     	</span>
+						<span id="auto_bidder"></br></span>
                   </div>
             	  </li>    
                   </ul>';	
@@ -325,7 +331,7 @@ function LeadingZero(Time) {
                 		<a href="">Like Us at Facebook</a>
                 	</li>
                 	<li>
-                		<a href="https://twitter.com/#!/NexVend">Follow Us at Twitter</a>
+                		<a href="">Follow Us at Twitter</a>
                 	</li>
                 	<li>
                 		<a href="">Plus One at Google+</a>
@@ -357,7 +363,7 @@ function LeadingZero(Time) {
      <div id="lower_footer_wrap">
 	 	<div class="container">
 			<div class="logo_image">
-				<a href="../CoinCod"><img src="template/template_image/logo2.png" width="80px" border="0"></a>
+				<a href="../Auction"><img src="template/template_image/logo2.png" width="80px" border="0"></a>
 			</div>  <!--end div logo_image-->	
 	 		<div class="payment_image">
 	 			<p/><a href="http://www.netbuilder.com/"><img src="template/template_image/payment.png" width="700" border="0"></a>

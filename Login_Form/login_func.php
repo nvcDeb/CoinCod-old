@@ -54,13 +54,13 @@ if(($user_login != 1) && ($valid_userlogin == 1))
 if(($user_login == 1) && ($valid_userlogin != 1))
 {
 	
-	echo '<div class="f_login">Your account is not activated. </br>Please go email to activate it. </br>Thank you.</div>';
+	echo '<div class="f_login">Your account has not been activate. Please go email to activate it now and enjoy the forthcoming experience that CoinCod will bring to you. Thank you.</div>';
 
 } 
 if (($user_login != 1) && ($valid_userlogin != 1))
 {
 
-  	echo '<div class="f_login">Account cannot be found. </br>Please try again. </br>Thank you.</div>';
+  	echo '<div class="f_login">Looks like your account cannot be found in our server. Please try again later. If this problem persists kindly send us an email at <a href="mailto:support@coincod.com">support@coincod.com.</a> Thank you.</div>';
 
 }
 

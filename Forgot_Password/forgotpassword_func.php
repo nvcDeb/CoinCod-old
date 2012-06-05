@@ -34,7 +34,9 @@
 							Enjoy your awesome first auction experience with Coincod.
 							<br /><br /> 
 							Thank You! 
-							<br /><br /> 
+							<br /><br />
+							NOTE:If you did not request for this email. Kindly ignore it.
+							<br /><br />
 							Best Regards,
 							CoinCod Management Team
 							</body>
