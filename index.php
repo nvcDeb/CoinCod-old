@@ -114,7 +114,7 @@ function LeadingZero(Time) {
 	
 				<div id="search"> 
 				<form action="Search" enctype="multipart/form-data" name="searchForm" id="myForm" method="GET">
-         			<input type="text" name="search" value="<?php echo isset($searchTerms)?htmlspecialchars($searchTerms):''; ?>" />
+         			<input type="text" class="search_input" name="search" value="<?php echo isset($searchTerms)?htmlspecialchars($searchTerms):''; ?>" />
          			<input type="submit" name="submit" class="form_button" value="Search" />
       			</form>
 				<!--<iframe style="width:300px; height:35px; margin:5px;" frameborder=0 allowtransparency=yes scrolling=no src="http://search.digitalpoint.com/iframe.php?site=www.google.com&y=1">
