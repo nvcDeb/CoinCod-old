@@ -109,15 +109,23 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #search{ /* the google search iframe position */
-	background: url(template_image/search.png) no-repeat;
 	position: absolute;
-	margin-top: 70px;
+	margin-top: 73px;
 	margin-left: 780px;
 	max-width: 230px;
 	max-height: 50px;
 	z-index: 1;
 }
 
+#search .search_input {
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #f2efef;
+	border: 1px solid #000;
+	min-height: 20px;
+	margin-top: 5px;
+	}
+	
 /* ---------- NAVIGATION MENU END ---------- */
 
 
@@ -392,7 +400,7 @@ td,td.label{
 	margin-left: 10px;
 	float: left;
 	position: relative;
-	border: 3px solid #123456;
+	border: 2px solid #123456;
 	width: 190px;
 	height: 340px;
 	list-style: none;

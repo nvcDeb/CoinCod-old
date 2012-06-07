@@ -23,7 +23,7 @@
 			<div class="forgot">
 			<table>
 				<tr>
-				<td>Please enter your email so that we can send you an email for you to reset your password:</td>
+				<td>Please enter your email so that we can send you an email for you to reset your password:<br><br></td>
 				</tr>
 				<tr>
 				<td>Email address: 
@@ -36,7 +36,7 @@
 				</td>
 				</tr>
 				<tr>
-				<td><input type="submit" name="button" class="form_button" value="RESET PASSWORD" /></td> 
+				<td><br><input type="submit" name="button" class="form_button" value="RESET PASSWORD" /></td> 
 				</tr>
 			</table>
 			</div> <!--end div forgot-->
