@@ -22,13 +22,8 @@ function UpdateTimer() {
 	var eta;
 	for ( var i in Timer ) {
 		eta = Timer[i];
-		if(eta <= 0)
-		{
-			var eta=0;
-			document.getElementById("bid_timer_" + i).innerHTML = eta;
-		}
 		//eta = "00:" + LeadingZero(Timer[i]);
-		document.getElementById("bid_timer_" + i).innerHTML = eta;
+		document.getElementById("bid_timer_" + i).innerHTML = ( (eta <= 0) ? 0 : eta );
 		Timer[i] -= 1;
 	}
 }
@@ -135,7 +130,6 @@ function LeadingZero(Time) {
 				
                 
                 <div id="bid_timer_'.$productId.'" class="timer" end_time="">
-					'.$product_time.'
 				</div>';
 				?>
                 

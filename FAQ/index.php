@@ -15,9 +15,8 @@
 	?>
    	
 	<div id="content_container">
+	<h1><img src="../template/template_image/header/faq.png"></h1>
 		<div class="auction_container">
-			<h1><img src="../template/template_image/header/faq.png" border="0"></h1>
-		
 		<div class="faq">
 		<ol>
 		<li><a href="Faq_page1.php#Question1">What is CoinCod?</a></li>
