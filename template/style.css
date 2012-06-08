@@ -110,8 +110,8 @@ h1,h2,h3,h4,h5,h6{
 
 #search{ /* the product search position */
 	position: absolute;
-	margin-top: 73px;
-	margin-left: 780px;
+	margin-top: 76px;
+	margin-left: 830px;
 	max-width: 230px;
 	max-height: 50px;
 	z-index: 1;
@@ -122,8 +122,19 @@ h1,h2,h3,h4,h5,h6{
 	border-radius: 5px;
 	background: #f2efef;
 	border: 1px solid #000;
-	min-height: 20px;
+	min-height: 22px;
 	margin top: 5px;
+	width: 115px;
+	-moz-transition: width 0.5s ease;
+	-webkit-transition: width 0.5s ease;
+	-o-transition: width 0.5s ease;
+}
+
+#search .search_input:focus {
+	width: 180px;
+	-moz-transition: width 0.5s ease;
+	-webkit-transition: width 0.5s ease;
+	-o-transition: width 0.5s ease;
 }
 
 /* ---------- NAVIGATION MENU END ---------- */
