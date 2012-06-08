@@ -108,7 +108,7 @@ function LeadingZero(Time) {
 	
 				<div id="search"> 
 				<form action="Search" enctype="multipart/form-data" name="searchForm" id="myForm" method="GET">
-         			<input type="text" name="search" value="<?php echo isset($searchTerms)?htmlspecialchars($searchTerms):''; ?>" />
+         			<input type="text" class="search_input" name="search" placeholder="Type Your Search Here" value="<?php echo isset($searchTerms)?htmlspecialchars($searchTerms):''; ?>" />
          			<input type="submit" name="submit" class="form_button" value="Search" />
       			</form>
 				<!--<iframe style="width:300px; height:35px; margin:5px;" frameborder=0 allowtransparency=yes scrolling=no src="http://search.digitalpoint.com/iframe.php?site=www.google.com&y=1">
@@ -356,7 +356,7 @@ function LeadingZero(Time) {
      <div id="lower_footer_wrap">
 	 	<div class="container">
 			<div class="logo_image">
-				<a href="../Auction"><img src="template/template_image/logo2.png" width="80px" border="0"></a>
+				<a href="../CoinCod"><img src="template/template_image/logo2.png" width="80px" border="0"></a>
 			</div>  <!--end div logo_image-->	
 	 		<div class="payment_image">
 	 			<p/><a href="http://www.netbuilder.com/"><img src="template/template_image/payment.png" width="700" border="0"></a>

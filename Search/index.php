@@ -20,13 +20,8 @@ function UpdateTimer() {
 	var eta;
 	for ( var i in Timer ) {
 		eta = Timer[i];
-		if(eta <= 0)
-		{
-			var eta=0;
-			document.getElementById("bid_timer_" + i).innerHTML = eta;
-		}
 		//eta = "00:" + LeadingZero(Timer[i]);
-		document.getElementById("bid_timer_" + i).innerHTML = eta;
+		document.getElementById("bid_timer_" + i).innerHTML = ( (eta <= 0) ? 0 : eta );
 		Timer[i] -= 1;
 	}
 }
@@ -125,7 +120,6 @@ function LeadingZero(Time) {
 	                  					<div class="bid_box">
 				
                 						<div id="bid_timer_'.$productID.'" class="bid_timer" end_time="">
-											'.$auctiontime.'
 										</div>';
                 						/*<div id="bid_price_1" class="bid_price">'.$Marketprice.'</div>';*/
 					
