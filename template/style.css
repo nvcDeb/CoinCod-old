@@ -278,14 +278,19 @@ td,td.label{
 	margin:0pt auto;
 }
 
+h1 {
+	margin-left: 150px;
+	}
+
 .auction_container { /*the content background */
-	-moz-border-radius: 30px;
+	/*-moz-border-radius: 30px;
 	box-shadow: 8px 8px 12px #666666;
-	border-radius: 30px;
+	background: #e3e8fd;*/
+	border-radius: 10px;
 	border: 1px solid #666666;
-	background: #e3e8fd;
 	/*position: absolute;*/
-	padding: 0px 150px 10px 150px;
+	background: #D9F7FB;
+	padding: 10px 150px 10px 150px;
 	margin-bottom: 20px;
 	text-align: justify;
 	font-family: Trebuchet MS;
