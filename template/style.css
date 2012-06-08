@@ -288,8 +288,14 @@ td,td.label{
 	margin:0pt auto;
 }
 
-h1 {
+h1 { /* the h1 title position */
 	margin-left: 150px;
+	}
+	
+#banner_image {
+	min-width: 1000px;
+	min-height: 200px;
+	border: 1px solid #000;
 	}
 
 .auction_container { /*the content background */
@@ -306,7 +312,6 @@ h1 {
 	font-family: Trebuchet MS;
 	font-size: 14px;
 	max-width: 700px;
-	
 }
 /*---------- SHARE CONTENT END ----------*/
 
@@ -767,6 +772,22 @@ h1 {
 	color: #8C1717;
 	text-decoration:underline;
 }
+
+.answer li{ /* font style for answers */
+	font-weight: bold;
+	padding-top: 20px;
+	}
+	
+.answer ol { /* adjust the position of the answers */
+	margin-top: -10px;
+	}
+
+.answer ul li { /* adjust the payment type on the answers */
+	margin-top: -10px;
+	}
+	
+
+
 
 /*---------- FAQ PAGE END ----------*/
 
