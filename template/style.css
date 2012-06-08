@@ -300,12 +300,12 @@ h1 { /* the h1 title position */
 
 .auction_container { /*the content background */
 	/*-moz-border-radius: 30px;
-	box-shadow: 8px 8px 12px #666666;
 	background: #e3e8fd;*/
 	border-radius: 10px;
 	border: 1px solid #666666;
 	/*position: absolute;*/
 	background: #D9F7FB;
+	box-shadow: 2px 2px 3px #666666;
 	padding: 10px 150px 10px 150px;
 	margin-bottom: 20px;
 	text-align: justify;
