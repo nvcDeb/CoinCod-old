@@ -18,7 +18,6 @@
 			<div id="search">
 				<form action="../Search" enctype="multipart/form-data" name="searchForm" id="myForm" method="GET">
          			<input type="text" class="search_input" name="search" placeholder="Enter Search..." value="<?php echo isset($searchTerms)?htmlspecialchars($searchTerms):''; ?>" />
-         			<!--<input type="submit" name="submit" class="form_button" value="Search" />-->
       			</form>
 				
                 <?php include "../Search/search.php"; ?>
