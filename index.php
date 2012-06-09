@@ -356,7 +356,7 @@ function LeadingZero(Time) {
      <div id="lower_footer_wrap">
 	 	<div class="container">
 			<div class="logo_image">
-				<a href="../Auction"><img src="template/template_image/logo2.png" width="80px" border="0"></a>
+				<a href="../CoinCod"><img src="template/template_image/logo2.png" width="80px" border="0"></a>
 			</div>  <!--end div logo_image-->	
 	 		<div class="payment_image">
 	 			<p/><a href="http://www.netbuilder.com/"><img src="template/template_image/payment.png" width="700" border="0"></a>
