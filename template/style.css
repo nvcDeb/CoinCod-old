@@ -108,7 +108,7 @@ h1,h2,h3,h4,h5,h6{
 	background: url(template_image/menu_active_bg.png) repeat-x;
 }
 
-#search{ /* the google search iframe position */
+#search{ /* the product search position */
 	position: absolute;
 	margin-top: 73px;
 	margin-left: 780px;

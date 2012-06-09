@@ -2,7 +2,7 @@
 $hostname = 'localhost';
 $dbname = 'coincod';
 $username = 'root';
-$password = 'password';
+$password = '1234';
 
 
 mysql_connect($hostname,$username,$password) or die ('Connection lost! Server is down!');
