@@ -14,15 +14,15 @@ session_start();
 		include "../template/templateheader.php";
 	?>
    <div id="content_container">
+		<h1><img src="../template/template_image/header/site_status.png"></h1>
 		<div class="auction_container">
-		<h1><img src="../template/template_image/header/site_status.png" border="0"></h1>
 		
 			<div class="status_box">
-				<div class="status_left">How is CoinCod doing today?<br>(Date Mth Yr)
+				<div class="status_left">How is CoinCod doing today?(Date Mth Yr)
 				</div>
 				<div class="status_right">Well as usual running like charm.
 				</div>
-			</div><p>
+			</div>
         
 		</div>
 	</div>

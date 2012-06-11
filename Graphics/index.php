@@ -14,8 +14,8 @@ session_start();
 		include "../template/templateheader.php";
 	?>
 	<div id="content_container">
+			<h1><img src="../template/template_image/header/graphics.png"></h1>
 		<div class="auction_container">
-			<h1><img src="../template/template_image/header/graphics.png" border="0"></h1>
 			<img src="../template/template_image/Coming-soon.gif" width="540px" height="380px"><p>
         
 		</div>

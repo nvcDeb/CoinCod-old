@@ -14,8 +14,8 @@ session_start();
 		include "../template/templateheader.php";
 	?>
     <div id="content_container">
+			<h1><img src="../template/template_image/header/security.png"></h1>
 			<div class="auction_container">
-			<h1><img src="../template/template_image/header/security.png" border="0"></h1>
 			<h4>Physical Security</h4>
 			<li> Data center access limited to Amazon Web Services data center technicians</li>
 			<li> The infrastructure is housed in Amazon-controlled data centers throughout the world</li>
@@ -33,8 +33,6 @@ session_start();
 		
 		<h4>Security Contact</h4>
 			Have a question, concern, or comment about Coincod security?Please email <a href = "mailto:security@coincod.com">security@coincod.com</a> for all inquires.
-	  <br>
-	  <br>
      
 		</div>
 	</div>
