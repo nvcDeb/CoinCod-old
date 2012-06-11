@@ -78,8 +78,8 @@
       <div class="rule"></div>
 
       <p>If you have any special request <strong>just shoot CoinCod an email</strong>, we are always available.</p>
-
-      <img alt="Heartocat" class="heartocat" src="https://a248.e.akamai.net/assets.github.com/images/modules/contact/heartocat.png?1334862345">
+	  
+	  <img alt="" class="" src="">
 
 </div>
 </ul>
