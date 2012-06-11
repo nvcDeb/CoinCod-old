@@ -86,7 +86,7 @@ h1,h2,h3,h4,h5,h6{
 .top_nav a{ /* (menu ++) design */
 	display:block;
 	margin-top: 0px;
-	padding: 7px 21px 7px 21px;
+	padding: 5px 21px 5px 21px;
 	font-size: 17px;
 	border-right: 1px double #919191;
 	font-family: Trebuchet MS;
@@ -96,13 +96,13 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .top_nav a:hover{ /* (menu ++) mouseover design */
-	padding: 5px 20px 5px 20px;
+	padding: 5px 20px 5px 19px;
 	border: 2px solid #636363;
 	background: url(template_image/menu_hover_bg.png) repeat-x;
 }
 
 .top_nav a:active{ /* (menu ++) on click design */
-	padding: 5px 20px 5px 20px;
+	padding: 5px 20px 5px 19px;
 	border: 2px solid #2d2d2d;
 	background: url(template_image/menu_active_bg.png) repeat-x;
 }
@@ -289,7 +289,7 @@ td,td.label{
 }
 
 h1 { /* the h1 title position */
-	margin-left: 150px;
+	margin-left: 50px;
 	}
 	
 #banner_image {
@@ -301,18 +301,20 @@ h1 { /* the h1 title position */
 
 .auction_container { /*the content background */
 	/*-moz-border-radius: 30px;
+	box-shadow: 8px 8px 12px #666666;
 	background: #e3e8fd;*/
 	border-radius: 10px;
 	border: 1px solid #666666;
 	/*position: absolute;*/
 	background: #D9F7FB;
-	box-shadow: 1px 1px 2px #666666;
 	padding: 10px 150px 10px 150px;
 	margin-bottom: 20px;
 	text-align: justify;
 	font-family: Trebuchet MS;
 	font-size: 14px;
-	max-width: 700px;
+	line-height: 20px;
+	min-width: 700px;
+	min-height: 150px;
 }
 /*---------- SHARE CONTENT END ----------*/
 
@@ -388,6 +390,10 @@ h1 { /* the h1 title position */
 #form_container #myForm smallfont{ /* telephone number */
 	font-size: 11px;
 }
+
+fieldset {
+	margin-top: 20px;
+	}
 
 /*---------- REGISTRATION register form PAGE END ----------*/
 
@@ -796,14 +802,111 @@ h1 { /* the h1 title position */
 
 /*---------- FEEDBACK PAGE ----------*/	
 
-#feedback { /* feedback form container */
-	margin-top: 10px;
-	margin-left: 0px;
-	width: 800px;
+#feedback { /* feedback container */
+	min-width: 800px;
+	min-height: 600px;
 	}
 	
+#feedback ul{ /* feedback form and description side by side */
+	margin-top: -5px;
+	max-width: 350px;
+	float: left;
+	}
+	
+
+.column_first { /* feedback form container */
+	margin-left: -50px;
+	width: 350px;
+	}
+	
+.column_first dt { /* feedback title style */
+	font-weight: bold;
+	font-size: 15px;
+	}
+	
+.column_first dd { /* feedback textarea position */
+	margin-top: 0px;
+	margin-left: -2px;
+	}
+
+/* feedback textarea size */	
+.column_first #form_name { 
+	min-width: 350px;
+	min-height: 22px;
+	}
+	
+.column_first #form_email {
+	min-width: 350px;
+	min-height: 22px;
+	}
+	
+.column_first #form_subject {
+	min-width: 350px;
+	min-height: 22px;
+	}
+	
+.column_first #form_comments {
+	min-width: 350px;
+	min-height: 100px;
+	resize: none;
+	}
+
+/* feedback textarea size end */	
+
+.column_first .form-actions { /* submit button position */
+	clear:both;
+	float: right;
+	}
+
+	
+.column_last { /* feedback description position and left border */
+	clear: both;
+	padding-left: 30px;
+	border-left: 1px solid #9c9c9c;	
+	}
 /*---------- FEEDBACK PAGE END ----------*/	
 
+
+
+/*---------- LOCATION PAGE ----------*/
+
+address ul {
+	list-style: none;
+	}
+
+/*---------- LOCATION PAGE END ----------*/	
+
+
+
+/* TERMS PAGE */
+
+terms ul {
+	list-style: none;
+	padding-top: 10px;
+	margin-left: -50px;
+	}
+	
+terms ul li {
+	padding-top: 5px;
+	}
+
+/* TERMS PAGE END */
+
+
+
+/* PRIVACY PAGE */
+
+privacy ul {
+	list-style: none;
+	padding-top: 10px;
+	margin-left: -50px;
+	}
+	
+privacy ul li {
+	padding-top: 5px;
+	}
+
+/* PRIVACY PAGE END */
 
 
 /*---------- SITE STATUS PAGE ----------*/
@@ -814,7 +917,7 @@ h1 { /* the h1 title position */
 	
 .status_left { /* background left image position and size */
 	background: url(template_image/left.png) no-repeat;
-	min-width: 300px;
+	max-width: 270px;
 	min-height: 110px;
 	font-size: 18px;
 	padding: 20px 15px 0px 15px;
