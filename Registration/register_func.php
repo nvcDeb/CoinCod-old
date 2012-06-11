@@ -46,10 +46,13 @@
 	}
 	else
 	{
-		$id = mysql_insert_id();
+		$getid=mysql_query("SELECT * FROM user_account WHERE User_Id = (select Max(User_Id) from user_account);");
+		$getId = mysql_fetch_array($getid);
+		$max_id = $getId["User_Id"];
+		$id = $max_id + 1;
 		
 		$to = "$emails";
-		$from = "hychan_89@hotmail.com";
+		$from = "wilson@nexvend.com";
 		$subject = "Complete your registration";
 		$message = '<html>
 					Dear ' . $username . ',
@@ -59,7 +62,7 @@
 					<br /><br />
 					To activate your account, please click on the confirmation link below (if link is not clickable, copy and paste the entire link into your
 					browser) : &gt;&gt;
-					<a href="http://auction12345.site50.net/register_activation.php?id=' . $id . '">
+					<a href="http://auction12345.site50.net/Registration/register_activation.php?id=' .$id. '">
 					ACTIVATE NOW</a>
 					<br /><br />
 					Your login information are as follows: 
@@ -82,9 +85,9 @@
 			if($sentactive)
 			{
 				$hash_password = md5($passwords); //MD5 encryption.
-				$sqlCommand = "INSERT INTO user_account 			(Category,Username,Email,Password,Hash_Password,First_Name,Last_Name,Date_Birth,Gender,Address1,Address2,City,State,Zip,Country,Mobile,Date_Register,Activation,Token) VALUES('0','$username','$emails','$passwords','$hash_password','$firstname','$lastname','$dob','$gender','$add1','$add2','$city','$state','$zip','$country','$mobile',now(),'0','10')";  		
+				$sqlCommand = "INSERT INTO user_account 			(User_Id,Category,Username,Email,Password,Hash_Password,First_Name,Last_Name,Date_Birth,Gender,Address1,Address2,City,State,Zip,Country,Mobile,Date_Register,Activation,Token) VALUES('$id','0','$username','$emails','$passwords','$hash_password','$firstname','$lastname','$dob','$gender','$add1','$add2','$city','$state','$zip','$country','$mobile',now(),'0','10')";  		
 
-		$query = mysql_query($sqlCommand) or die (mysql_error()); 
+				$query = mysql_query($sqlCommand) or die (mysql_error()); 
 				header("location:register_end.php");
 			}
 			else

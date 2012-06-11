@@ -100,7 +100,7 @@ function LeadingZero(Time) {
 									</form>   
 				
 				  				<div class="bid_current">
-								Current Auction Price:<br/><div class="bid_current_color">RM '.$Auctionprice.'
+								Current Auction Price:<div class="bid_current_color">RM '.$Auctionprice.'
 				  				</div></div>
 				
                   				<div class="bid_box">
@@ -152,7 +152,7 @@ function LeadingZero(Time) {
 						      		  </div>';
 							}
 					
-                    echo'<span class="bid_spot">Highest Bidder</br>'.$highest_user.' </br>
+                    echo'<span class="bid_spot">Highest Bidder'.$highest_user.' 
                     	<!--This is the spot for you to put the bid function<div>Bid<div>-->
                     	</span>
                   </div>
