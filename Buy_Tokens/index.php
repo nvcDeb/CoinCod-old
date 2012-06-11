@@ -16,8 +16,9 @@ include "../server.php";
 		include "../template/templateheader.php";
 	?>
     <div id="content_container">
+	<h1><img src="../template/template_image/header/buy_tokens.png"></h1>
 		<div class="auction_container">	 
-			<div class="buy_tokens"><h1><img src="../template/template_image/header/buy_tokens.png" border="0"></h1>Choose your package by clicking on the button. Please take note that your payment is processed by Netbuilder.The Name of NbePay will be shown on your Credit Card / Bank Statement and you will also receive a notification e-mail from Netbuilder on this transaction.<br>
+			<div class="buy_tokens">Choose your package by clicking on the button. Please take note that your payment is processed by Netbuilder.The Name of NbePay will be shown on your Credit Card / Bank Statement and you will also receive a notification e-mail from Netbuilder on this transaction.
 			</div>
 		
 			<div class="package_value">

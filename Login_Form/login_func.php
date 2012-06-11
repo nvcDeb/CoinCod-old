@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include '../server.php';
 
 $email = stripslashes($_POST['email']);
@@ -16,6 +16,8 @@ $valid_userlogin=mysql_num_rows($validuserresult);
 
 if(($user_login != 1) && ($valid_userlogin == 1))
 {
+	$_SESSION['start'] = time(); 
+	$_SESSION['expire'] = $_SESSION['start'] + (1 * 60) ;
 	while($row = mysql_fetch_array($validuserresult))
 	{ 
 	   // Get member ID into a session variable
@@ -26,7 +28,7 @@ if(($user_login != 1) && ($valid_userlogin == 1))
 	    $username = $row["Username"];   
         session_register('user_username'); 
         $_SESSION['user_username'] = $username;
-		
+				
         mysql_query("UPDATE user_account SET last_login=now() WHERE User_Id='$id'"); 
 		if($id == 1)
 		{
@@ -49,7 +51,7 @@ if(($user_login != 1) && ($valid_userlogin == 1))
 		?>
       <div id="content_container">
     	<div class="auction_container">
-		<h1><img src="../template/template_image/header/coincod_login.png" border="0"></h1>
+		<h1><img src="../template/template_image/header/coincod_login.png"></h1>
 <?php 
 if(($user_login == 1) && ($valid_userlogin != 1))
 {
@@ -72,7 +74,7 @@ if (($user_login != 1) && ($valid_userlogin != 1))
 						<td width="25%">
 							Email
 						</td>
-						<td width="75%"></br>
+						<td width="75%">
 							<input type="text" name="email" value="" class="text" id="email"  placeholder="Email" size="33" maxlength="50" tabindex="10">
                             <script type="text/javascript">
 								var email = new LiveValidation('email');
@@ -100,7 +102,7 @@ if (($user_login != 1) && ($valid_userlogin != 1))
 						</td>
 					</tr>
 					</table> 
-        </br>
+       
         </form>
 	</div><!--end div auction_container-->
   </div><!--end div content_container-->

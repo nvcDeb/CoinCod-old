@@ -14,10 +14,9 @@
 		include "../template/templateheader.php";
 	?>
     <div id="content_container">
-    		<div class="auction_container">
-					<h1><img src="../template/template_image/header/careers.png" border="0"></h1>
+	<h1><img src="../template/template_image/header/careers.png"></h1>
+    		<div class="auction_container">					
 		Sorry, currently there are no available job openings. Please check with us again soon and hopefully we can provide you one in coming few months time.
-      <br><br>
 
 	  		</div>  <!--end div auction_container-->
 	</div>  <!--end div content_container-->

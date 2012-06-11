@@ -17,9 +17,10 @@
 		include "../template/templateheader.php";
 	?>
 	<div id="content_container">
+	<h1><img src="../template/template_image/header/identify_your_account.png"></h1>
 		<div class="auction_container">
 		<form action="forgotpassword_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
-		<h1><img src="../template/template_image/header/identify_your_account.png" border="0"></h1>
+	
 			<div class="forgot">
 			<table>
 				<tr>
@@ -40,7 +41,6 @@
 				</tr>
 			</table>
 			</div> <!--end div forgot-->
-        <br/>
 		</form>
 		</div><!--end div auction_container-->
 	</div><!--end div content_container-->
