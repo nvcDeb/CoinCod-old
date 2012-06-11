@@ -14,8 +14,6 @@
 		include "../template/templateheader.php";
 	?>
     <div id="content_container">
-	<div id="banner_image">
-	</div>
 	<h1><img src="../template/template_image/header/about_us.png"></h1>
     		<div class="auction_container">
 					

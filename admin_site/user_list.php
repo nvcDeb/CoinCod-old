@@ -72,7 +72,7 @@
 	{
 	 	echo "no data";
 	}
-?> <br>
+?> 
        </div> <!--end div user_list-->
 	  </div><!--end div auction container-->
 	</div><!--end div content_container-->

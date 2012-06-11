@@ -68,11 +68,11 @@
 			}
 			?>	
 				<h1><img src="../template/template_image/header/product_information.png" border="0"></h1>
-				<div class="smallfont"><br/>
+				<div class="smallfont">
                     All Fields are required to be filled.
 				</div>
         	<form action="product_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
-        		<br/><fieldset width="700">
+        		<fieldset width="700">
 					<legend><font size="5"><strong>Information</strong></legend>
 					<table width="650" cellpadding="0" cellspacing="10">
 					<tr>
@@ -166,7 +166,7 @@
 					<input type="submit" name="button" class="form_button" value="Submit" />                    
 				</fieldset>
                 </form>
-                </br>
+                
         
 	  </div>  <!--end div auction container-->
 	</div>  <!--end div content_container-->

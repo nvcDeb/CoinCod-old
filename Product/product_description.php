@@ -111,7 +111,7 @@ function LeadingZero(Time) {
 			  
 			  <div class="desc_bid_box">
                 <div class="price">					
-                  <div class="current_bid_price"></br>
+                  <div class="current_bid_price">
 				  <div class="price_title">Current Price: </div> RM
 				  <?php echo $product_aucprice;	?>
 				  </div>
@@ -193,7 +193,7 @@ function LeadingZero(Time) {
 						echo $highest_user;
 						echo "&nbsp;";
 						echo $highest_time;
-						echo "</br>";
+						echo "";
 					}
 				}
 				?>
@@ -204,7 +204,7 @@ function LeadingZero(Time) {
             </tr>
           </table>
 	  </div>
-  </br>  	
+    	
   </div>
 	</div>
 	</div><!--wrapper-->
