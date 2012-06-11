@@ -18,56 +18,72 @@
 	  		include "../template/templateheader.php";
 		?>
 	<div id="content_container">
+		<h1><img src="../template/template_image/header/feedback.png"></h1>
     	<div class="auction_container">	
-			<div id="feedback"><h1><img src="../template/template_image/header/feedback.png" border="0"></h1><br/>
-			<form action="feedback_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
-			<tr>
-				<td>
-					Name:
-				</td>
-				<td>
-					<input type="text" name="names" value="" class="text" id="names" size="33" maxlength="50" tabindex="2"></br>
-                    <script type="text/javascript">
-		    			var names = new LiveValidation('names');
-		    			names.add(Validate.Presence);
-						names.add(Validate.Char, { onlyInteger: true } );
-		  			</script>
-				</td>
-			</tr>
-			<br/>
-			
-			<tr>
-				<td width="33%">
-					Email : 
-				</td>
-				<td width="100%">
-					<input type="text" name="emails" value="" class="text" id="emails" size="33" maxlength="50" tabindex="10"></br>
-                    <script type="text/javascript">
-						var emails = new LiveValidation('emails');
-						emails.add(Validate.Presence);
-						emails.add(Validate.Email, {failureMessage: 'Email Not Valid!'});
-					</script>
-				</td>
-			</tr>
-            <br/>
-			
-			<tr>
-            	<td width="33%">
-					Comment : </br>
-				</td>
-            	<td width="100%">
-            		<textarea id="comment" name="comment" rows="10" cols="95"></textarea></br>
-					<script type="text/javascript">
-		    			var comment = new LiveValidation('comment');
-		    			comment.add(Validate.Presence);
-		  			</script>
-                 </td>
-            </tr>
-			<br/>
-            <input type="submit" name="button" class="form_button" value="Submit" />
-            </form>
-			</div>
-            </br>
+		<div id="feedback">
+		<ul>
+			<div class="column_first">
+        <p>Feel free to email us at <a href="mailto:support@coincod.com">support@coincod.com</a></p>
+        <form accept-charset="UTF-8" action="/contact" class="edit_user" id="edit_user_1809494" method="post"><div style="margin:0;padding:0;display:inline"><input name="_method" value="put" type="hidden"></div>
+
+  <dl class="form">
+    <dt><label for="form_name">Name</label></dt>
+    <dd><input id="form_name" name="form[name]" value="" type="text"></dd></dl>
+
+    <dl class="form">
+    <dt><label for="form_email">Email</label></dt>
+    <dd><input id="form_email" name="form[email]" required="true" value="" type="text"></dd></dl>
+
+
+    <dl class="form">
+    <dt><label for="form_subject">Subject</label></dt>
+    <dd><input id="form_subject" name="form[subject]" required="true" type="text"></dd></dl>
+
+
+    <input name="form[last_repo]" value="" type="hidden">
+    <input name="form[last_repo_at]" value="" type="hidden">
+
+
+  <dl class="form">
+    <dt><label for="form_comments">Questions / Comments</label></dt>
+    <dd><textarea id="form_comments" name="form[comments]" placeholder="Please write your feedback here. We will reply your feedback as soon as possible." required="true"></textarea></dd></dl>
+
+  <div class="form-actions">
+    <button type="submit" class="form_button"><span>Submit</span></button>
+  </div>
+
+</form>
+</div>
+</ul>
+
+<ul>
+
+<div class="column_last">
+      <h3>Why is your feedback crucial to CoinCod?</h3>
+      <ul class="checklist">
+        <li>We will able to challenge the status quo together by having a mutual understanding of each other.</li>
+	<li>Pushing boundaries to create innovation for upcoming features</li>
+        <li>Users like you will be able to have full control of your favorites.</li>
+      </ul>
+
+      <div class="rule"></div>
+
+      <h3>Reporting a security vulnerability?</h3>
+      <p>
+        Please send to our email at
+        <a href="mailto:security@coincod.com">security@coincod.com
+        </a>
+      </p>
+
+      <div class="rule"></div>
+
+      <p>If you have any special request <strong>just shoot CoinCod an email</strong>, we are always available.</p>
+
+      <img alt="Heartocat" class="heartocat" src="https://a248.e.akamai.net/assets.github.com/images/modules/contact/heartocat.png?1334862345">
+
+</div>
+</ul>
+	</div>
 		</div>
 	</div>
 		
