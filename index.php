@@ -52,31 +52,51 @@ function LeadingZero(Time) {
 				<?php
 					if (isset($_SESSION['user_id'])) 
 					{
-						include "server.php";
-    					$userid = $_SESSION['user_id'];
-    					$username = $_SESSION['user_username'];
+						 $now = time(); 
+						if($now > $_SESSION['expire'])
+						{
+							session_destroy();
+							echo "<script language='javascript'>";
+							echo "window.location='index.php';";
+							echo "alert('Timeout!!!Please login to continue browsing the site');";
+							echo "</script>";
+						}
+						else
+						{ 
+							$_SESSION['start_reset'] = time();
+							$_SESSION['expire'] = $_SESSION['start_reset'] + (1 * 60) ;
+							include "server.php";
+							$userid = $_SESSION['user_id'];
+							$username = $_SESSION['user_username'];
 							
-						$user=mysql_query("SELECT * FROM user_account WHERE User_Id='$userid'");
-						$get=mysql_fetch_array($user);
-						$token=$get["token"];
-				
-						echo '
-						<div id="after_log_in">
-					<div class="user_name"><img src="template/template_image/header/welcome_back.png" border="0" width="45%">
-						<a href="User_Profile/user_profile.php?id=' . $userid . '">' . $username . '
-						</a>
-					</div>
-					<div class="logout">
-						<a href="../CoinCod/Logout"><div class="logout_button">Log Out</div>
-						</a>
-					</div><div class="token_left">
-						</br><img src="template/template_image/header/token_left.png" border="0" width="30%"> '.$token.'
-					</div>
-						</div>';
+							$user=mysql_query("SELECT * FROM user_account WHERE User_Id='$userid'");
+							$get=mysql_fetch_array($user);
+							$token=$get["Token"];
+							$gravatar_image=$get["Email"];
+							$default = "http://auction12345.site50.net/template/template_image/favicon.ico";
+							$size = 40;
+
+							$grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $gravatar_image ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;
+												
+							echo '
+							<div id="after_log_in">
+							<div class="user_name">
+							<img src="'.$grav_url.'" alt="" />
+								<a href="User_Profile/user_profile.php?id=' . $userid . '">' . $username . '
+								</a>
+							</div>
+							<div class="logout">
+								<a href="Logout"><div class="logout_button">Log Out</div>
+								</a>
+							</div><div class="token_left">
+							<img src="template/template_image/header/token_left.png" border="0" width="30%"> '.$token.'
+							</div>
+							</div>';
+						}
 					} 
 					else 
 					{
-						echo '</br>
+						echo '
 							<form action="Login_Form/login_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 							<table cellspacing="0">
 							<tbody>
@@ -111,7 +131,6 @@ function LeadingZero(Time) {
          			<input type="text" class="search_input" name="search" placeholder="Enter Search..." value="<?php echo isset($searchTerms)?htmlspecialchars($searchTerms):''; ?>" />
       			</form>
 
-                <?php include "../Search/search.php"; ?>
 			</div>  <!--end div search-->
 
 				<div id="logo">
@@ -148,6 +167,10 @@ function LeadingZero(Time) {
 	</br>
         
   <div id="content_container">
+    
+	<div id="banner_image">
+	</div>
+	
 		<div class="site_body">
 	<?php	
 		$product_list=mysql_query("SELECT * FROM product_list");
