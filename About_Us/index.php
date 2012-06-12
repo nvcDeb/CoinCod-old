@@ -14,12 +14,10 @@
 		include "../template/templateheader.php";
 	?>
     <div id="content_container">
-	<div id="banner_image">
-	</div>
 	<h1><img src="../template/template_image/header/about_us.png"></h1>
     		<div class="auction_container">
 					
-		Coincod was founded in 2012 because we believe in helping our customers to challenge the status quo of the current auction method. By challenging the status quo, we try our best on lowering the barriers so that everyone can obtain their products and at the same time enjoying the best auction experience. This auction system is based on the unique worldwide concept which we ensure every user of ourselves have great pleasure throughout the process. At Coincod we supply all the best brand new quality of products. You name it, we have it. In order to fulfill our manifesto, the Coincod team will handle all our users' goods personally from buying, packaging and shipping.
+		Coincod was founded in 2012 because we believe in helping our customers to challenge the status quo of the current auction method. By challenging the status quo, we try our best on lowering the barriers so that everyone can obtain their products and at the same time enjoying the best auction experience. This auction system is based on the unique worldwide concept which we ensure every user of ours will have great pleasure throughout the process. At Coincod we supply all the best branded and new high quality products. You name it, we have it. In order to fulfill our manifesto, the Coincod team will handle all our users' goods personally from buying, packaging and shipping.
 		
 			</div>
       

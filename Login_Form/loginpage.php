@@ -48,7 +48,6 @@
 						</td>
 					</tr>
 					</table> 
-        </br>
         </form>
 	  </div><!--auction_container-->
 	</div><!--content_container-->
