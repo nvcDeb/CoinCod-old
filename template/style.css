@@ -142,6 +142,14 @@ h1,h2,h3,h4,h5,h6{
 
 /* ---------- LOGIN @ HEADER ---------- */
 
+.login_head{ /* login interface position */
+	margin-top: 11px;
+	float:right;
+	padding-top: -50px;
+	font-size:11px;
+	font-family: Trebuchet MS;
+}
+
 .login{ /* login interface position */
 	margin-top: -5px;
 	float:right;
@@ -151,11 +159,15 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /* login_function.php */
+.login_head table tr td{
+	padding:0pt 0pt 0pt 14px;
+}
+
 .login table tr td{
 	padding:0pt 0pt 0pt 14px;
 }
 
-td,td.label{
+ td,td.label{
 	font-size:13px;
 	text-align:left;
 }
@@ -185,13 +197,13 @@ td,td.label{
 	background: #1c1c1c;
 }
 
-.login .login_label_field a{ /* the text below the login email/password box */
+.login_label_field a{ /* the text below the login email/password box */
 	color:#000;
 	padding-left:5px;
 	text-decoration: none;
 }
 
-.login .login_label_field a:hover{ /* the text below the login email/password box */
+.login_label_field a:hover{ /* the text below the login email/password box */
 	font-style:italic;
 	text-decoration:underline;
 }
@@ -321,8 +333,24 @@ h1 { /* the h1 title position */
 
 /*---------- LOGIN PAGE ----------*/
 
-.f_login {
-	text-align: left;
+#login { /* the login for width and position */
+	width: 400px;
+	margin-left: 200px;	
+	margin-top: -30px;
+	}
+	
+#login tr td { /* the form value position and size */
+	padding-top: 40px;
+	font-weight: bold;
+	font-size: 15px;
+	}
+	
+#login .text { /* the text area size */
+	position: absolute;
+	margin-top: 15px;
+	margin-left: -68px;
+	min-width: 300px;
+	min-height: 27px;
 	}
 	
 /*---------- LOGIN PAGE END ----------*/
@@ -401,14 +429,38 @@ fieldset {
 
 /*---------- FORGOT PASSWORD form PAGE ----------*/	
 
-.forgot { /* text and form align */
-	text-align: left;
+.forgot td { /* the text content size and position */
+	width: 800px;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 10px;
 	}
 
-.forgot fieldset{ /* remove the border of the form */
-	border: none;
+.forgot td .value { /* the form value text size and position */
+	text-align: left;
+	font-size: 15px;
+	margin-left: 170px;
+	margin-top: 0px;
 	}
-		
+	
+.forgot .text { /* the text area size and position */
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 170px;
+	width: 350px;
+	height: 22px;
+	}
+
+.forgot span { /* the alert text position */
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 530px;	
+	}
+	
+.forgot .form_button { /* the form button position */
+	margin-top: 50px;
+	}
+	
 /*---------- FORGOT PASSWORD form PAGE END ----------*/	
 
 
@@ -574,7 +626,7 @@ fieldset {
 #description .product_image { /* product description image frame size */
 	width:410px;
 	height: 293px;
-	margin-left: 10px;
+	margin-left: 18px;
 	}
 	
 #description .product { /* the product description frame size */
@@ -626,19 +678,19 @@ fieldset {
 .price .current_bid_price { /* current bid price style and position */
 	font-size: 23px;
 	width: 150px;
-	margin-top: -35px;
+	margin-top: 0px;
 	text-align: center;
 	font-weight: bold;
 	color: #dc8c00;
 	}
 	
-.price .market_price{ /* product market price style and position */
+.price .market_price{ /* product retail price style and position */
 	font-size: 23px;
 	text-align: center;
 	width: 180px;
 	height: 40px;
 	padding-top: 10px;
-	margin-top: -63px;
+	margin-top: -50px;
 	float: right;
 	text-align: center;
 	font-weight: bold;
@@ -648,13 +700,13 @@ fieldset {
 
 /* product highest bidder */	
 .desc_bid_box .highest_bidder { /*highest bidder position, content font style and frame size */
-	font-size: 16px;
+	font-size: 14px;
 	text-align: center;
 	width: 180px;
 	height: 40px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	margin-top: -100px;
+	margin-top: -80px;
 	margin-left: 200px;
 	}
 	

@@ -48,7 +48,7 @@ function LeadingZero(Time) {
 	<div id="header">
 		<div id="header_content">
 			<div class="container">
-				<div class="login">
+				<div class="login_head">
 				<?php
 					if (isset($_SESSION['user_id'])) 
 					{
