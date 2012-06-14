@@ -27,8 +27,8 @@
 				<td>Please enter your email so that we can send you an email for you to reset your password:</td>
 				</tr>
 				<tr>
-				<td>Email address: 
-				<input type="text" id="emails" name="emails" class="inputtext"/>
+				<td><div class="value">Email</div>
+				<input type="text" id="emails" name="emails" class="text"/>
 					<script type="text/javascript">
 						var emails = new LiveValidation('emails');
 						emails.add(Validate.Presence)
