@@ -510,6 +510,26 @@ fieldset {
 	margin-top: 50px;
 	margin-left: -30px;
 	}
+	
+.read_more {
+	font-size: 13px;
+	font-weight: bold;
+	background: none;
+	border: none;
+	width: 50px;
+	text-align: center;
+	white-space: normal;
+	cursor: pointer;
+	color: #0F80AC;
+	position: absolute;
+	z-index: 1;
+	margin-top: 48px;
+	margin-left: -55px;
+	}
+	
+.read_more:hover {
+	color: #529FBD;
+	}
 
 .image { /* the position & design of each auction item image */
 	position: absolute;
@@ -586,9 +606,10 @@ fieldset {
 	position: absolute;
 	top: 48px;
 	right: 10px;
-	width: 80px;
+	width: 100px;
 	height: 35px;
 	text-align: center;
+	background: #ff3;
 	}
 
 #auto_bidder{ /* auto bidder container position and style */

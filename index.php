@@ -287,7 +287,15 @@ function LeadingZero(Time) {
 						      		  </div>';
 							}
 					
-                    echo'<span class="bid_spot">Highest Bidder</br>'.$highest_user.' </br>
+                    echo'
+								<div id="read_more">						
+									<form id="myForm" name="postlink" action="Product/product_description.php" method="post">
+				  	  					<input type="hidden" name="pid" value='.$productID.' />
+				 	   					<input name="link"  class="read_more" type="submit" value="Read More..." />	
+									</form>
+								</div>
+					
+						<span class="bid_spot">Highest Bidder</br>'.$highest_user.' </br>
                     	<!--This is the spot for you to put the bid function<div>Bid<div>-->
                     	</span>
 						<span id="auto_bidder"></br></span>
