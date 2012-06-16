@@ -79,19 +79,21 @@ function LeadingZero(Time) {
 							$grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $gravatar_image ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;
 												
 							echo '
+							<div id="main_after_log">
 							<div id="after_log_in">
 							<div class="user_name">
 							<img src="'.$grav_url.'" alt="" />
 								<a href="User_Profile/user_profile.php?id=' . $userid . '">' . $username . '
 								</a>
 							</div>
-							<div class="logout">
-								<a href="Logout"><div class="logout_button">Log Out</div>
-								</a>
-							</div><div class="token_left">
-							<img src="template/template_image/header/token_left.png" border="0" width="30%"> '.$token.'
+							<div id="logout">
+								<a href="Logout">Log Out</a>
+						
 							</div>
-							</div>';
+							<div class="token_left">
+								<img src="template/template_image/header/token_left.png" border="0" width="30%"> '.$token.'
+							</div>
+							</div></div>';
 						}
 					} 
 					else 
@@ -164,7 +166,6 @@ function LeadingZero(Time) {
 			</div>  <!--end div container clearfix-->
 		</div>  <!--end div true clearfix-->								
 	</div><!--end div menu-->
-	</br>
         
   <div id="content_container">
     
@@ -236,7 +237,7 @@ function LeadingZero(Time) {
                   				</div>
 				
 				  				<div class="bid_current">
-								Current Auction Price:<br/><div class="bid_current_color">RM '.$Auctionprice.'
+								Current Auction Price:<div class="bid_current_color">RM '.$Auctionprice.'
 				  				</div></div>
 				
                   				<div class="bid_box">
@@ -295,10 +296,10 @@ function LeadingZero(Time) {
 									</form>
 								</div>
 					
-						<span class="bid_spot">Highest Bidder</br>'.$highest_user.' </br>
+						<span class="bid_spot">Highest Bidder'.$highest_user.' 
                     	<!--This is the spot for you to put the bid function<div>Bid<div>-->
                     	</span>
-						<span id="auto_bidder"></br></span>
+						<span id="auto_bidder"></span>
                   </div>
             	  </li>    
                   </ul>';	

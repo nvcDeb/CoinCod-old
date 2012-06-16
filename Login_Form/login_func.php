@@ -43,15 +43,27 @@ if(($user_login != 1) && ($valid_userlogin == 1))
     } 
 } ?>
 
-	<html>
-    <body>
-	<div id="wrapper">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>CoinCod Login</title>
+	<link href="../template/style.css" rel="stylesheet" type="text/css" />
+	
+	<!--[if lt IE 10]>
+	<link href="template/style_ie.css" rel="stylesheet" type="text/css"  />
+	<![endif]-->
+	
+</head>
+
+<body>
+<div id="wrapper">
 		<?php
-			include "../template/templateheader.php";
+	  		include "../template/templateheader.php";
 		?>
-      <div id="content_container">	  
+	<div id="content_container">
 		<h1><img src="../template/template_image/header/coincod_login.png"></h1>
-    	<div class="auction_container">
+    	<div class="auction_container">	
 <?php 
 if(($user_login == 1) && ($valid_userlogin != 1))
 {
