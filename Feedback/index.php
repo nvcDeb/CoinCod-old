@@ -62,7 +62,7 @@
       <h3>Why is your feedback crucial to CoinCod?</h3>
       <ul class="checklist">
         <li>We will able to challenge the status quo together by having a mutual understanding of each other.</li>
-	<li>Pushing boundaries to create innovation for upcoming features</li>
+	<li>Pushing boundaries to create more upcoming innovative features</li>
         <li>Users like you will be able to have full control of your favorites.</li>
       </ul>
 	  
