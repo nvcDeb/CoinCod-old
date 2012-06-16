@@ -21,7 +21,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #content_container{ /*body container*/
-	overflow:auto;
+	overflow:none;
 	padding-bottom: 190px;	
 	width: 1015px; 
 	margin: 0px auto 0px auto;	
@@ -142,6 +142,14 @@ h1,h2,h3,h4,h5,h6{
 
 /* ---------- LOGIN @ HEADER ---------- */
 
+.login_head{ /* login interface position */
+	margin-top: 11px;
+	float:right;
+	padding-top: -50px;
+	font-size:11px;
+	font-family: Trebuchet MS;
+}
+
 .login{ /* login interface position */
 	margin-top: -5px;
 	float:right;
@@ -151,11 +159,15 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /* login_function.php */
+.login_head table tr td{
+	padding:0pt 0pt 0pt 14px;
+}
+
 .login table tr td{
 	padding:0pt 0pt 0pt 14px;
 }
 
-td,td.label{
+ td,td.label{
 	font-size:13px;
 	text-align:left;
 }
@@ -185,13 +197,13 @@ td,td.label{
 	background: #1c1c1c;
 }
 
-.login .login_label_field a{ /* the text below the login email/password box */
+.login_label_field a{ /* the text below the login email/password box */
 	color:#000;
 	padding-left:5px;
 	text-decoration: none;
 }
 
-.login .login_label_field a:hover{ /* the text below the login email/password box */
+.login_label_field a:hover{ /* the text below the login email/password box */
 	font-style:italic;
 	text-decoration:underline;
 }
@@ -210,13 +222,17 @@ td,td.label{
 
 /* ---------- AFTER LOGIN @ HEADER ---------- */
 
+#main_after_log {
+	margin-top: -16px;
+	}
+
 #after_log_in { /* after log in box container position */
 	margin-top: 15px;
 	}
 	
 #after_log_in a{ /* username font and style */
 	font-weight: bold;
-	font-size: 13px;
+	font-size: 15px;
 	width: 250px;
 	color: #000;
 	}
@@ -225,43 +241,42 @@ td,td.label{
 	position: absolute;
 	margin-left: 5px;
 	margin-top: 10px;
+	text-decoration: none;
 	}
 	
 .user_name img { /* "welcome back" & "token left" image position */
 	margin-top: 10px;
 	}
+
+#logout {
+	margin-top: -10px;	
+	margin-left: 170px;
+	}
 	
-.logout_button { /* logout button position and style */
+#logout a {  /* logout button position and style */
+	font-size: 12px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	position: absolute;
-	margin-top: -17px;
-	margin-left: 200px;
 	text-decoration:none;
-	padding-top: 2px;
-	font-size: 12px;
+	padding: 2px 5px 2px 5px;
 	font-weight: bold;
-	color: #3f3f3f;
 	border: 1px solid #757575;
-	min-width: 60px;
-	min-height: 18px;
 	background: #d3d3d3;
-	text-align: center;
+	text-align: center;	
 	}
-
-.logout_button:hover{ /* logout button on mouseover */
+	
+#logout a:hover { /* logout button on mouseover */
 	color: #9c9c9c;
 	background: #4a4848;
-}
-
-.logout_button:active{ /* logout button on click */
-	color: #9c9c9c;
-	background: #1c1c1c;
-}
+	}
 	
+#logout a:active { /* logout button on click */
+	background: #1c1c1c;
+	}
+		
 .token_left { /* user token left position and font */
 	font-family: Trebuchet MS;
-	margin-top: -10px;
+	margin-top: -5px;
 	font-size: 12px;
 	}
 
@@ -292,7 +307,8 @@ h1 { /* the h1 title position */
 	margin-left: 50px;
 	}
 	
-#banner_image {
+#banner_image { /*adjusting the banner image on homepage */
+	margin-top: 25px;
 	min-width: 1000px;
 	min-height: 200px;
 	border: 1px solid #000;
@@ -321,8 +337,29 @@ h1 { /* the h1 title position */
 
 /*---------- LOGIN PAGE ----------*/
 
-.f_login {
-	text-align: left;
+#login { /* the login for width and position */
+	width: 400px;
+	margin-left: 200px;	
+	margin-top: -30px;
+	}
+	
+#login tr td { /* the form value position and size */
+	padding-top: 40px;
+	font-weight: bold;
+	font-size: 15px;
+	}
+	
+#login .text { /* the text area size */
+	position: absolute;
+	margin-top: 15px;
+	margin-left: -305px;
+	width: 300px;
+	height: 22px;
+	}
+	
+#login .form_button { /* button position */
+	margin-top: 10px;
+	margin-left: 240px;
 	}
 	
 /*---------- LOGIN PAGE END ----------*/
@@ -370,29 +407,107 @@ h1 { /* the h1 title position */
 
 /*---------- REGISTRATION register form PAGE ----------*/	
 
-#form_container { /* form container style and position */
-	margin-left: 160px;
-	margin-right: 150px;
+.registration legend { /* the legend text design */
+	font-size: 22px;
+	font-weight: bold;
+	color: #000;
+	}
+	
+.registration { /* form container style and position */
 	text-align: justify;
 	font-family: Trebuchet MS;
 	font-size: 14px;
+	padding-bottom: 20px;
 }
 
-#form_container #myForm td { /* form static word size */
-	font-size: 15px;
+.registration fieldset { /* the form width and position */
+	width: 500px;
+	margin-left: 100px;
+	padding-bottom: 10px;
+	}
+	
+.registration table { /* the form content position */
+	margin-left: 30px;
+	}
+	
+.registration #myForm td { /* form static word size */
+	font-size: 14px;
+	padding-top: 17px;
+	width: 150px;
 }
 
-#form_container .smallfont { /* form sub title */
-	font-size: 15px;
-	float: left;
+.registration .smallfont { /* form sub title */
+	font-size: 14px;	
+	margin-left: 100px;
 }
 
-#form_container #myForm smallfont{ /* telephone number */
+.registration #myForm smallfont { /* telephone number */
 	font-size: 11px;
 }
 
-fieldset {
+/* text area size */	
+.registration .text {
+	width : 280px;
+	height: 22px;
+	}
+	
+.registration #date_birth_year{
+	margin-top: -10px;
+	margin-left: -30px;
+	height: 22px;
+	}
+
+.registration #date_birth_month {
+	margin-top: -10px;
+	margin-left: -40px;
+	height: 22px;
+	}
+	
+.registration #date_birth_day{
+	margin-top: -10px;
+	margin-left: -30px;
+	height: 22px;
+	}
+	
+.registration #gender{
+	height: 22px;
+	}
+	
+.registration #state {
+	height: 22px;
+	}
+	
+/* text area size end */
+
+
+/* the javascript notificatin position */
+.registration span { 
+	font-size: 11px;
+	position: absolute;
+	margin-top: 25px;
+	margin-left: -280px;
+	}
+
+.registration .gender span {
 	margin-top: 20px;
+	margin-left: -70px;
+	}
+	
+.registration .state span {
+	margin-top: 20px;
+	margin-left: -120px;
+	}
+	
+/* the javascript notificatin position end */
+
+fieldset { /* each fieldset spacing size */
+	margin-top: 20px;
+	}
+	
+.registration .form_button { /* the position of the button */
+	margin-top: 20px;
+	margin-left: 410px;
+	
 	}
 
 /*---------- REGISTRATION register form PAGE END ----------*/
@@ -401,14 +516,39 @@ fieldset {
 
 /*---------- FORGOT PASSWORD form PAGE ----------*/	
 
-.forgot { /* text and form align */
-	text-align: left;
+.forgot td { /* the text content size and position */
+	width: 800px;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 10px;
 	}
 
-.forgot fieldset{ /* remove the border of the form */
-	border: none;
+.forgot td .value { /* the form value text size and position */
+	text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: 175px;
+	margin-top: 0px;
+	padding-bottom: 5px;
 	}
-		
+	
+.forgot .text { /* the text area size and position */
+	width: 350px;
+	height: 22px;
+	}
+
+.forgot span { /* the alert text position */
+	font-size: 11px;
+	position: absolute;
+	margin-top: 25px;
+	margin-left: -350px;
+	}
+	
+.forgot .form_button { /* the form button position */
+	margin-top: 10px;
+	margin-left: 250px;
+	}
+	
 /*---------- FORGOT PASSWORD form PAGE END ----------*/	
 
 
@@ -457,6 +597,26 @@ fieldset {
 .button_image { /* the image position for each auction item */
 	margin-top: 50px;
 	margin-left: -30px;
+	}
+	
+.read_more { /* read more on mainpage position and style */
+	font-size: 11px;
+	font-weight: bold;
+	background: none;
+	border: none;
+	width: 100px;
+	text-align: center;
+	white-space: normal;
+	cursor: pointer;
+	color: #0F80AC;
+	position: absolute;
+	z-index: 1;
+	margin-top: 78px;
+	margin-left: -85px;
+	}
+	
+.read_more:hover { /* read more design on mouseover */
+	color: #529FBD;
 	}
 
 .image { /* the position & design of each auction item image */
@@ -534,7 +694,7 @@ fieldset {
 	position: absolute;
 	top: 48px;
 	right: 10px;
-	width: 80px;
+	width: 100px;
 	height: 35px;
 	text-align: center;
 	}
@@ -574,7 +734,7 @@ fieldset {
 #description .product_image { /* product description image frame size */
 	width:410px;
 	height: 293px;
-	margin-left: 10px;
+	margin-left: 18px;
 	}
 	
 #description .product { /* the product description frame size */
@@ -626,19 +786,19 @@ fieldset {
 .price .current_bid_price { /* current bid price style and position */
 	font-size: 23px;
 	width: 150px;
-	margin-top: -35px;
+	margin-top: 0px;
 	text-align: center;
 	font-weight: bold;
 	color: #dc8c00;
 	}
 	
-.price .market_price{ /* product market price style and position */
+.price .market_price{ /* product retail price style and position */
 	font-size: 23px;
 	text-align: center;
 	width: 180px;
 	height: 40px;
 	padding-top: 10px;
-	margin-top: -63px;
+	margin-top: -50px;
 	float: right;
 	text-align: center;
 	font-weight: bold;
@@ -648,13 +808,13 @@ fieldset {
 
 /* product highest bidder */	
 .desc_bid_box .highest_bidder { /*highest bidder position, content font style and frame size */
-	font-size: 16px;
+	font-size: 14px;
 	text-align: center;
 	width: 180px;
 	height: 40px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	margin-top: -100px;
+	margin-top: -80px;
 	margin-left: 200px;
 	}
 	
@@ -804,7 +964,7 @@ fieldset {
 
 #feedback { /* feedback container */
 	min-width: 800px;
-	min-height: 600px;
+	min-height: 500px;
 	}
 	
 #feedback ul{ /* feedback form and description side by side */
@@ -822,6 +982,7 @@ fieldset {
 .column_first dt { /* feedback title style */
 	font-weight: bold;
 	font-size: 15px;
+	margin-top: 20px;
 	}
 	
 .column_first dd { /* feedback textarea position */
@@ -847,7 +1008,7 @@ fieldset {
 	
 .column_first #form_comments {
 	min-width: 350px;
-	min-height: 100px;
+	min-height: 150px;
 	resize: none;
 	}
 
@@ -857,13 +1018,22 @@ fieldset {
 	clear:both;
 	float: right;
 	}
-
 	
 .column_last { /* feedback description position and left border */
 	clear: both;
 	padding-left: 30px;
 	border-left: 1px solid #9c9c9c;	
 	}
+
+.column_last ul{ /* making a space between the first and half tier */
+	padding-bottom: 30px;
+	}
+	
+.fisheart { /* the heart or fish logo position and size */
+	max-width: 70%;
+	margin-top: 20px;
+	margin-left: 80px;
+		}
 /*---------- FEEDBACK PAGE END ----------*/	
 
 
@@ -1038,14 +1208,46 @@ privacy ul li {
 }
    /*----------Footer End ----------*/
    
+   
+   /*--------------- Feedback Page ----------*/
+
+	.column_first dd { /* feedback title style */
+	margin-top: 5px;
+} 
+	
+   /*---------- Feedback Page End ----------*/
+   
+   
+	/*---------- REGISTRATION register form PAGE ----------*/	
+
+	.registration fieldset { /* the form width and position */
+	padding-bottom: 15px;
+	}	
+	
+	/* the javascript notificatin position */
+
+	.registration .gender span {
+	margin-left: -60px;
+	}
+	
+	.registration .state span {
+	margin-left: -110px;
+	}
+	
+	/* the javascript notificatin position end */
+	
+	/*---------- REGISTRATION register form PAGE END ----------*/	
+
+
+   
    /*----------FAQ ----------*/
 	.faq a:hover {
 	font-style:normal;
 	color: #8C1717;
 	text-decoration:underline;
 }
-
    /*----------FAQ End ----------*/
+
    
 }
 
@@ -1057,11 +1259,68 @@ privacy ul li {
 	padding-bottom: 202px;
 }
 
-/*--------------- Footer ----------------*/
+
+/* ---------- AFTER LOGIN @ HEADER ---------- */
+
+#main_after_log {
+	margin-top: -26px;
+	}
+
+#after_log_in { /* after log in box container position */
+	margin-top: 45px;
+	}
+	
+#after_log_in .user_name a{ /* username position */
+	margin-left: 20px;
+	margin-top:-10px;
+	}
+
+/* ---------- AFTER LOGIN @ HEADER END ---------- */
+
+
+
+/*---------- Footer ----------*/
 
 	#footer_wrap {
 	margin-top: -202px; /* negative value of footer height */
 	height: 202px;
 } 
+
+/*---------- Footer End ----------*/
+
+
+/*---------- Feedback Page ----------*/
+
+	.column_first dd { /* feedback title style */
+	margin-top: 5px;
+	}
+	
+	#feedback .form_button { /* submit button position */
+	margin-top: 15px;
+	}
+	
+/*---------- Feedback Page End ----------*/
+
+
+
+/*---------- FORGOT PASSWORD form PAGE ----------*/	
+
+.forgot .form_button { /* the form button position */
+	font-size: 10px;
+	margin-left: 220px;
+	}
+	
+/*---------- FORGOT PASSWORD form PAGE END ----------*/	
+
+
+
+/*---------- REGISTRATION register form PAGE ----------*/	
+
+.registration fieldset { /* the form width and position */
+	padding-bottom: 15px;
+	}
+	
+/*---------- REGISTRATION register form PAGE END ----------*/	
                     
 	}
+

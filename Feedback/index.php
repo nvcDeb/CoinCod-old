@@ -62,24 +62,18 @@
       <h3>Why is your feedback crucial to CoinCod?</h3>
       <ul class="checklist">
         <li>We will able to challenge the status quo together by having a mutual understanding of each other.</li>
-	<li>Pushing boundaries to create innovation for upcoming features</li>
+	<li>Pushing boundaries to create more upcoming innovative features</li>
         <li>Users like you will be able to have full control of your favorites.</li>
       </ul>
-
-      <div class="rule"></div>
-
+	  
       <h3>Reporting a security vulnerability?</h3>
-      <p>
         Please send to our email at
         <a href="mailto:security@coincod.com">security@coincod.com
         </a>
-      </p>
 
-      <div class="rule"></div>
+      If you have any special request <strong>just shoot CoinCod an email</strong>, we are always available.
 
-      <p>If you have any special request <strong>just shoot CoinCod an email</strong>, we are always available.</p>
-	  
-	  <img alt="" class="" src="">
+      <img alt="fisheart" class="fisheart" src="../template/template_image/fisheart.png">
 
 </div>
 </ul>

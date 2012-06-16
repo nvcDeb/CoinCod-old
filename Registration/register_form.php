@@ -17,20 +17,22 @@
 	  		include "../template/templateheader.php";
 		?>
 		<div id="content_container">
+			<h1><img src="../template/template_image/header/registration.png"></h1>
 			<div class="auction_container">
-			<h1><img src="../template/template_image/header/registration.png" border="0"></h1>
+			
+		  <div class="registration">
 				<div class="smallfont">
                     All Fields are required to be filled.
 				</div>
         	<form action="register_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
-        		<br/><fieldset width="700">
-					<legend><font size="5"><strong>ID and Password</strong></legend>
-					<table width="650" cellpadding="0" cellspacing="10">
+        		<fieldset>
+					<legend>ID and Password</legend>
+					<table>
 					<tr>
-						<td width="20%">
+						<td>
 							Username
 						</td>
-						<td width="80%">
+						<td>
 							<input type="text" name="username" value="" class="text" id="username" size="33" maxlength="50" tabindex="10">
                             <script type="text/javascript">
 		     					var username = new LiveValidation('username');
@@ -40,10 +42,10 @@
 					</tr>
                     
                      <tr>
-						<td width="25%">
+						<td>
 							Email
 						</td>
-						<td width="75%">
+						<td>
 							<input type="text" name="emails" value="" class="text" id="emails" size="33" maxlength="50" tabindex="10">
                             <script type="text/javascript">
 								var emails = new LiveValidation('emails');
@@ -53,29 +55,23 @@
 						</td>
 					</tr>
 					<tr>
-						<td width="25%">
+						<td>
 							Password
 						</td>
-						<td width="75%">
-							<table cellpadding="0" cellspacing="0" border="0">
-							<tr>
-								<td>
+						<td>
 									<input type="password" name="passwords" value="" class="text" id="passwords" size="33" maxlength="50" tabindex="12">
                                     <script type="text/javascript">
 										var passwords = new LiveValidation('passwords');
 										passwords.add(Validate.Presence);	
 										passwords.add(Validate.Length, { minimum: 6 } );
 									</script>
-								</td>
-							</tr>
-							</table>
 						</td>
 					</tr>
 					<tr>
-						<td width="25%">
+						<td>
 							Confirm password
 						</td>
-						<td width="75%">
+						<td>
 							<input type="password" name="re_password" value="" class="text" id="re_password" size="33" maxlength="50" tabindex="13">
                             <script type="text/javascript">
 								var repasswords = new LiveValidation('re_password');
@@ -86,15 +82,14 @@
 					</tr>										
 					</table>
 				</fieldset>
-                <br/>
-				<fieldset>
-					<legend><font size="5"><strong>Personal Information</strong></legend>
-				  <table width="640" cellpadding="0" cellspacing="10">
+                <fieldset>
+					<legend>Personal Information</legend>
+				  <table>
 					<tr>
-						<td width="20%">
+						<td>
 							First Name
 				    	</td>
-						<td width="80%">
+						<td>
 							<input type="text" name="firstname" value="" class="text" id="firstname" size="33" maxlength="50" tabindex="1">
                             <script type="text/javascript">
 		    					var firstname = new LiveValidation('firstname');
@@ -104,10 +99,10 @@
 						</td>
 					</tr>
 					<tr>
-						<td width="25%">
+						<td>
 							Last Name
 				    	</td>
-						<td width="75%">
+						<td>
 							<input type="text" name="lastname" value="" class="text" id="lastname" size="33" maxlength="50" tabindex="2">
                             <script type="text/javascript">
 		    					var lastname = new LiveValidation('lastname');
@@ -117,11 +112,11 @@
 						</td>
 					</tr>
 					<tr>
-						<td width="25%">
+						<td>
 							Date birth
 						</td>
-						<td width="75%">
-							<table cellpadding="0" cellspacing="0" border="0">
+						<td>
+							<table>
 							<tr>
 								<td>
                                 <input type="hidden" name="date_birth" value="" id="date_birth">
@@ -239,10 +234,10 @@
 						</td>
                   </tr>
                   <tr>
-						<td width="25%">
+						<td>
 							Gender
 						</td>
-						<td width="75%">
+						<td><div class="gender">
 							<select id="gender" name="gender" size="1" tabindex="3">
                             	<option value="0">Choose</option>
 								<option value="Male">Male</option>
@@ -251,14 +246,14 @@
                             <script type="text/javascript">
 		    					var gender = new LiveValidation('gender');
 		    					gender.add(Validate.Inclusion, { within: [ 'Male', 'Female' ], failureMessage: 'You must select an option!' } );
-		  					</script> 
+		  					</script> </div>
 						</td>
 				   </tr>
 				   <tr>
-						<td width="25%">
+						<td>
 							Address 1
 						</td>
-						<td width="75%">
+						<td>
 							<input type="text" name="add1" value="" class="text" id="add1" size="33" maxlength="100" tabindex="5">
                             <script type="text/javascript">
 		    					var add1 = new LiveValidation('add1');
@@ -267,10 +262,10 @@
 						</td>
 					</tr>
                   <tr>
-						<td width="25%">
+						<td>
 							Address 2
 						</td>
-						<td width="75%">
+						<td>
 							<input type="text" name="add2" value="" class="text" id="add2" size="33" maxlength="100" tabindex="5">
                             <script type="text/javascript">
 		    					var add2 = new LiveValidation('add2');
@@ -279,10 +274,10 @@
 						</td>
 					</tr>
 					<tr>
-						<td width="25%">
+						<td>
 							City
 						</td>
-						<td width="75%">
+						<td>
 							<input type="text" name="city" value="" class="text" id="city" size="33" maxlength="100" tabindex="6">
 							<script type="text/javascript">
 		    					var city = new LiveValidation('city');
@@ -293,10 +288,10 @@
 						</td>
 					</tr>
 					<tr>
-						<td width="25%">
+						<td>
 							State
 						</td>
-						<td width="75%">
+						<td><div class="state">
 							<select id="state" name="state" size="1" tabindex="7">
 								<option value="0">Choose</option>
 								<option value="Johor">Johor</option>
@@ -319,14 +314,14 @@
                             <script type="text/javascript">
 		    					var state = new LiveValidation('state');
 		    					state.add(Validate.Inclusion, { within: [ 'Johor', 'Kedah','Kelantan','Kuala Lumpur','Labuan','Melaka','Negeri Sembilan','Pahang','Perak','Perlis','Pulau Pinang','Putrajaya','Sabah','Selangor','Sarawak','Terengganu' ], failureMessage: 'You must select an option!' } );
-		  					</script>
+		  					</script></div>
 						</td>
 					</tr>
 					<tr>
-						<td width="25%">
+						<td>
 							Zip
 						</td>
-						<td width="75%">
+						<td>
 							<input type="text" name="zip" value="" class="text" id="zip" size="33" maxlength="100" tabindex="8">
                             <script type="text/javascript">
 		    					var zip = new LiveValidation('zip');
@@ -336,30 +331,25 @@
 						</td>
 					</tr>
 					<tr>
-						<td width="25%">
+						<td>
 							Country
 						</td>
-						<td width="75%">
+						<td>
 							Malaysia
 						</td>
 					</tr>
 					<tr>
-						<td width="25%">
+						<td>
 							Mobile <smallfont>(+60XXXXXXXX)</smallfont>
 						</td>
-						<td width="75%">
-							<table cellpadding="0" cellspacing="0" border="0">
-							<tr>
-								<td>
+						<td>
+							
 									<input type="text" name="mobile" value="" class="text" id="mobile" size="33" maxlength="100" tabindex="9">
                                     <script type="text/javascript">
 		    							var mobile = new LiveValidation('mobile');
 		    							mobile.add(Validate.Presence);
 										mobile.add(Validate.Numericality, { onlyInteger: true } );
 		  							</script>
-								</td>
-							</tr>
-							</table>
 						</td>
 					</tr>
                    
@@ -368,7 +358,7 @@
 					<input type="submit" name="button" class="form_button" value="Submit" />                    
 				</fieldset>
                 </form>
-                </br>
+		</div> <!--end div registration-->
 	  </div>  <!--end div auction container-->
 	</div>  <!--end div content_container-->
 </div>  <!--end div wrapper-->

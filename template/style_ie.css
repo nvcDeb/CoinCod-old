@@ -44,6 +44,77 @@
 
 
 
+/*---------- LOGIN PAGE ----------*/
+	
+#login .text { /* the text area size */
+	margin-left: -310px;
+	height: 20px;
+	}
+	
+#login .form_button { /* button position */
+	margin-left: 230px;
+	}
+	
+/*---------- LOGIN PAGE END ----------*/
+
+
+
+/* ---------- AFTER LOGIN @ HEADER ---------- */
+
+#main_after_log {
+	margin-top: -16px;
+	}
+
+#after_log_in { /* after log in box container position */
+	margin-top: 5px;
+	}
+
+/* ---------- AFTER LOGIN @ HEADER END ---------- */
+
+
+
+/*--------------- Feedback Page ----------------*/
+
+.column_first dd { /* feedback title style */
+	margin-top: 4px;
+	}
+	
+/*--------------- Feedback Page End ----------------*/
+
+
+
+/*---------- FORGOT PASSWORD form PAGE ----------*/	
+
+.forgot .form_button { /* the form button position */
+	margin-left: 240px;
+	}
+	
+/*---------- FORGOT PASSWORD form PAGE END ----------*/	
+
+
+
+/*---------- REGISTRATION register form PAGE ----------*/	
+
+.registration fieldset { /* the form width and position */
+	padding-bottom: 15px;
+	}	
+
+/* the javascript notificatin position */
+
+.registration .gender span {
+	margin-left: -65px;
+	}
+	
+.registration .state span {
+	margin-left: -115px;
+	}
+	
+/* the javascript notificatin position end */
+	
+/*---------- REGISTRATION register form PAGE END ----------*/	
+
+
+
 /*--------------- FOOTER ----------------*/
 
 #main_content{ /* body */
@@ -64,4 +135,6 @@
 	font-size: 13px;
 	}
 
-/*----------- Footer End ----------*/
+/*----------- FOOTER End ----------*/
+
+
