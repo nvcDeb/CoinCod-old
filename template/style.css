@@ -307,7 +307,8 @@ h1 { /* the h1 title position */
 	margin-left: 50px;
 	}
 	
-#banner_image {
+#banner_image { /*adjusting the banner image on homepage */
+	margin-top: 25px;
 	min-width: 1000px;
 	min-height: 200px;
 	border: 1px solid #000;
@@ -1217,25 +1218,25 @@ privacy ul li {
    /*---------- Feedback Page End ----------*/
    
    
-/*---------- REGISTRATION register form PAGE ----------*/	
+	/*---------- REGISTRATION register form PAGE ----------*/	
 
-.registration fieldset { /* the form width and position */
+	.registration fieldset { /* the form width and position */
 	padding-bottom: 15px;
 	}	
 	
 	/* the javascript notificatin position */
 
-.registration .gender span {
+	.registration .gender span {
 	margin-left: -60px;
 	}
 	
-.registration .state span {
+	.registration .state span {
 	margin-left: -110px;
 	}
 	
-/* the javascript notificatin position end */
+	/* the javascript notificatin position end */
 	
-/*---------- REGISTRATION register form PAGE END ----------*/	
+	/*---------- REGISTRATION register form PAGE END ----------*/	
 
 
    
