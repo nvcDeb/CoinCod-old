@@ -45,7 +45,7 @@ function LeadingZero(Time) {
 <body>
 <!--header-->
 <div id="wrapper">
-	<div id="header">
+	<header id="header">
 		<div id="header_content">
 			<div class="container">
 				<div class="login_head">
@@ -139,7 +139,7 @@ function LeadingZero(Time) {
 					<a href="../CoinCod"></a>
 				</div>  <!--end div logo-->
 	
-				<div class="menu">
+				<nav class="menu">
 					<table cellspacing="0">
 					<tbody>
 						<tr>
@@ -162,10 +162,10 @@ function LeadingZero(Time) {
 						</tr>
 					</tbody>
        				</table> 		
-				</div>  <!--end div menu-->
+				</nav>  <!--end div menu-->
 			</div>  <!--end div container clearfix-->
 		</div>  <!--end div true clearfix-->								
-	</div><!--end div menu-->
+	</header><!--end div menu-->
         
   <div id="content_container">
     
@@ -317,7 +317,7 @@ function LeadingZero(Time) {
 <!--end header-->
 			
 <!--footer-->  
-<div id="footer_wrap">
+<footer id="footer_wrap">
 	<div class="upper_footer_wrap">
     	<div class="container" align="left">
 			<div class="ul">
@@ -396,7 +396,7 @@ function LeadingZero(Time) {
 	 		</div>  <!--end div copyright-->
 	 	</div>  <!--end div container clearfix-->	 
 	</div>  <!--end div lower_footer_wrap-->         
-</div><!--footer_wrap--> 
+</footer><!--footer_wrap--> 
 <!--end footer-->    
 </body>
 </html>
