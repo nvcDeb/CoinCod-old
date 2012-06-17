@@ -6,7 +6,7 @@
 </head>
 
 <body>
-<div id="header">
+<header id="header">
 	<div id="header_content">
     	<div class="container">
            	<div class="login">
@@ -25,7 +25,7 @@
 				<a href="../../CoinCod"></a>
 			</div>  <!--end div logo-->	
 		
-			<div class="menu">
+			<nav class="menu">
 				<table cellspacing="0">
 				<tbody>
 					<tr>
@@ -48,11 +48,10 @@
 					</tr>
 				</tbody>
         		</table> 						
-			</div>  <!--end div menu-->	
+			</nav>  <!--end div menu-->	
             
 		</div>  <!--end div header_content-->
 	</div>  <!--end div container-->
-</div>  <!--end div header-->
-</br>
+</header>  <!--end div header-->
 </body>
 </html>
