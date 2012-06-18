@@ -53,7 +53,8 @@ Note: Product cost refers to the final cost of product at which bidding stopped.
         No. Purchased bids are non refundable and hence users should only buy as many bids as they are comfortable spending on CoinCod.
 
 </ol>
-		</div>  <!--end div Faq-->     
+		</div>  <!--end div Faq-->    
+			<h1><img src="../template/template_image/bottom/faq.png"></h1>
       	</div>  <!--end div auction_container-->
 	</div>  <!--end div content_container-->
 </div>  <!--end div wrapper-->

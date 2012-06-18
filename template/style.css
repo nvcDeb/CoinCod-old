@@ -333,6 +333,12 @@ h1 { /* the h1 title position */
 	min-width: 700px;
 	min-height: 150px;
 }
+
+.auction_container h1 img {/* the bottom image position and size */
+	margin-left: 240px;
+	max-width: 150px;
+	}
+
 /*---------- SHARE CONTENT END ----------*/
 
 
@@ -917,11 +923,6 @@ fieldset { /* each fieldset spacing size */
 	background: url(template_image/price_button_active.png) repeat-x;
 	}
 /* price button for each package end */
-
-	
-.package2 { /* for buy_tokens table bottom spacing */
-	font-size: 1px;
-	}
 	
 /*---------- Buy_Tokens PAGE END ----------*/
 
