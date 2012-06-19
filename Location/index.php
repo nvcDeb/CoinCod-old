@@ -28,6 +28,7 @@ session_start();
 			</ul>
 			</address>
 		        
+			<h1><img src="../template/template_image/bottom/location.png"></h1>
 		</div>
 	</div>
 </div><!--wrapper-->

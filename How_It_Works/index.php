@@ -18,7 +18,7 @@
     		<div class="auction_container">
 					<img src="../template/template_image/Coming-soon.gif" width="540px" height="380px">
 					
-					<h1><img src="../template/template_image/bottom/how_it_works.png"></h1>
+					<h1><img src="../template/template_image/bottom/sorry.png"></h1>
 	  		</div>  <!--end div auction_container-->
 	</div>  <!--end div content_container-->
 </div>  <!--wrapper-->
