@@ -37,7 +37,8 @@
         True, there is a possibility that it might happen. This is when the auction winner turns out to be fraudulent – for example someone who has registered multiple accounts in our system without entering any personal data and automatically received free bids for each username created. All bids by such fraud users will be considered void and the auction will be re-listed from the same point when it ended so that real users can have a possibility to win it. Our support team is doing its best on a daily basis to filter such cases.
 
 		</ol>
-		</div>  <!--end div faq-->        
+		</div>  <!--end div faq-->  
+			<h1><img src="../template/template_image/bottom/faq.png"></h1>
 	  	</div>  <!--end div auction_container-->
 	</div>  <!--end div content_container-->
 </div>  <!--wrapper-->
