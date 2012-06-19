@@ -323,6 +323,7 @@ h1 { /* the h1 title position */
 	border: 1px solid #666666;
 	/*position: absolute;*/
 	background: #D9F7FB;
+	box-shadow: 1px 1px 2px #666666;
 	padding: 10px 150px 10px 150px;
 	margin-bottom: 20px;
 	text-align: justify;
@@ -564,7 +565,7 @@ fieldset { /* each fieldset spacing size */
 	-moz-border-radius: 20px;
 	box-shadow: 5px 5px 10px #666666;
 	border-radius: 20px;
-	margin-left: 10px;
+	margin-left: 14px;
 	float: left;
 	position: relative;
 	border: 2px solid #123456;
