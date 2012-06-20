@@ -41,9 +41,10 @@
 					<div id="after_log_in">
 					<div class="user_name">
 					<img src="'.$grav_url.'" alt="" />
-						<a href="User_Profile/user_profile.php?id=' . $userid . '">' . $username . '
+						<a href="../User_Profile/user_profile.php?id=' . $userid . '">' . $username . '
 						</a>
 					</div>
+					
 					<div id="logout">
 						<a href="../Logout">Log Out</a>
 						
