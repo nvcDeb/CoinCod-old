@@ -30,7 +30,11 @@
 	$zip = mysql_real_escape_string($_POST['zip']);
 	$country = "Malaysia";
 	$mobile = mysql_real_escape_string($_POST['mobile']);
+	$captcha = @$_POST['ct_captcha'];
 
+	include 'securimage/securimage.php';
+    $securimage = new Securimage();
+	
 	$username_check = mysql_query("SELECT * FROM user_account WHERE Username='$username' LIMIT 1");
 	$username_checks = mysql_num_rows($username_check);
 	$email_check = mysql_query("SELECT * FROM user_account WHERE Email='$emails' LIMIT 1");
@@ -44,6 +48,9 @@
 	{
 		echo " your email already register.Please go forgot password.";
 	}
+	else if ($securimage->check($captcha) == false) {
+        echo 'Incorrect security code entered<br />';
+	  }
 	else
 	{
 		$getid=mysql_query("SELECT * FROM user_account WHERE User_Id = (select Max(User_Id) from user_account);");
