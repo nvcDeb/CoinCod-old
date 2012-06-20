@@ -36,7 +36,8 @@ session_start();
 		<li><a name="Question30">If I have additional questions, how do I contact CoinCod?</a></li>
         If you any additional questions please e-mail our customer service at <a href="mailto:support@coincod.com">support@coincod.com</a> You will receive an answer ASAP.
 		</ol>
-		</div>  <!--end div Faq-->    
+		</div>  <!--end div Faq-->   
+		<h1><img src="../template/template_image/bottom/faq.png"></h1>		
       	</div>  <!--end div auction_container-->
 	</div>  <!--end div content_container-->
 </div>  <!--end div wrapper-->

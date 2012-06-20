@@ -38,6 +38,7 @@
         
 		</ol>
 		</div>  <!--end div faq-->  
+			<h1><img src="../template/template_image/bottom/faq.png"></h1>
 	  	</div>  <!--end div auction_container-->
 	</div>  <!--end div content_container-->
 </div>  <!--end div wrapper-->
