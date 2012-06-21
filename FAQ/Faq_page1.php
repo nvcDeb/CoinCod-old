@@ -11,7 +11,7 @@
 <body>
 <div id="wrapper">
     <?php
-		include "../template/templateheader.php";
+		include "../../template/templateheader.php";
 	?>
      <div id="content_container">
 		<h1><a href="index.php"><img src="../template/template_image/header/faq.png" ></a></h1>
@@ -43,7 +43,7 @@
 	</div>  <!--end div content_container-->
 </div>  <!--wrapper-->
 	<?php
-		include "../template/templatefooter.html";
+		include "../../template/templatefooter.html";
 	?>
 </body>
 </html>
