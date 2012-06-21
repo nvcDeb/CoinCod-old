@@ -16,7 +16,7 @@
      <div id="content_container">
     	<div class="auction_container">
 		<h1><a href="index.php"><img src="../template/template_image/header/faq.png" border="0"></a></h1>
-		<div class="faq">
+		<div class="answer">
 		<ol>
         
 		<li><a name="Question21"><strong>How secure are your payment methods?</strong></a></li>
@@ -51,7 +51,7 @@
         The winner of the auction pays for all delivery fees of the item. If you are interested in a delivery cost of a specific item then please refer to the specific auction you are interested in. Rates vary between auctions due to the size and weight of the products and destination of delivery. Rates are indicated for all destinantions within Malaysia.
 
 </ol>
-		</div>  <!--end div Faq--> 
+		</div>  <!--end div answer--> 
 		<h1><img src="../template/template_image/bottom/faq.png"></h1>
       	</div>  <!--end div auction_container-->
 	</div>  <!--end div content_container-->

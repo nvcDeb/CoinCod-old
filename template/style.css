@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5,h6{
 	overflow:none;
 	padding-bottom: 190px;	
 	width: 1015px; 
-	margin: 0px auto 0px auto;	
+	margin: 0px auto 0px auto;
 }
 
 /* ---------- HEADER ---------- */
@@ -242,6 +242,7 @@ h1,h2,h3,h4,h5,h6{
 	margin-left: 5px;
 	margin-top: 10px;
 	text-decoration: none;
+	max-width: 100px;
 	}
 	
 .user_name img { /* "welcome back" & "token left" image position */
@@ -318,12 +319,13 @@ h1 { /* the h1 title position */
 .auction_container { /*the content background */
 	/*-moz-border-radius: 30px;
 	box-shadow: 8px 8px 12px #666666;
-	background: #e3e8fd;*/
+	background: #e3e8fd;
 	border-radius: 10px;
-	border: 1px solid #666666;
-	/*position: absolute;*/
-	background: #D9F7FB;
-	box-shadow: 1px 1px 2px #666666;
+	border-top: none;*/
+	/*position: absolute;	
+	box-shadow: 1px 1px 2px #666666;*/
+	border-top: 1px solid #9c9c9c;
+	background: none;
 	padding: 10px 150px 10px 150px;
 	margin-bottom: 20px;
 	text-align: justify;
@@ -333,10 +335,16 @@ h1 { /* the h1 title position */
 	min-width: 700px;
 	min-height: 150px;
 }
-
+	
 .auction_container h1 img {/* the bottom image position and size */
-	margin-left: 240px;
-	max-width: 150px;
+	margin-left: 600px;
+	max-width: 180px;
+	}
+	
+.auction_container location  img{ /* the location page image */
+	margin-left: 600px;
+	margin-top: -150px;
+	max-width: 180px;
 	}
 
 /*---------- SHARE CONTENT END ----------*/
@@ -1089,11 +1097,15 @@ privacy ul li {
 	
 .status_left { /* background left image position and size */
 	background: url(template_image/left.png) no-repeat;
-	max-width: 270px;
+	min-width: 270px;
 	min-height: 110px;
 	font-size: 18px;
 	padding: 20px 15px 0px 15px;
 	float: left;
+	}
+	
+.status_left .left{ /* background left image position and size */
+	max-width: 240px;
 	}
 	
 .status_right { /* background left image position and size */
@@ -1103,6 +1115,10 @@ privacy ul li {
 	font-size: 18px;
 	padding: 20px 15px 0px 15px;
 	float: right;
+	}
+
+.status_right .right {
+	max-width: 270px;
 	}
 
 /*---------- SITE STATUS PAGE END ----------*/
