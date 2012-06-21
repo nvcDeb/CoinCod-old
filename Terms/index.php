@@ -1,8 +1,8 @@
 <?php
 session_start();
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Terms of Service</title>
@@ -17,8 +17,8 @@ session_start();
 		<h1><img src="../template/template_image/header/term_of_service.png"></h1>
 		<div class="auction_container">
 		
-		<terms>
-		<ul>
+		<section><terms>
+		<article><ul>
         <strong>1. Acceptance of Terms of Service:</strong><li>
 THE FOLLOWING DESCRIBES THE TERMS ON WHICH Coincod OFFERS YOU ACCESS TO OUR AUCTION SERVICE.</li><li>
 1.1 The relationship between Coincod auction service, (the platform, the auction service referred to as "Coincod") and the Participant’s of that website (“Participants”), are exclusively defined by the following General Terms of service (the “Terms”), in the version applicable on the date of use of the Coincod’s service.</li><li>
@@ -30,7 +30,7 @@ ANY PERSON THAT DOES NOT ACCEPT THE TERMS OF SERVICE, AS WELL AS THE MANNER IN W
 1.6  Amendments or additions to the Terms of service shall enter into force immediately upon their publication on the Site.</li><li>
 1.7  You consent to the amendments or modifications to the Terms of service if you use your user account after the amendments or additions have been posted on the Site.</li><li>
 1.8  Please review these Terms of service periodically for changes, as your ongoing use of this site after the posting of any changes to the Terms of service signifies your acceptance of those changes.  
-		</li><li></ul><ul>
+		</li><li></ul></article><article><ul>
         
         <strong>2.    Registration / Eligibility to Participate:</strong></li><li>
 
@@ -60,7 +60,7 @@ ANY PERSON THAT DOES NOT ACCEPT THE TERMS OF SERVICE, AS WELL AS THE MANNER IN W
 3.6  If you are the winning bidder, an invoice including the auction ending price will be sent to your e-mail address. Coincod shall arrange the delivery of the purchased item to the mailing address provided by you within fourteen (14) business days from the date on which the Seller’s full payment has been received. Buyer will have to pay for shipping and handling.</li><li>
 3.7  When you take part in the auction of electronic devices, make sure that the device works in your region.</li><li>
 3.8  Coincod reserves the right to deliver a similar product of equivalent value available locally at a winner’s resident state or country.
-		</li><li></ul><ul>
+		</li><li></ul></article><article><ul>
         
         <strong>4.    Bids and Bid’s Fees: </strong></li><li>
 
@@ -74,16 +74,16 @@ ANY PERSON THAT DOES NOT ACCEPT THE TERMS OF SERVICE, AS WELL AS THE MANNER IN W
 4.8  Bids and Voucher Bids are valid for one year after they have been credited to a Participant’s account.
 Free Bids are only valid for the time stated in the promotion, in general only 7 days. Upon expiration, they become void and can no longer be placed. Once a Bid is placed in an auction, it is deducted from the Participant’s bid account and can no longer be refunded. Refunds will not be issued for Bids placed in an auction, expired Bids, Voucher Bids and Free Bids.</li><li>
 4.9  Credits used to make bids are not refundable. NO EXCEPTIONS. Customer should only buy as many bids as the Customer is comfortable spending on the Auction.
-		</li><li></ul><ul>
+		</li><li></ul></article><article><ul>
         
         <strong>5.    Bidding:</strong></li><li>
         5.1 Users can bid online. Tokens can be placed by clicking on the relevant buttons. Only registered users can submits their bids. Users are prohibited from using any bidding software that are not authorized by CoinCod, and doing so will result in immediate disqualification from use.
-        </li><li></ul><ul>
+        </li><li></ul></article><article><ul>
         
         <strong>6.    Currency of the transactions:</strong></li><li>
 
 6.1  At the moment the currency of all transactions related to service provided by Coincod is Ringgit Malaysia ($,RM).
-		</li><li></ul><ul>
+		</li><li></ul></article><article><ul>
         
 		<strong>7.    Acceptance of the Win / Payment:</strong></li><li>
 
@@ -94,7 +94,7 @@ Free Bids are only valid for the time stated in the promotion, in general only 7
 7.5  Coincod will exercise a right of retention pertaining to delivery of an auctioned item to such winning Participant as long as all relevant Bids and the Final Auction Price for the respective single auction have been paid for in full. Any other rights of Coincod, such as late payment fees or storage charges, are reserved.     </li><li>   
 7.6  Payment can be made by credit card or via payment agent such as PayPal.</li><li>
 7.7  The Participant has right of withdrawal of auctioned goods within 7 days from the closed auction.
-		</li><li></ul><ul>
+		</li><li></ul></article><article><ul>
         
 		<strong>8.    Delivery</strong></li><li>
 
@@ -111,18 +111,18 @@ Free Bids are only valid for the time stated in the promotion, in general only 7
 8.11 Coincod makes no representations or warranties as to any of the products and/or service provided in the Auction and no claims may be made against Coincod  based upon the products provided.</li><li>
 8.12 All items on Coincod are brand new, all product warrantees will be provided (if provided) by the actual distributors, manufacturers, and/or providers of products and/or service. No claims may be made against Coincod for defective products and or service.</li><li>
 8.13 If Coincod is unable to deliver the auctioned item to the winning Participant, and such inability is not caused by Coincod but through a failure in performance or a delayed performance by an external supplier of Coincod, Coincod may, at its sole discretion, either replace the auctioned item with a comparable substitute or one with better features, or rescind the contract with the winning Participant. Any statutory rights of the winning Participant shall remain unaffected.   
-		</li><li></ul><ul>
+		</li><li></ul></article><article><ul>
 		
         <strong>9.   Returns and Cancellation</strong></li><li>
         9.1 No refund unless the product is faulty
-        </li><li></ul><ul>
+        </li><li></ul></article><article><ul>
         
         <strong>10. Offsetting / Withholding Payment / Retention of Title</strong></li><li>
 
 10.1  The Participant shall only have the right to offset if his or her counterclaims are not disputed by Coincod.</li><li>
 10.2  The Participant is not entitled by reason of any alleged minor defect to withhold more than a proportionate amount of the sum due.</li><li>
 10.3  The item delivered shall remain Coincod’s property until payment is received in full of the total price, including the bids used in the auction. Until such time as payment has been made in full, the Participants undertakes to store the item separately from their other possessions and to insure it.
-		</li><li></ul><ul>
+		</li><li></ul></article><article><ul>
 	
 		<strong>11. Disclaimer of Warranty and Limitation of Liability regarding the Use of Coincod.</strong></li><li>
 
@@ -140,7 +140,7 @@ Free Bids are only valid for the time stated in the promotion, in general only 7
 11.9.3-  SOFTWARE UPGRADE/MAINTENANCE OR TESTING WILL BE PERFORMED.</li><li>
 11.9.4-  ONCE SATISFIED THE SYSTEM IS WORKING 100% THE AUCTIONS WILL BE TAKEN OFF THEIR PAUSED STATE AND CONTINUE UNINTERRUPTED.</li><li>
 11.9.5 PLEASE NOTE: THERE ARE TIMES WHEN WE NEED TO TAKE THE SITE DOWN FOR THE ABOVE REASONS. BE ASSURED - YOU WILL NOT BE AFFECTED IF WE TAKE THE SITE DOWN.
-		</li><li></ul><ul>
+		</li><li></ul></article><article><ul>
         
 		<strong>12. Disclaimer of Warranty and Limitation of Liability regarding Purchases from Coincod.</strong></li><li> 
 
@@ -149,7 +149,7 @@ Free Bids are only valid for the time stated in the promotion, in general only 7
 12.3  Except for the warranties set forth above  Coincod makes no other warranties, either express or implied, with respect to the products, or any related service performed by  Coincod or any of its agents or subcontractors in connection with any order, including, without limitation, any warranties of fitness for a particular purpose, which other warranties are expressly excluded and disclaimed. Please keep in mind that the product may differ from the images provided in each auction page.</li><li>
 12.4  Coincod makes no representations or warranties as to any of the products and/or service provided in the Auction and no claims may be made against  Coincod based upon the products provided.</li><li>
 12.5  Coincod shall not be liable for personal injury and property damage resulting from the improper handling, modification, and misuse of the products by the Participant or any other person following delivery by  Coincod. In no event shall  Coincod be liable to any person for incidental or consequential damages including but not limited to loss of profits or goodwill, loss-of-use damages or additional expenses incurred, whether pursuant to a claim in contract, tort or otherwise and whether in an action for breach of warranty or otherwise.
-		</li><li></ul><ul>
+		</li><li></ul></article><article><ul>
         
 		<strong>13. Illegal Activity</strong></li><li> 
 
@@ -162,19 +162,19 @@ Free Bids are only valid for the time stated in the promotion, in general only 7
 (b) if  Coincod is unable to verify or authenticate any information Participant provided to  Coincod; or</li><li>
 (c) if  Coincod believes that Participant actions may cause legal liability for other Participants or Coincod.</li><li>
 13.6  Internet fraud is a serious offense. Coincod HAS ZERO TOLERANCE FOR ONLINE FRAUD. Every time you log in to the  Coincod Site, your IP address is recorded. This information can be used against fraudulent bidders. Any acts of online fraud or suspicions thereof, should be immediately reported to Coincod.  Coincod will notify and assist the appropriate law enforcement agencies in any case where there is suspicion of fraudulent use of our Coincod website.  Coincod will terminate and ban the Participant on the first offense.  Coincod will also maintain and enforce a blacklist to chronicle fraudulent Participants. 
-		</li><li></ul><ul>
+		</li><li></ul></article><article><ul>
         
 		<strong>14. Service and Support for Products Purchased</strong></li><li>
 
 14.1  All requests for technical service and support should be made directly to the manufacturer in accordance with their Terms of service.</li><li>
 14.2  All items on  Coincod are brand new, all product warrantees will be provided (if provided) by the actual distributors, manufacturers, and/or providers of products and/or service. No claims may be made against  Coincod for defective products and or service.  Coincod makes no representations or warranties as to any of the products and/or service provided in the Auction and no claims may be made against  Coincod based upon the products provided.</li><li>
 14.3  Coincod makes no representations or warranties as to any of the products and/or service provided in the Auction and no claims may be made against  Coincod based upon the products provided.
-		</li><li></ul><ul>
+		</li><li></ul></article><article><ul>
         
 		<strong>15. Trademarks</strong></li><li>
 
 15.1  Coincod's logos are trademarks. All rights reserved. All other trademarks appearing on  Coincod are the property of their respective owners.
-		</li><li></ul><ul>
+		</li><li></ul></article><article><ul>
 
 		<strong>16. Failures and System Outage; Temporary Time-Out for Pending Auctions</strong></li><li>
 
@@ -184,17 +184,17 @@ Free Bids are only valid for the time stated in the promotion, in general only 7
 16.4  The  Coincod auction system may occasionally experience a temporary and unscheduled downtime in a data processing or data transmission system (hardware or software), as a result of which Bids (for one or several single auctions) cannot be properly submitted by Participants and/ or properly received and processed by  Coincod (hereinafter “System Outage”).</li><li>
 16.5  A system outage has occurred if no bids can be submitted for items due to an unforeseeable disruption in a system. In such a case, auctions will be temporarily halted and the remaining times for the auctions, the current bidding price and the current highest bidder will be maintained. After the disruption has been resolved, the auctions will be continued. Temporarily halted auctions are clearly indicated. Bids placed on a temporarily halted auction shall not be credited back on a Participant’s account and are not eligible for a refund for bids used or other costs incurred.</li><li>
 16.6  Coincod shall not be liable for any damage whatsoever incurred by auction Participants or third parties from using Coincod’s service. In particular, Coincod shall not be liable for damage that occurs due to bids submitted by auction Participants not being received by  Coincod or not being received promptly or not being considered, as a consequence of technical faults.
-		</li><li></ul><ul>
+		</li><li></ul></article><article><ul>
         
 		<strong>17. No Responsibility for External Internet Links</strong></li><li>
 
 17.1  Our website may contain links to other websites operated by third parties, and these sites may likewise contain links to other websites. Despite conducting careful checks, we assume no liability for the content of external links. The operators of the.1sites linked to and from this site are solely responsible for their contents. We hereby expressly distance ourselves from all content of any and all websites linked to the  Coincod website. We cannot take any responsibility for the content of the data protection guidelines of third-party websites.
-		</li><li></ul><ul>
+		</li><li></ul></article><article><ul>
         
 		<strong>18. Acceptance of Terms of service</strong></li><li>
 
 18.1  By registering it will be deemed that you have fully read the Terms of service and accepted all Terms of service listed.
-		</li><li></ul><ul>
+		</li><li></ul></article><article><ul>
         
 		<strong>19. General / Miscellaneous</strong></li><li>
 
@@ -207,11 +207,11 @@ Free Bids are only valid for the time stated in the promotion, in general only 7
 19.6  It is explicitly prohibited to bid or to act in any manner with the intent to manipulate the auction. Coincod reserves the right to suspend or cancel any bids it considers erroneous or ill intended; or even suspend the auction of a determined item.  Coincod reserves the right to pause any of the auctions at anytime and for any reason.</li><li>
 19.7  By participating on Coincod the Participants agree not to interfere with the normal flow of auction behavior, not to overload our databases with huge quantities of data or the introduction of any viruses and mal-ware that interferes with normal computer functions or sends personal data about other Participants to unauthorized parties over the Internet.</li><li>
 19.8  Any comments or materials sent to  Coincod, including feedback data, such as questions, comments, suggestions or similar with regarding the content of any such documents shall be deemed to be non-confidential and non-proprietary.  Coincod shall have no obligation of any kind with respect to such Feedback and shall be free to reproduce, use, disclose, exhibit, display, transform, create derivative works and distribute the Feedback to others without limitation and without compensation to you. Further, Coincod shall be free to use any ideas, concepts, technical knowledge or techniques contained in such Feedback for any purpose whatsoever, including but not limited to, developing, manufacturing and marketing products incorporating such Feedback
-		</li><li></ul><ul>
+		</li><li></ul></article><article><ul>
         
 		<strong>20. Copyright Release: </strong></li><li>
         Participant certifies that any comments or materials, including but not limited to informational content, writings, articles previously published and unpublished, artwork, illustrations and photography, submitted to  Coincod by Participant or by its appointed agents or representatives, for the purpose of publication on Coincod, do not knowingly infringe upon the copyrights of any other persons or entities.  Participant agrees indemnify and hold  Coincod harmless from any and all actions brought against it from any and all parties claiming to hold copyrights to any of Participant’s submitted materials.
-        </li><li></ul><ul>
+        </li><li></ul></article><article><ul>
         
 		<strong>21.  Interpretation: </strong></li><li>
         The format, words and phrases used herein shall have the meaning generally understood in the Telecommunications/Software/Internet Industries.
@@ -221,11 +221,11 @@ Free Bids are only valid for the time stated in the promotion, in general only 7
         Normal 0 false false false EN-US ZH-CN X-NONE</li><li>
 The use of the Coincod service on this Website and the Terms of service herein shall be governed by and construed in accordance with the laws of Malaysia and the parties hereby submit to the exclusive jurisdiction of the Courts of Malaysia notwithstanding that the Coincod service on this Website may be accessed in other jurisdiction and not restricted to Malaysia</li><li>
 The Customer hereby agrees that the Customer shall be solely responsible for the compliance with all laws applicable to the Customer in the Customer’s jurisdiction in respect of the use of the Coincod service.
-		</li><li></ul><ul>
+		</li><li></ul></article><article><ul>
         
 		<strong>23. Termination of Using the service:</strong></li><li>
 You may terminate the use of service and close your user account. However, any contractual obligations incurred before the termination of the account shall remain in full force and effect until you completely discharge them by paying for any outstanding purchases and any applicable taxes or delivery charges.
-		</li><li></ul><ul>
+		</li><li></ul></article><article><ul>
         
 		<strong>24. Final Provisions:</strong></li><li>
 24.1 In addition to these Terms of service, the relationship between you and Service Provider shall be governed by the Site price list for service.</li><li>
@@ -239,8 +239,8 @@ Note:</li><li>
 24.8 Please remember - Many Participants visit and use Coincod’s website.</li><li>
 24.9 Everyone has the same chance of winning - Every bid counts and can grab you that item.</li><li>
 24.10 It is your responsibility to ensure all your details are up to date at all times -  Coincod will not be held responsible for any Participant not receiving notifications for out of date records held for the Participants on our database.
-		</li><li>
-        </terms>
+		</li><li></ul></article>
+        </terms></section>
 		
 		<h1><img src="../template/template_image/bottom/term_of_service.png"></h1>
 		</div>
