@@ -36,7 +36,8 @@
         The bid button will be replaced with a red "ENDED" button and the countdown will be replaced with "0:00”.
 
 		</ol>
-		</div>  <!--end div Faq-->    
+		</div>  <!--end div Faq-->   
+			<h1><img src="../template/template_image/bottom/faq.png"></h1>
       	</div>  <!--end div auction_container-->
 	</div>  <!--end div content_container-->
 </div>  <!--end div wrapper-->

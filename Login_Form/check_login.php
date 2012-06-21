@@ -23,7 +23,7 @@
 				else
 				{ 
 					$_SESSION['start_reset'] = time();
-					$_SESSION['expire'] = $_SESSION['start_reset'] + (1 * 60) ;
+					$_SESSION['expire'] = $_SESSION['start_reset'] + (30 * 60) ;
 					include "../server.php";
 					$userid = $_SESSION['user_id'];
 					$username = $_SESSION['user_username'];
@@ -41,9 +41,10 @@
 					<div id="after_log_in">
 					<div class="user_name">
 					<img src="'.$grav_url.'" alt="" />
-						<a href="User_Profile/user_profile.php?id=' . $userid . '">' . $username . '
+						<a href="../User_Profile/user_profile.php?id=' . $userid . '">' . $username . '
 						</a>
 					</div>
+					
 					<div id="logout">
 						<a href="../Logout">Log Out</a>
 						
