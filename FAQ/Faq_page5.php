@@ -1,8 +1,8 @@
 <?php
 	session_start();
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>FAQ</title>
@@ -13,10 +13,10 @@
     <?php
 		include "../template/templateheader.php";
 	?>
-     <div id="content_container">
-    	<div class="auction_container">
+     <section div id="content_container">
+    	<section div class="auction_container">
 		<h1><a href="index.php"><img src="../template/template_image/header/faq.png" border="0"></a></h1>
-		<div class="faq">
+		<article div class="answer">
 		<ol>
         
 		<li><a name="Question21"><strong>How secure are your payment methods?</strong></a></li>
@@ -51,9 +51,10 @@
         The winner of the auction pays for all delivery fees of the item. If you are interested in a delivery cost of a specific item then please refer to the specific auction you are interested in. Rates vary between auctions due to the size and weight of the products and destination of delivery. Rates are indicated for all destinantions within Malaysia.
 
 </ol>
-		</div>  <!--end div Faq--> 
-      	</div>  <!--end div auction_container-->
-	</div>  <!--end div content_container-->
+		</div></article>  <!--end div answer--> 
+		<h1><img src="../template/template_image/bottom/faq.png"></h1>
+      	</div></section>  <!--end div auction_container-->
+	</div></section>  <!--end div content_container-->
 </div>  <!--end div wrapper-->
 	<?php
 		include "../template/templatefooter.html";

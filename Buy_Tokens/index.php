@@ -104,10 +104,7 @@ include "../server.php";
 			
 			</div>
 		
-		
-			<div class="package2">
-		.
-			</div>
+			<h1><img src="../template/template_image/bottom/buy_tokens.png"></h1>
 		</div>  <!--end div auction_container-->
 	</div>  <!--end div content_container-->
 </div>  <!--wrapper-->
