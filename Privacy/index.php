@@ -83,6 +83,7 @@ Please do not hesitate to contact us should you have any concerns or questions r
 This document is incorporated on the Terms of services of CoinCod. Through acceptance of the Terms of Services at the time of subscription, the user accepts the policies contained herein.
 		</ul></li>
 		</privacy>
+		<h1><img src="../template/template_image/bottom/privacy.png"></h1>
 		</div>
 	 
 	</div>

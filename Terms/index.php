@@ -241,6 +241,8 @@ Note:</li><li>
 24.10 It is your responsibility to ensure all your details are up to date at all times -  Coincod will not be held responsible for any Participant not receiving notifications for out of date records held for the Participants on our database.
 		</li><li>
         </terms>
+		
+		<h1><img src="../template/template_image/bottom/term_of_service.png"></h1>
 		</div>
 	</div>
 </div><!--wrapper-->

@@ -4,6 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<link href="../../template/style.css" rel="stylesheet" type="text/css"  />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>FAQ</title>
 </head>
@@ -11,10 +12,11 @@
 <body>
 <div id="wrapper">
     <?php
-		include "../template/templateheader.php";
+				include($_SERVER['DOCUMENT_ROOT']."/CoinCod/template/templateheader.php");
+				
 	?>
      <div id="content_container">
-		<h1><a href="index.php"><img src="../template/template_image/header/faq.png" ></a></h1>
+		<h1><a href="index.php"><img src="../../template/template_image/header/faq.png" ></a></h1>
 		
     	<div class="auction_container">
 		
@@ -37,12 +39,13 @@
         True, there is a possibility that it might happen. This is when the auction winner turns out to be fraudulent – for example someone who has registered multiple accounts in our system without entering any personal data and automatically received free bids for each username created. All bids by such fraud users will be considered void and the auction will be re-listed from the same point when it ended so that real users can have a possibility to win it. Our support team is doing its best on a daily basis to filter such cases.
 
 		</ol>
-		</div>  <!--end div faq-->        
+		</div>  <!--end div faq-->  
+			<h1><img src="../../template/template_image/bottom/faq.png"></h1>
 	  	</div>  <!--end div auction_container-->
 	</div>  <!--end div content_container-->
 </div>  <!--wrapper-->
 	<?php
-		include "../template/templatefooter.html";
+		include "../../template/templatefooter.html";
 	?>
 </body>
 </html>

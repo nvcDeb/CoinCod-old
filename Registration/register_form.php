@@ -352,7 +352,25 @@
 		  							</script>
 						</td>
 					</tr>
-                   
+                   <tr>
+						<td>
+						</td>
+						<td>
+							<img id="siimage" style="border: 1px solid #000; margin-right: 15px" src="../securimage/securimage_show.php?sid=<?php echo $captcha_word; ?>" alt="CAPTCHA Image">
+						
+									
+								<a tabindex="-1" style="border-style: none;" href="#" title="Refresh Image" onclick="document.getElementById('siimage').src = '../securimage/securimage_show.php?sid=' + Math.random(); this.blur(); return false">
+								<img src="../securimage/images/refresh.png" alt="Reload Image" onclick="this.blur()"></a><br />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>Enter Captcha Code*:</strong><br />
+						</td>
+						<td>	
+								<input type="text" name="ct_captcha" size="12" maxlength="8" />
+						</td>
+					</tr>
 					</table>
 					
 					<input type="submit" name="button" class="form_button" value="Submit" />                    

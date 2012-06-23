@@ -64,7 +64,8 @@
 			{
 				echo '<div id="admin_menu"><a href="../User_Profile/user_profile.php?id=' . $userid . '">' . $username . '</a>  &ndash;
         			<a href="../admin_site/product_form.php">Add Product</a>&ndash;
-					<a href="../admin_site/user_list.php">User Listing</a></div>';
+					<a href="../admin_site/user_list.php">User Listing</a>&ndash;
+					<a href="../admin_site/sitestatus_updateform.php">Site Status</a></div>';
 			}
 			?>	
 				<h1><img src="../template/template_image/header/product_information.png" border="0"></h1>
