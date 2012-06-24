@@ -11,12 +11,12 @@
     	<div class="container">
            	<div class="login">
 				<?php
-					include "../Login_Form/check_login.php";
+				include("$_SERVER[DOCUMENT_ROOT]/CoinCod/Login_Form/check_login.php");
 				?>
             </div>  <!--end div login-->	
 	
 			<div id="search">
-				<form action="../Search" enctype="multipart/form-data" name="searchForm" id="myForm" method="GET">
+				<form action="http://<?php echo $_SERVER['HTTP_HOST']; ?>/CoinCod/Search" enctype="multipart/form-data" name="searchForm" id="myForm" method="GET">
          			<input type="text" class="search_input" name="search" placeholder="Enter Search..." value="<?php echo isset($searchTerms)?htmlspecialchars($searchTerms):''; ?>" />
       			</form>
 			</div>  <!--end div search-->
@@ -31,14 +31,13 @@
 					<tr>
 						<td>
 							<ul class="top_nav">
-								<li>
-									<a href="../../CoinCod">Home</a>
+								<li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/CoinCod">Home</a>
                                 </li>
 								<li>
-									<a href="../How_It_Works">How It Works</a>
+									<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/CoinCod/How_It_Works">How It Works</a>
 								</li>
 								<li>
-									<a href="../Buy_Tokens">Buy Tokens</a>
+									<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/CoinCod/Buy_Tokens">Buy Tokens</a>
 								</li>
 								<!--<li>
 									<a href="Winners">Winners</a>			
