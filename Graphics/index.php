@@ -17,7 +17,8 @@ session_start();
 			<h1><img src="../template/template_image/header/graphics.png"></h1>
 		<div class="auction_container">
 			<img src="../template/template_image/Coming-soon.gif" width="540px" height="380px"><p>
-        
+			
+			<h1><img src="../template/template_image/bottom/sorry.png"></h1>
 		</div>
 	 
 	</div>

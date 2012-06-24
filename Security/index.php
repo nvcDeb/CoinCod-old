@@ -33,6 +33,8 @@ session_start();
 		
 		<h4>Security Contact</h4>
 			Have a question, concern, or comment about Coincod security?Please email <a href = "mailto:security@coincod.com">security@coincod.com</a> for all inquires.
+			
+			<h1><img src="../template/template_image/bottom/security.png"></h1>
      
 		</div>
 	</div>
