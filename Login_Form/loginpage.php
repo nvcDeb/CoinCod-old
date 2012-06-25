@@ -14,7 +14,7 @@
 	<h1><img src="../template/template_image/header/login_form.png"></h1>
     	<div class="auction_container">
 		        
-        <form action="../Login_Form/login_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+        <form action="http://<?php echo $_SERVER['HTTP_HOST']; ?>/CoinCod/Login_Form/login_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 					<table width="650" cellpadding="0" cellspacing="10">
 					<tr>
 						<td width="25%">

@@ -25,6 +25,7 @@
 	  <div class="auction_container">
 		Need more support? Contact us at <a href = "mailto:support@coincod.com">support@coincod.com</a> for all support.
        
+	    <h1><img src="../template/template_image/bottom/contacts.png"></h1>
 	  </div>  <!--end div auction_container-->
 	</div>  <!--end div content_container-->
 </div>  <!--wrapper-->
