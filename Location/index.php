@@ -28,7 +28,7 @@ session_start();
 			</ul>
 			</address>
 		        
-			<location><img src="../template/template_image/bottom/location.png"></location>
+			<div class="location"><img src="../template/template_image/bottom/location.png"></div>
 		</div>
 	</div>
 </div><!--wrapper-->
