@@ -2,8 +2,8 @@
 	session_start();
 	include "../server.php";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
@@ -39,7 +39,7 @@ function LeadingZero(Time) {
 </head>
 
 <body>
-<div class="site_body">
+<section div class="site_body">
 	<?php	
 		$product_list=mysql_query("SELECT * FROM product_list");
 		$productLIST=mysql_num_rows($product_list);
@@ -167,5 +167,6 @@ function LeadingZero(Time) {
 	}
 ?> 
 </div>
+</section>
 </body>
 </html>

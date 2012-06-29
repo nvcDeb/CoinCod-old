@@ -2,8 +2,8 @@
 	session_start();
 	include "../server.php";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="../style.css" rel="stylesheet" type="text/css" />
@@ -78,15 +78,15 @@ function LeadingZero(Time) {
 		
 	?>
     <title><?php echo $product_brand; echo $product_model; ?></title>
-    <div id="content_container">
-	<div class="auction_container">
+    <section div id="content_container">
+	<section div class="auction_container">
 	<div id="product">
 		<div class="name">
 				<?php echo $product_brand;	echo " ";	echo $product_model;	?> 
 		</div>
 	</div>
 	
-		<div id="description">
+		<section div id="description">
 		  <table width="900" border="0">
             <tr>
               <td width="412"><div class="product_image"> <?php echo'<img alt="" src="../Product/product_image/'.$productId.'.jpg" width="390" height="275" border="0"/>'; ?>
@@ -205,8 +205,8 @@ function LeadingZero(Time) {
           </table>
 	  </div>
     	
-  </div>
-	</div>
+  </div></section>
+	</div></section>
 	</div><!--wrapper-->
 	<?php
 		include "../template/templatefooter.html";
