@@ -1,6 +1,3 @@
-<?php
-	session_start();
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>	
@@ -28,7 +25,7 @@
 					$userid = $_SESSION['user_id'];
 					$username = $_SESSION['user_username'];
 							
-					$user=mysql_query("SELECT * FROM user_account WHERE User_Id='$userid'");
+					$user=mysql_query("SELECT * FROM user_account WHERE user_id='$userid'");
 					$get=mysql_fetch_array($user);
 					$token=$get["Token"];
 					$gravatar_image=$get["Email"];
