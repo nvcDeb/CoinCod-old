@@ -47,20 +47,20 @@ function LeadingZero(Time) {
 		{	  
 			while ($row = mysql_fetch_array($product_list))
 			{
-				$productID=$row["Product_Id"];
+				$productID=$row["product_id"];
 				$Brand=$row["Brand"];
 				$Model=$row["Model"];
-				$Marketprice=$row["Market_Price"];
-				$Auctionprice=$row["Auction_Price"];
+				$Marketprice=$row["market_price"];
+				$Auctionprice=$row["auction_price"];
 			
-				$auctionend=$row["Auction_End"];
+				$auctionend=$row["auction_end"];
 				$auctiontime = $auctionend - time();
 				
-				$highest_bidder=mysql_query("SELECT * FROM product$productID WHERE Price=(select max(Price) from product$productID)");
+				$highest_bidder=mysql_query("SELECT * FROM product_log WHERE auction_price=(select max(auction_price) from product_log)");
 				$highest=mysql_fetch_array($highest_bidder);
 				$highest_user=$highest["User"];
 			
-				$token_needed=$row["Total_Bid"];
+				$token_needed=$row["total_bid"];
 				if($token_needed <= 200)									{	$tokenneed = 1;		}
 				if(($token_needed <= 400)	&&	($token_needed > 200))		{	$tokenneed = 2;		}
 				if(($token_needed <= 600)	&&	($token_needed > 400))		{	$tokenneed = 3;		}

@@ -37,12 +37,12 @@ session_start();
 	}
 	else
 	{
-		$getid=mysql_query("SELECT * FROM product_list WHERE Product_Id = (select Max(Product_Id) from product_list);");
+		$getid=mysql_query("SELECT * FROM product_list WHERE product_id = (select Max(product_id) from product_list);");
 		$getId = mysql_fetch_array($getid);
 		$max_id = $getId["Product_Id"];
 		$productid = $max_id + 1;
 
-		$product_insert = "INSERT INTO product_list(Product_Id,Brand, Model, Market_Price, Auction_Price, Category, Availability,Description) VALUES('$productid','$brand','$model','$marketprice','$auctionprice','$category','$availability','$description')";  
+		$product_insert = "INSERT INTO product_list(product_id,Brand, Model, market_price, auction_price, Category, Availability,Description) VALUES('$productid','$brand','$model','$marketprice','$auctionprice','$category','$availability','$description')";  
 		$productinsert = mysql_query($product_insert) or die (mysql_error()); 		
 		
 		//insert to product_images
@@ -52,26 +52,6 @@ session_start();
 		if($productinsert == 1)
 		{
 			echo "Product is successfully saved into database<br/>";
-			
-			$product_table = "CREATE TABLE product$productid ( 
-                			Listing int(100) NOT NULL auto_increment, 
-							User_id int(11) NOT NULL, 
-                			User varchar(255) NOT NULL, 
-               				Email varchar(255) NOT NULL, 
-							Price decimal(30,2) NOT NULL,
-                			Time datetime NULL, 
-                			PRIMARY KEY (Listing)
-                			)"; 
-			$table_create = mysql_query($product_table); 
-
-			if ($table_create == 1) 
-			{ 
-				echo "The product table is successfully created."; 
-			} 
-			else 
-			{ 
-        		echo "Checked. No table was created."; 
-			} 
 		}
 		else
 		{

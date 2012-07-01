@@ -13,15 +13,15 @@
 		include"../server.php";
 		include "../template/templateheader.php";
 		$userid = $_SESSION['user_id'];
-		$user_info=mysql_query("SELECT * FROM user_account WHERE User_Id = '$userid'");
+		$user_info=mysql_query("SELECT * FROM user_account WHERE user_id = '$userid'");
 		$userINFO=mysql_fetch_array($user_info);
 		$username=$userINFO["Username"];	
 		$emails=$userINFO["Email"];
 		$passwords=$userINFO["Password"];
 		$token=$userINFO["Token"];
-		$firstname=$userINFO["First_Name"];
-		$lastname=$userINFO["Last_Name"];
-		$dob=$userINFO["Date_Birth"];
+		$firstname=$userINFO["first_name"];
+		$lastname=$userINFO["last_name"];
+		$dob=$userINFO["date_birth"];
 		list($year, $month, $day) = split('[/.-]', $dob);
 		if($month == 00)	{ $month = '';	}
 		if($month == 01)	{ $month = 'January';	}

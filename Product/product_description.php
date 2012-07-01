@@ -42,17 +42,17 @@ function LeadingZero(Time) {
 		$productId = mysql_real_escape_string($_POST['pid']);
 		
 		
-		$get_product=mysql_query("SELECT * FROM product_list WHERE Product_Id='$productId'");
+		$get_product=mysql_query("SELECT * FROM product_list WHERE product_id='$productId'");
 		$getproduct=mysql_fetch_array($get_product);
 		$product_brand=$getproduct["Brand"];
 		$product_model=$getproduct["Model"];
-		$product_marprice=$getproduct["Market_Price"];
-		$product_aucprice=$getproduct["Auction_Price"];
+		$product_marprice=$getproduct["market_price"];
+		$product_aucprice=$getproduct["auction_price"];
 		$product_description=$getproduct["Description"];
-		$product_time_end = $getproduct["Auction_End"];
+		$product_time_end = $getproduct["auction_end"];
 		$product_time = $product_time_end - time();
 		
-		$token_needed=$getproduct["Total_Bid"];
+		$token_needed=$getproduct["total_bid"];
 			if($token_needed <= 200)									{	$tokenneed = 1;		}
 			if(($token_needed <= 400)	&&	($token_needed > 200))		{	$tokenneed = 2;		}
 			if(($token_needed <= 600)	&&	($token_needed > 400))		{	$tokenneed = 3;		}
@@ -182,14 +182,14 @@ function LeadingZero(Time) {
                 <div class="highest_bidder">
 				<div id="top_highest_bidder">Highest Bidders :</div>
 				<?php 
-				$highest_bid=mysql_query("SELECT * FROM product$productId ORDER BY time DESC LIMIT 5");
+				$highest_bid=mysql_query("SELECT * FROM product_log ORDER BY Time DESC LIMIT 5");
 				$highest_bids=mysql_num_rows($highest_bid);
     			if($highest_bids>0)
 				{	  
 					while ($high = mysql_fetch_array($highest_bid))
 					{
 						$highest_user=$high["User"];
-						$highest_time=$high["time"];
+						$highest_time=$high["Time"];
 						echo $highest_user;
 						echo "&nbsp;";
 						echo $highest_time;

@@ -48,13 +48,11 @@
 						  
 				while ($row = mysql_fetch_array($user_list))
 				{
-					$userID=$row["User_Id"];
+					$userID=$row["user_id"];
 					$username=$row["Username"];
 					$email=$row["Email"];
-					$dateregister=$row["Date_Register"];
+					$dateregister=$row["date_register"];
 					$token=$row["Token"];
-					$yestoken=$row['Yesterday_Token'];
-					$usetoken=$yestoken - $token;
 						
 					echo '<table border="0">
 						  <tr width="100">
