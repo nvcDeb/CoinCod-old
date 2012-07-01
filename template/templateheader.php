@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<link href="../template/style.css" rel="stylesheet" type="text/css"  />
-	<link rel="shortcut icon" href="../template_image/favicon.ico" />
+	<link rel="shortcut icon" href="../template/template_image/favicon.ico" />
 </head>
 
 <body>
