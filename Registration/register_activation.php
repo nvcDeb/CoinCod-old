@@ -22,9 +22,9 @@
 		{	
 			echo "</br>Missing Data";
 		}
-		$sql = mysql_query("UPDATE user_account SET Activation='1' WHERE User_Id='$id'"); 
+		$sql = mysql_query("UPDATE user_account SET Activation='1' WHERE user_id='$id'"); 
 
-		$update_activation = mysql_query("SELECT * FROM user_account WHERE User_Id='$id' AND Activation='1'"); 
+		$update_activation = mysql_query("SELECT * FROM user_account WHERE user_id='$id' AND Activation='1'"); 
 		$updateactivation = mysql_num_rows($update_activation); 
 		if($updateactivation == 0)
 		{ 

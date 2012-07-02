@@ -33,7 +33,7 @@
 	$newdescription=mysql_real_escape_string($_POST['description']);
 	
 	$newpasswords = md5($newpassword); //MD5 encryption.	
-	$update_product = "UPDATE product_list SET Brand='$newbrand', Model='$newmodel', Market_Price='$newmarketprice', Auction_Price='$newauctionprice', Category='$newcategory', Availability='$newavailability',Description='$newdescription' WHERE product_id='$pid'";
+	$update_product = "UPDATE product_list SET Brand='$newbrand', Model='$newmodel', market_price='$newmarketprice', auction_price='$newauctionprice', Category='$newcategory', Availability='$newavailability',Description='$newdescription' WHERE product_id='$pid'";
 		$update = mysql_query($update_product) or die (mysql_error()); 
 		
 		mysql_close(); 

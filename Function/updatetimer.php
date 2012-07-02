@@ -8,14 +8,14 @@ if((isset($_POST['pid'])) && (isset($_POST['uid'])))
 	//get info from user_account table
 	$getuser=mysql_query("SELECT * FROM user_account WHERE user_id='$uid'");
 	$get=mysql_fetch_array($getuser);
-	$oldtoken=$get["token"];
+	$oldtoken=$get["Token"];
 	$username=$get["Username"];
 		$emails=$get["Email"];
 	//get info from product_list table
 	$getproduct=mysql_query("SELECT * FROM product_list WHERE product_id='$pid'");
 	$get=mysql_fetch_array($getproduct);
 	$oldtotalbid=$get["total_bid"];
-	$oldauctionprice=$get["Auction_Price"];
+	$oldauctionprice=$get["auction_price"];
 
 	if($oldtotalbid <=200)                                {	$newtoken = $oldtoken - 1;      }
 	if($oldtotalbid > 200 && $oldtotalbid <= 400)         {	$newtoken = $oldtoken - 2;		}
@@ -41,7 +41,7 @@ if((isset($_POST['pid'])) && (isset($_POST['uid'])))
 	
 	if($newtoken >= 0)
 	{
-		$updatetoken = "UPDATE user_account SET token='$newtoken' WHERE user_id='$uid'";
+		$updatetoken = "UPDATE user_account SET Token='$newtoken' WHERE user_id='$uid'";
 		$querytoken = mysql_query($updatetoken) or die (mysql_error());
 	
 		//update total bid and auction price
@@ -51,14 +51,14 @@ if((isset($_POST['pid'])) && (isset($_POST['uid'])))
 	
 		$newauctionprice = $oldauctionprice + 0.01;
 
-		$updatetimer = "UPDATE product_list SET Auction_Price='$newauctionprice', auction_start='$newauctionstart', auction_end='$newauctionend', total_bid='$newtotalbid' WHERE product_id='$pid'"; 		
+		$updatetimer = "UPDATE product_list SET auction_price='$newauctionprice', auction_start='$newauctionstart', auction_end='$newauctionend', total_bid='$newtotalbid' WHERE product_id='$pid'"; 		
 		$querytimer = mysql_query($updatetimer) or die (mysql_error()); 
 	
 		//insert to product listing
-		$insert_product_listing = "INSERT INTO product$pid (User_id,User,Email,Price,time)VALUES('$uid','$username','$emails','$newauctionprice',now())";  		
+		$insert_product_listing = "INSERT INTO product_log (product_id,user_id,Username,Email,auction_price,Time)VALUES('$pid','$uid','$username','$emails','$newauctionprice',now())";  		
 		$queryinsert = mysql_query($insert_product_listing) or die (mysql_error()); 
 
-		header("location:../../Auction");
+		header("location:../");
 	}
 	else
 	{

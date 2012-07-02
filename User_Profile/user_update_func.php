@@ -57,7 +57,7 @@
 			if($sentupdate)
 			{
 			$newpasswords = md5($newpassword); //MD5 encryption.	
-			$sqlCommand = "UPDATE user_account SET Username='$newusername', Password='$newpassword', Hash_Password='$newpasswords', First_Name='$newfirstname', Last_Name='$newlastname', Gender='$newgender', Address1='$newadd1', Address2='$newadd2', City='$newcity', Zip='$newzip', State='$newstate', Mobile='$newmobile' WHERE User_Id='$userid'";
+			$sqlCommand = "UPDATE user_account SET Username='$newusername', Password='$newpassword', hash_password='$newpasswords', first_name='$newfirstname', last_name='$newlastname', Gender='$newgender', Address1='$newadd1', Address2='$newadd2', City='$newcity', Zip='$newzip', State='$newstate', Mobile='$newmobile' WHERE user_id='$userid'";
 			$query = mysql_query($sqlCommand) or die (mysql_error()); 		
 			header("Location: ../User_Profile/user_profile.php");
 				
