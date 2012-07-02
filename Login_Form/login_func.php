@@ -8,8 +8,8 @@ $email = mysql_real_escape_string($email);
 $password = ereg_replace("[^A-Za-z0-9]", "", $_POST['password']);
 $hash_password = md5($password);
 
-$userresult = mysql_query("SELECT * FROM user_account WHERE Email='$email' and Hash_Password='$hash_password' and Activation='0'" )or die(mysql_error());
-$validuserresult = mysql_query("SELECT * FROM user_account WHERE Email='$email' and Hash_Password='$hash_password' and Activation='1'" )or die(mysql_error());
+$userresult = mysql_query("SELECT * FROM user_account WHERE Email='$email' and hash_password='$hash_password' and Activation='0'" )or die(mysql_error());
+$validuserresult = mysql_query("SELECT * FROM user_account WHERE Email='$email' and hash_password='$hash_password' and Activation='1'" )or die(mysql_error());
 	
 $user_login=mysql_num_rows($userresult);
 $valid_userlogin=mysql_num_rows($validuserresult);
@@ -21,7 +21,7 @@ if(($user_login != 1) && ($valid_userlogin == 1))
 	while($row = mysql_fetch_array($validuserresult))
 	{ 
 	   // Get member ID into a session variable
-        $id = $row["User_Id"];   
+        $id = $row["user_id"];   
         session_register('user_id'); 
         $_SESSION['user_id'] = $id;
         // Get member username into a session variable
@@ -29,7 +29,7 @@ if(($user_login != 1) && ($valid_userlogin == 1))
         session_register('user_username'); 
         $_SESSION['user_username'] = $username;
 				
-        mysql_query("UPDATE user_account SET last_login=now() WHERE User_Id='$id'"); 
+        mysql_query("UPDATE user_account SET last_login=now() WHERE user_id='$id'"); 
 		if($id == 1)
 		{
 			header("location: ../User_Profile/user_profile.php?id=$id"); 

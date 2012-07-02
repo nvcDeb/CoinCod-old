@@ -46,9 +46,9 @@
 	}
 	else
 	{
-		$getid=mysql_query("SELECT * FROM user_account WHERE User_Id = (select Max(User_Id) from user_account);");
+		$getid=mysql_query("SELECT * FROM user_account WHERE user_id = (select Max(user_id) from user_account);");
 		$getId = mysql_fetch_array($getid);
-		$max_id = $getId["User_Id"];
+		$max_id = $getId["user_id"];
 		$id = $max_id + 1;
 		
 		$to = "$emails";
@@ -85,7 +85,7 @@
 			if($sentactive)
 			{
 				$hash_password = md5($passwords); //MD5 encryption.
-				$sqlCommand = "INSERT INTO user_account 			(User_Id,Category,Username,Email,Password,Hash_Password,First_Name,Last_Name,Date_Birth,Gender,Address1,Address2,City,State,Zip,Country,Mobile,Date_Register,Activation,Token) VALUES('$id','0','$username','$emails','$passwords','$hash_password','$firstname','$lastname','$dob','$gender','$add1','$add2','$city','$state','$zip','$country','$mobile',now(),'0','10')";  		
+				$sqlCommand = "INSERT INTO user_account 			(user_id,Category,Username,Email,Password,hash_password,first_name,last_name,date_birth,Gender,Address1,Address2,City,State,Zip,Country,Mobile,date_register,Activation,Token) VALUES('$id','0','$username','$emails','$passwords','$hash_password','$firstname','$lastname','$dob','$gender','$add1','$add2','$city','$state','$zip','$country','$mobile',now(),'0','10')";  		
 
 				$query = mysql_query($sqlCommand) or die (mysql_error()); 
 				header("location:register_end.php");

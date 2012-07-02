@@ -21,8 +21,8 @@
 			$getinfo=mysql_fetch_array($get_product_info);
 			$brand=$getinfo["Brand"];
 			$model=$getinfo["Model"];
-			$marketprice=$getinfo["Market_Price"];
-			$auctionprice=$getinfo["Auction_Price"];
+			$marketprice=$getinfo["market_price"];
+			$auctionprice=$getinfo["auction_price"];
 			$category=$getinfo["Category"];
 			$availability=$getinfo["Availability"];
 			$description=$getinfo["Description"];
