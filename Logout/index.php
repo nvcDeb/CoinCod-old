@@ -17,11 +17,11 @@
 		include"../server.php";
 		include "../template/templateheader.php";
 	?>
-		<div id="content_container">
+		<section div id="content_container">
 		<?php	
 			include "../Product/product.php";
 		?>
-		</div>  <!--end div content_container-->
+		</div></section>  <!--end div content_container-->
 	</div>  <!--end div wrapper-->
 			
 	 <?php	
