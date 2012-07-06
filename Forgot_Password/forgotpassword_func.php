@@ -1,6 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
 
 <body>
 <title>Forgot Password</title>
@@ -9,7 +8,7 @@
 		include "../template/templateheader.php";
 	?>
     <div id="content_container">
-		<div class="auction_container">
+		<section div class="auction_container">
 		<?php
 			include "../server.php";
 			$emails = stripslashes($_POST['emails']);
@@ -63,7 +62,7 @@
     			header("Location: forgotpassword_func.php?send=Email address not found");
 			}
 			?>
-		</div><!--end div auction_container-->
+		</div></section><!--end div auction_container-->
 	</div><!--end div content_container-->
 </div><!--end div wrapper-->
 	<?php
