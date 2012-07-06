@@ -22,7 +22,7 @@
 			</div>  <!--end div search-->
                 
 			<div id="logo">
-				<a href="../../CoinCod"></a>
+				<a href="http://localhost/CoinCod"></a>
 			</div>  <!--end div logo-->	
 		
 			<nav class="menu">
