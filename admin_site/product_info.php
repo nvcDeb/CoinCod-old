@@ -2,8 +2,8 @@
 	session_start();
 	 include "../server.php";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Product</title>
@@ -28,12 +28,12 @@
 			$description=$getinfo["Description"];
 			$totalbid=$getinfo["total_bid"];
 		?>
-		<div id="content_container">
-			<div class="auction_container">
+		<section id="content_container">
+			<section class="auction_container">
 			<h1><img src="../template/template_image/header/product_information.png" border="0"></h1>
-			<div class="smallfont">
+			<article class="smallfont">
            All Fields are required to be filled.
-			</div>
+			</article>
         	
 					<form action="../admin_site/product_update.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
         			<fieldset width="700">
@@ -142,8 +142,8 @@
                 </form>
                 
         
-		</div><!--end div auction container-->
-	</div><!--end div content_container-->
+		</section><!--end div auction container-->
+	</section><!--end div content_container-->
 </div><!--end div wrapper-->
 		<?php
 	  		include "../template/templatefooter.html";
