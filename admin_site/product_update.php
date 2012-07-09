@@ -15,8 +15,8 @@
 	<?php
 		include "templateheader.php";
 	?>
-  <div id="content_container">
-	<div class="site_body">
+  <section id="content_container">
+	<section class="site_body">
     <section div class="auction_container">
 	<?php  
 	// connect to your MySQL database here 
@@ -46,9 +46,9 @@
 			echo "fail update";
 		}
 ?>
-	</div></section><!--end div auction_container-->
-    </div><!--end div site_body-->
-  </div><!--end div content_container-->
+	</section><!--end div auction_container-->
+    </section><!--end div site_body-->
+  </section><!--end div content_container-->
 </div><!--end div wrapper-->
 	<?php
 		include "templatefooter.html";

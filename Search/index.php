@@ -38,8 +38,8 @@ function LeadingZero(Time) {
     <?php
 		include "../template/templateheader.php";
 	?>
-     <div id="content_container">
-		<div class="site_body">
+     <section id="content_container">
+		<section class="site_body">
 		<?php
 			include "../server.php";
 			
@@ -182,8 +182,8 @@ function LeadingZero(Time) {
 			}
 			
 		?>
-		</div>  <!--end div site_body-->
-	</div>  <!--end div content_container-->
+		</section>  <!--end div site_body-->
+	</section>  <!--end div content_container-->
 </div>  <!--wrapper-->
 <?php
 	include "../template/templatefooter.html";

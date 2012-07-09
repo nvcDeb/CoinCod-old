@@ -14,9 +14,9 @@
 		include "../server.php";
 		include "../template/templateheader.php";
 	?>
-    <div id="content_container">
+    <section id="content_container">
     	<section div class="auction_container">
-		<div id="user_list">
+		<section id="user_list">
 		
         <?php
 			
@@ -72,9 +72,9 @@
 	 	echo "no data";
 	}
 ?> 
-       </div> <!--end div user_list-->
-	  </div></section>!--end div auction container-->
-	</div><!--end div content_container-->
+       </section> <!--end div user_list-->
+	  </section>!--end div auction container-->
+	</section><!--end div content_container-->
 </div><!--end div wrapper-->
 	<?php
 		include "../template/templatefooter.html";

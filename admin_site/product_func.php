@@ -13,8 +13,8 @@ session_start();
 	<?php
 		include "../template/templateheader.php";
 	?>
-    <div id="content_container">
-		<section div class="auction_container">
+    <section id="content_container">
+		<section class="auction_container">
 	<?php  
 	// connect to your MySQL database here 
 	include "../server.php"; 
@@ -60,8 +60,8 @@ session_start();
 	}
 	?>
     
-		</div></section><!--end div auction_container-->
-	</div><!--end div content_container-->
+		</section><!--end div auction_container-->
+	</section><!--end div content_container-->
 </div><!--end div wrapper-->
 	<?php
 		include "../template/templatefooter.html";

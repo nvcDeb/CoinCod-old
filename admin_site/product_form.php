@@ -57,8 +57,8 @@
 		<?php
 	  		include "../template/templateheader.php";
 		?>
-		<div id="content_container">
-    	<section div class="auction_container">
+		<section id="content_container">
+    	<section class="auction_container">
      		<?php
             if($userid == 1)
 			{
@@ -169,8 +169,8 @@
                 </form>
                 
         
-	  </div></section>  <!--end div auction container-->
-	</div>  <!--end div content_container-->
+	  </section>  <!--end div auction container-->
+	</section>  <!--end div content_container-->
 </div>  <!--end div wrapper-->
 		<?php
 	  		include "../template/templatefooter.html";

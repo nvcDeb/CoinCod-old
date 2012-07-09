@@ -28,12 +28,12 @@
 			$description=$getinfo["Description"];
 			$totalbid=$getinfo["total_bid"];
 		?>
-		<div id="content_container">
-			<section div class="auction_container">
+		<section id="content_container">
+			<section class="auction_container">
 			<h1><img src="../template/template_image/header/product_information.png" border="0"></h1>
-			<div class="smallfont">
+			<article class="smallfont">
            All Fields are required to be filled.
-			</div>
+			</article>
         	
 					<form action="../admin_site/product_update.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
         			<fieldset width="700">
@@ -142,8 +142,8 @@
                 </form>
                 
         
-		</div></section><!--end div auction container-->
-	</div><!--end div content_container-->
+		</section><!--end div auction container-->
+	</section><!--end div content_container-->
 </div><!--end div wrapper-->
 		<?php
 	  		include "../template/templatefooter.html";

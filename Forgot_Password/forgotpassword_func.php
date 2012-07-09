@@ -7,8 +7,8 @@
 	<?php
 		include "../template/templateheader.php";
 	?>
-    <div id="content_container">
-		<section div class="auction_container">
+    <section id="content_container">
+		<section class="auction_container">
 		<?php
 			include "../server.php";
 			$emails = stripslashes($_POST['emails']);
@@ -62,8 +62,8 @@
     			header("Location: forgotpassword_func.php?send=Email address not found");
 			}
 			?>
-		</div></section><!--end div auction_container-->
-	</div><!--end div content_container-->
+		</section><!--end div auction_container-->
+	</section><!--end div content_container-->
 </div><!--end div wrapper-->
 	<?php
 		include "../template/templatefooter.html";
