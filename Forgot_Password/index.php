@@ -5,7 +5,7 @@
 <html>
 <head>
 	<title>Forgot Password</title>
-  	<meta charset=utf-8" />
+  	<meta charset=utf-8 />
   	<link rel="stylesheet" href="../validation/css/validation.css" type="text/css" />
   	<script type="text/javascript" src="../validation/livevalidation_standalone.compressed.js"></script>
     
