@@ -6,7 +6,7 @@
 
 <body>
 </br>
-	<form action="http://<?php echo $_SERVER['HTTP_HOST']; ?>/CoinCod/Login_Form/login_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+	<form action="http://<?php echo $_SERVER['HTTP_HOST']; ?>/CoinCod/Login_Form/" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 	<table cellspacing="0">
 		<tbody>
 			<tr>
@@ -22,10 +22,10 @@
 			</tr>
 			<tr>
 				<td class="login_label_field">
-					<a href="http://localhost/CoinCod/Forgot_Password/forgotpassword_form.php">Forgot Password?</a>
+					<a href="http://localhost/CoinCod/Forgot_Password/">Forgot Password?</a>
 				</td>
 				<td class="login_label_field">
-					<a href="http://localhost/CoinCod/Registration/register_form.php">Sign Up</a>
+					<a href="http://localhost/CoinCod/Registration/">Sign Up</a>
 				</td>
 			</tr>                   
 		</tbody>
