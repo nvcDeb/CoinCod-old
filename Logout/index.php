@@ -1,10 +1,10 @@
 <?php
 	ob_start();
 ?>
-<!DOCTYPE html">
+<!DOCTYPE html>
 <html>
 <head>
-	<meta charset=utf-8" />
+	<meta charset=utf-8 />
 	<title>Logout</title>
 </head>
 
@@ -17,11 +17,11 @@
 		include"../server.php";
 		include "../template/templateheader.php";
 	?>
-		<section div id="content_container">
+		<section id="content_container">
 		<?php	
 			include "../Product/product.php";
 		?>
-		</div></section>  <!--end div content_container-->
+		</section>  <!--end div content_container-->
 	</div>  <!--end div wrapper-->
 			
 	 <?php	

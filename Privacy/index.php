@@ -1,8 +1,8 @@
 <?php
 session_start();
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Privacy</title>
@@ -13,11 +13,11 @@ session_start();
     <?php
 		include "../template/templateheader.php";
 	?>
-    <div id="content_container">
+    <section id="content_container">
 		<h1><img src="../template/template_image/header/privacy.png"></h1>
-		<div class="auction_container">
+		<section class="auction_container">
 		<privacy>
-		<ul><li>
+		<article><ul><li>
         <strong>1. General</strong></li>
 We respect your online privacy...and recognize the need for protection and management of any personally identifiable information.<li></li>
 CoinCod.com is an online auction service provided by --------.CoinCod collects your data solely in compliance with applicable statutory regulations. This Privacy Policy describes all aspects relating to gathering information while you are visiting the CoinCod website, how CoinCod handle your personal information for our services and all further permissible uses of such information.<li></li>
@@ -82,11 +82,12 @@ Please do not hesitate to contact us should you have any concerns or questions r
 		<strong>11. Your Consent </strong><li></li>
 This document is incorporated on the Terms of services of CoinCod. Through acceptance of the Terms of Services at the time of subscription, the user accepts the policies contained herein.
 		</ul></li>
-		</privacy>
+		</article>
+		</privacy> <!-- What is this?? Can we remove this?? -->
 		<h1><img src="../template/template_image/bottom/privacy.png"></h1>
-		</div>
+		</section>
 	 
-	</div>
+	</section>
 </div><!--wrapper-->
 	<?php
 		include "../template/templatefooter.html";
