@@ -587,6 +587,7 @@ fieldset { /* each fieldset spacing size */
 .site_body { /*standardize for all page */
 	width:1000px;
 	margin:0pt auto;
+	padding-top: 20px;
 }
 
 .auction_box { /* the single box for each auction item */
