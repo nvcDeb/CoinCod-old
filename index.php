@@ -1,4 +1,5 @@
 <?php
+	error_reporting(E_ALL ^ E_NOTICE);
 	session_start();
 	include "server.php";
 ?>
@@ -170,6 +171,7 @@ function LeadingZero(Time) {
   <div id="content_container">
     
 	<section id="banner_image">
+	<img src="template/template_image/banner.png" width="1015px" border="0">
 	</section>
 	
 		<section class="site_body">
