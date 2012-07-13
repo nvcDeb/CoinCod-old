@@ -83,7 +83,7 @@ function LeadingZero(Time) {
 							<div id="after_log_in">
 							<div class="user_name">
 							<img src="'.$grav_url.'" alt="" />
-								<a href="User_Profile/user_profile.php?id=' . $userid . '">' . $username . '
+								<a href="User_Profile/?id=' . $userid . '">' . $username . '
 								</a>
 							</div>
 							<div id="logout">
@@ -99,7 +99,7 @@ function LeadingZero(Time) {
 					else 
 					{
 						echo '
-							<form action="Login_Form/login_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+							<form action="Login_Form/" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 							<table cellspacing="0">
 							<tbody>
 								<tr>
@@ -115,10 +115,10 @@ function LeadingZero(Time) {
 								</tr>
 								<tr>
 									<td class="login_label_field">
-										<a href="Forgot_Password/forgotpassword_form.php">Forgot Password?</a>
+										<a href="Forgot_Password/">Forgot Password?</a>
 									</td>
 									<td class="login_label_field">
-										<a href="Registration/register_form.php">Sign Up</a>
+										<a href="Registration/">Sign Up</a>
 									</td>
 								</tr>                   
 							</tbody>
@@ -223,14 +223,14 @@ function LeadingZero(Time) {
 											<ul id="auction_list_ul" class="auction_box">
 												<li>
 													<div class="title">
-														<form id="myForm" name="postlink" action="Product/product_description.php" method="post">
+														<form id="myForm" name="postlink" action="Product/" method="post">
 															<input type="hidden" name="pid" value='.$productID.' />
 															<input name="link"  class="button_title" type="submit" value="'.$Brand.' '.$Model.'" />	
 														</form>
 													</div>
 									
 													<div class="image">				  
-														<form id="myForm" name="postlink" action="Product/product_description.php" method="post">
+														<form id="myForm" name="postlink" action="Product/" method="post">
 															<input type="hidden" name="pid" value='.$productID.' />
 															<input type="image" src="Product/product_image/'.$productID.'.jpg" width="210" height="150" input name="link"  type="submit" value="'.$Brand.' '.$Model.'" />				  	
 														</form>                	
@@ -267,7 +267,7 @@ function LeadingZero(Time) {
 												}
 												else if($userid == 0)
 												{
-													echo '<form action="Login_Form/loginpage.php" method="post">
+													echo '<form action="Login_Form/" method="post">
 														  <div class="bid_button">
 														  <input name="login"  class="button" type="submit" value="LOGIN" />
 														  </div></form>';
@@ -290,7 +290,7 @@ function LeadingZero(Time) {
 										
 										echo'
 													<div id="read_more">						
-														<form id="myForm" name="postlink" action="Product/product_description.php" method="post">
+														<form id="myForm" name="postlink" action="Product/" method="post">
 															<input type="hidden" name="pid" value='.$productID.' />
 															<input name="link"  class="read_more" type="submit" value="Read More..." />	
 														</form>
