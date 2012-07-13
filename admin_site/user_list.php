@@ -61,7 +61,6 @@
 						  <td width="150">'.$email.'</td>
 						  <td width="100">'.$dateregister.'</td>
 						  <td width="100">'.$token.'</td>
-						  <td width="100">'.$usetoken.'</td>
 						  <td width="100">buy</td>
 						  </tr>
 						  </table>'; 
@@ -73,7 +72,7 @@
 	}
 ?> 
        </section> <!--end div user_list-->
-	  </section>!--end div auction container-->
+	  </section><!--end div auction container-->
 	</section><!--end div content_container-->
 </div><!--end div wrapper-->
 	<?php
