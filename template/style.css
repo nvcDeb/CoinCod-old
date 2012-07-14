@@ -1243,7 +1243,7 @@ privacy ul li {
 
 /* lower footer content*/
 #lower_footer_wrap{ /* lower footer design */
-	border-top: 1px solid #d7f7fb;
+	border-top: 1px solid #000;
 	margin-top: -10px;
 	font-size: 15px;
 	background: #000;
