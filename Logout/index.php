@@ -18,6 +18,9 @@
 		include "../template/templateheader.php";
 	?>
 		<section id="content_container">
+		<section id="banner_image">
+		<img src="../template/template_image/banner.png" width="1015px" border="0">
+		</section>
 		<?php	
 			include "../Product/product.php";
 		?>
