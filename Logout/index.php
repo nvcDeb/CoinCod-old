@@ -19,7 +19,7 @@
 	?>
 		<div id="content_container">
 		<?php	
-			include "../Product/product.php";
+			include "../Product/index.php";
 		?>
 		</div>  <!--end div content_container-->
 	</div>  <!--end div wrapper-->

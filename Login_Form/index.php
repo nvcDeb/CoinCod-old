@@ -80,7 +80,7 @@ if (($user_login != 1) && ($valid_userlogin != 1))
 
 ?>
 	<div id="login">
-	<form action="../Login_form/" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+	<form action="./" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 					<table>
 					<tr>
 						<td>

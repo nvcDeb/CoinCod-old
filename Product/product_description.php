@@ -89,7 +89,7 @@ function LeadingZero(Time) {
 		<div id="description">
 		  <table width="900" border="0">
             <tr>
-              <td width="412"><div class="product_image"> <?php echo'<img alt="" src="../Product/product_image/'.$productId.'.jpg" width="390" height="275" border="0"/>'; ?>
+              <td width="412"><div class="product_image"> <?php echo'<img alt="" src="./product_image/'.$productId.'.jpg" width="390" height="275" border="0"/>'; ?>
 			  </div></td>
               <td width="100">&nbsp;</td>
               <td width="432" rowspan="3">
