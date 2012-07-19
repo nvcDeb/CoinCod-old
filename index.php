@@ -15,7 +15,16 @@
 	<![endif]-->
 	
     <link rel="shortcut icon" href="template/template_image/favicon.ico" />
-    
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="template/placeholder.js"></script>
+<script>
+$(function(){
+	$("[placeholder]").placeholder();
+})
+</script>
+
+
 <script type="text/javascript">  
   
 window.setTimeout("Tick()", 1000);  
