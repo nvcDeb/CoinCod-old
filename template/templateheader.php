@@ -3,6 +3,15 @@
 <head>
 	<link href="../template/style.css" rel="stylesheet" type="text/css"  />
 	<link rel="shortcut icon" href="../template/template_image/favicon.ico" />
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="../template/placeholder.js"></script>
+<script>
+$(function(){
+	$("[placeholder]").placeholder();
+})
+</script>
+
 </head>
 
 <body>
@@ -22,7 +31,7 @@
 			</div>  <!--end div search-->
                 
 			<div id="logo">
-				<a href="../../CoinCod"></a>
+				<a href="http://localhost/CoinCod"></a>
 			</div>  <!--end div logo-->	
 		
 			<nav class="menu">

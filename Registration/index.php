@@ -353,13 +353,13 @@
 						</td>
 					</tr>
 					</table>
-					<center>
+					<div id="recaptcha">
 					<?php
 						require_once('recaptchalib.php');
 						$publickey = "6LdlXNMSAAAAANom8ZRIjWvMFI3U-Vx-bmDnLVP8"; // you got this from the signup page
 						echo recaptcha_get_html($publickey);
 					?>
-					</center>
+					</div>
 					<input type="submit" name="button" class="form_button" value="Submit" />                    
 				</fieldset>
                 </form>
