@@ -22,7 +22,7 @@
 		<img src="../template/template_image/banner.png" width="1015px" border="0">
 		</section>
 		<?php	
-			include "../Product/product.php";
+			include "../Product/index.php";
 		?>
 		</section>  <!--end div content_container-->
 	</div>  <!--end div wrapper-->

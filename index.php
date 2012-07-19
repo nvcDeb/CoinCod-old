@@ -146,7 +146,7 @@ function LeadingZero(Time) {
 			</div>  <!--end div search-->
 
 				<div id="logo">
-					<a href="../CoinCod"></a>
+					<a href="./"></a>
 				</div>  <!--end div logo-->
 	
 				<nav class="menu">
@@ -156,7 +156,7 @@ function LeadingZero(Time) {
 							<td>
 								<ul class="top_nav logged_out">
 									<li>
-										<a href="../CoinCod">Home</a>
+										<a href="./">Home</a>
                                    	</li>
 									<li>
 										<a href="How_It_Works">How It Works</a>
@@ -234,14 +234,14 @@ function LeadingZero(Time) {
 											<ul id="auction_list_ul" class="auction_box">
 												<li>
 													<div class="title">
-														<form id="myForm" name="postlink" action="Product/" method="post">
+														<form id="myForm" name="postlink" action="Product/product_description.php" method="post">
 															<input type="hidden" name="pid" value='.$productID.' />
 															<input name="link"  class="button_title" type="submit" value="'.$Brand.' '.$Model.'" />	
 														</form>
 													</div>
 									
 													<div class="image">				  
-														<form id="myForm" name="postlink" action="Product/" method="post">
+														<form id="myForm" name="postlink" action="Product/product_description.php" method="post">
 															<input type="hidden" name="pid" value='.$productID.' />
 															<input type="image" src="Product/product_image/'.$productID.'.jpg" width="210" height="150" input name="link"  type="submit" value="'.$Brand.' '.$Model.'" />				  	
 														</form>                	
@@ -397,10 +397,10 @@ function LeadingZero(Time) {
      <div id="lower_footer_wrap">
 	 	<div class="container">
 			<div class="logo_image">
-				<a href="../CoinCod"><img src="template/template_image/logo2.png" width="80px" border="0"></a>
+				<a href="./"><img src="template/template_image/logo2.png" width="80px" border="0"></a>
 			</div>  <!--end div logo_image-->	
 	 		<div class="payment_image">
-	 			<p/><a href="http://www.netbuilder.com/"><img src="template/template_image/payment.png" width="700" border="0"></a>
+	 			<p/><a href="#"><img src="template/template_image/payment.png" width="700" border="0"></a>
 	 		</div>  <!--end div payment_image-->
 	 		<div class="copyright">
 	 			<p>Copyright &copy; 2012 NexVend. All rights reserved.</p>

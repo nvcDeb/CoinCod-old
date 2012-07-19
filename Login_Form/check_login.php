@@ -57,7 +57,7 @@
 			} 
 			else 
 			{
-				include("$_SERVER[DOCUMENT_ROOT]/CoinCod/Login_Form/login_form.php");
+				include $_SERVER['DOCUMENT_ROOT'].$PATH.'Login_Form/login_form.php';
 			}
 		?>
 </body>
