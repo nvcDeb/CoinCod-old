@@ -1,5 +1,4 @@
 <?php
-	error_reporting(E_ALL ^ E_NOTICE);
 	session_start();
 	include "../server.php";
 ?>
@@ -134,6 +133,14 @@ function LeadingZero(Time) {
                 
                 <div class="product_bid_button">
 				<?php
+				if(!isset($_SESSION['user_id']))
+				{
+					echo '<form action="../Login_Form/loginpage.php" method="post">
+				  		  <div class="bid_button">
+				   		  <input name="login"  class="button" type="submit" value="LOGIN" />
+				   		  </div></form>';
+				}
+				else {
                if($userid == 1 && $product_time >0)
 				{
 					echo '<form action="../admin_site/product_info.php" method="post">
@@ -153,13 +160,7 @@ function LeadingZero(Time) {
 						  <input name="endbid'.$productId.'" class="button" type="submit" value="End Bid" />
 				   		  </div></form>';
 				}
-				else if($userid == 0)
-				{
-					echo '<form action="../Login_Form/loginpage.php" method="post">
-				  		  <div class="bid_button">
-				   		  <input name="login"  class="button" type="submit" value="LOGIN" />
-				   		  </div></form>';
-				}
+				
 				else if($userid > 0 && $product_time >0)
 				{
 					echo '<form action="../Function/updatetimer.php" method="post">
@@ -175,6 +176,7 @@ function LeadingZero(Time) {
 				   		  <input name="endbid'.$productId.'" class="button" type="submit" value="Bid Ended " />
 				   		  </div>';
 				}
+				}
 				?>
 				</div>
 				
@@ -187,7 +189,7 @@ function LeadingZero(Time) {
 				{	  
 					while ($high = mysql_fetch_array($highest_bid))
 					{
-						$highest_user=$high["User"];
+						$highest_user=$high["Username"];
 						$highest_time=$high["Time"];
 						echo $highest_user;
 						echo "&nbsp;";

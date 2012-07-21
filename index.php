@@ -1,5 +1,4 @@
 <?php
-	error_reporting(E_ALL ^ E_NOTICE);
 	session_start();
 	include "server.php";
 ?>
@@ -247,6 +246,14 @@ function LeadingZero(Time) {
 													</div>';
 														/*<div id="bid_price_1" class="bid_price">'.$Marketprice.'</div>';*/
 										
+												if(!isset($_SESSION['user_id']))
+												{
+													echo '<form action="Login_Form/loginpage.php" method="post">
+														  <div class="bid_button">
+														  <input name="login"  class="button" type="submit" value="LOGIN" />
+														  </div></form>';
+												}
+												else {
 												if($userid == 1 && $auctiontime >0)
 												{
 													echo '<form action="admin_site/product_info.php" method="post">
@@ -266,13 +273,7 @@ function LeadingZero(Time) {
 														  <input name="endbid'.$productID.'" class="button" type="submit" value="End Bid" />
 														  </div></form>';
 												}
-												else if($userid == 0)
-												{
-													echo '<form action="Login_Form/loginpage.php" method="post">
-														  <div class="bid_button">
-														  <input name="login"  class="button" type="submit" value="LOGIN" />
-														  </div></form>';
-												}
+											
 												else if($userid > 0 && $auctiontime >0)
 												{
 													echo '<form action="Function/updatetimer.php" method="post">
@@ -288,7 +289,7 @@ function LeadingZero(Time) {
 														  <input name="endbid'.$productID.'" class="button" type="submit" value="Bid End " />
 														  </div>';
 												}
-										
+										}
 										echo'
 													<div id="read_more">						
 														<form id="myForm" name="postlink" action="Product/product_description.php" method="post">

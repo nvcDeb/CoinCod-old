@@ -1,5 +1,4 @@
 <?php
-	error_reporting(E_ALL ^ E_NOTICE);
 	session_start();
 	include "../server.php";
 ?>
@@ -59,7 +58,7 @@ function LeadingZero(Time) {
 				
 				$highest_bidder=mysql_query("SELECT * FROM product_log WHERE auction_price=(select max(auction_price) from product_log)");
 				$highest=mysql_fetch_array($highest_bidder);
-				$highest_user=$highest["User"];
+				$highest_user=$highest["Username"];
 			
 				$token_needed=$row["total_bid"];
 				if($token_needed <= 200)									{	$tokenneed = 1;		}
@@ -110,7 +109,15 @@ function LeadingZero(Time) {
 									'.$auctiontime.'
 								</div>';
                 					/*<div id="bid_price_1" class="bid_price">'.$Marketprice.'</div>';*/
-					
+							
+							if(!isset($_SESSION['user_id']))
+							{
+								echo '<form action="../Login_Form/loginpage.php" method="post">
+						 	  		  <div class="bid_button">
+						      		  <input name="login"  class="button" type="submit" value="LOGIN" />
+						      		  </div></form>';
+							}
+							else {
 							if($userid == 1 && $auctiontime >0)
 							{
 								echo '<form action="../admin_site/product_info.php" method="post">
@@ -130,13 +137,7 @@ function LeadingZero(Time) {
 									  <input name="endbid'.$productID.'" class="button" type="submit" value="End Bid" />
 						      		  </div></form>';
 							}
-							else if($userid == 0)
-							{
-								echo '<form action="../Login_Form/loginpage.php" method="post">
-						 	  		  <div class="bid_button">
-						      		  <input name="login"  class="button" type="submit" value="LOGIN" />
-						      		  </div></form>';
-							}
+							
 							else if($userid > 0 && $auctiontime >0)
 							{
 								echo '<form action="../Function/updatetimer.php" method="post">
@@ -152,7 +153,7 @@ function LeadingZero(Time) {
 						      		  <input name="endbid'.$productID.'" class="button" type="submit" value="Bid Ended" />
 						      		  </div>';
 							}
-					
+							}
                     echo'<span class="bid_spot">Highest Bidder'.$highest_user.' 
                     	<!--This is the spot for you to put the bid function<div>Bid<div>-->
                     	</span>
