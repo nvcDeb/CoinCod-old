@@ -1,11 +1,12 @@
+
 <html>
 <body>
 <div id="wrapper">
 	<?php
 		include "../template/templateheader.php";
 	?>
-  <div id="content_container">
-    <div class="auction_container">
+  <section id="content_container">
+    <section class="auction_container">
 	<?php  
 	// connect to your MySQL database here 
 	include "../server.php"; 
@@ -112,8 +113,8 @@
 		mysql_close(); 
 		}
 ?>
-	</div><!--end div auction_container-->
-  </div><!--end div content_container-->
+	</section><!--end div auction_container-->
+  </section><!--end div content_container-->
 </div><!--end div wrapper-->
 	<?php
 		include "../template/templatefooter.html";

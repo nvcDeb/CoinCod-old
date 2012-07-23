@@ -1,7 +1,10 @@
-<!DOCTYPE html">
+<?php
+	session_start();
+?>
+<!DOCTYPE html>
 <html>
 <head>	
-<meta charset=utf-8" />
+<meta charset=utf-8 />
 </head>
 
 <body>
@@ -38,7 +41,7 @@
 					<div id="after_log_in">
 					<div class="user_name">
 					<img src="'.$grav_url.'" alt="" />
-						<a href="../User_Profile/user_profile.php?id=' . $userid . '">' . $username . '
+						<a href="../User_Profile/?id=' . $userid . '">' . $username . '
 						</a>
 					</div>
 					
@@ -54,7 +57,7 @@
 			} 
 			else 
 			{
-				include("$_SERVER[DOCUMENT_ROOT]/CoinCod/Login_Form/login_form.php");
+				include $_SERVER['DOCUMENT_ROOT'].$PATH.'Login_Form/login_form.php';
 			}
 		?>
 </body>

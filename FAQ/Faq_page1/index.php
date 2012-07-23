@@ -7,13 +7,13 @@
 	<link href="../../template/style.css" rel="stylesheet" type="text/css"  />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>FAQ</title>
+	
 </head>
 
 <body>
 <div id="wrapper">
     <?php
-				include($_SERVER['DOCUMENT_ROOT']."/CoinCod/template/templateheader.php");
-				
+			include '../../template/templateheader.php';
 	?>
      <section id="content_container">
 		<h1><a href="index.php"><img src="../../template/template_image/header/faq.png" ></a></h1>
