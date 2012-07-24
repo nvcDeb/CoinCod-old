@@ -2,12 +2,11 @@
 	session_start();
 	include "../server.php";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset=utf-8" />
 <link href="../style.css" rel="stylesheet" type="text/css" />
-
 
 <script type="text/javascript">  
   
@@ -40,8 +39,7 @@ function LeadingZero(Time) {
 		include "../template/templateheader.php";
 		
 		$productId = mysql_real_escape_string($_POST['pid']);
-		
-		
+			
 		$get_product=mysql_query("SELECT * FROM product_list WHERE product_id='$productId'");
 		$getproduct=mysql_fetch_array($get_product);
 		$product_brand=$getproduct["Brand"];
@@ -135,46 +133,49 @@ function LeadingZero(Time) {
                 
                 <div class="product_bid_button">
 				<?php
-               if($userid == 1 && $product_time >0)
-				{
-					echo '<form action="../admin_site/product_info.php" method="post">
-				  		  <input type="hidden" name="uid" value='.$userid.' />
-				  		  <input type="hidden" name="pid" value='.$productID.' />
-				  		  <div class="bid_button">
-				   		  <input name="bid'.$productID.'"  class="button" type="submit" value="Edit"/>
-				   		  </div></form>';
-				}
-				else if($userid == 1 && $product_time <0)
-				{
-					echo '<form action="../admin_site/product_info.php" method="post">
-				  		  <input type="hidden" name="uid" value='.$userid.' />
-				  		  <input type="hidden" name="pid" value='.$productID.' />
-				  		  <div class="bid_button">
-				   		  <input name="bid'.$productID.'"  class="button" type="submit" value="Edit"/>
-						  <input name="endbid'.$productID.'" class="button" type="submit" value="End Bid" />
-				   		  </div></form>';
-				}
-				else if($userid == 0)
+				if(!isset($_SESSION['user_id']))
 				{
 					echo '<form action="../Login_Form/loginpage.php" method="post">
 				  		  <div class="bid_button">
 				   		  <input name="login"  class="button" type="submit" value="LOGIN" />
 				   		  </div></form>';
 				}
+				else {
+               if($userid == 1 && $product_time >0)
+				{
+					echo '<form action="../admin_site/product_info.php" method="post">
+				  		  <input type="hidden" name="uid" value='.$userid.' />
+				  		  <input type="hidden" name="pid" value='.$productId.' />
+				  		  <div class="bid_button">
+				   		  <input name="bid'.$productId.'"  class="button" type="submit" value="Edit"/>
+				   		  </div></form>';
+				}
+				else if($userid == 1 && $product_time <0)
+				{
+					echo '<form action="../admin_site/product_info.php" method="post">
+				  		  <input type="hidden" name="uid" value='.$userid.' />
+				  		  <input type="hidden" name="pid" value='.$productId.' />
+				  		  <div class="bid_button">
+				   		  <input name="bid'.$productId.'"  class="button" type="submit" value="Edit"/>
+						  <input name="endbid'.$productId.'" class="button" type="submit" value="End Bid" />
+				   		  </div></form>';
+				}
+				
 				else if($userid > 0 && $product_time >0)
 				{
 					echo '<form action="../Function/updatetimer.php" method="post">
 				 		  <input type="hidden" name="uid" value='.$userid.' />
-				  		  <input type="hidden" name="pid" value='.$productID.' />
+				  		  <input type="hidden" name="pid" value='.$productId.' />
 				  		  <div class="bid_button">
-				   		  <input name="bid'.$productID.'"  class="button" type="submit" value="'.$tokenneed.' Token to BID" />
+				   		  <input name="bid'.$productId.'"  class="button" type="submit" value="'.$tokenneed.' Token to BID" />
 				   		  </div></form>';
 				}
 				else if($userid > 0 && $product_time <0)
 				{
 					echo '<div  class="bid_button">
-				   		  <input name="endbid'.$productID.'" class="button" type="submit" value="Bid Ended " />
+				   		  <input name="endbid'.$productId.'" class="button" type="submit" value="Bid Ended " />
 				   		  </div>';
+				}
 				}
 				?>
 				</div>
@@ -188,7 +189,7 @@ function LeadingZero(Time) {
 				{	  
 					while ($high = mysql_fetch_array($highest_bid))
 					{
-						$highest_user=$high["User"];
+						$highest_user=$high["Username"];
 						$highest_time=$high["Time"];
 						echo $highest_user;
 						echo "&nbsp;";

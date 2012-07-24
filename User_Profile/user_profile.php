@@ -1,10 +1,11 @@
 <?php
+	//error_reporting(E_ALL ^ E_NOTICE);
 	session_start(); 
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset=utf-8 />
 </head>
 
 <body>
@@ -22,20 +23,20 @@
 		$firstname=$userINFO["first_name"];
 		$lastname=$userINFO["last_name"];
 		$dob=$userINFO["date_birth"];
-		list($year, $month, $day) = split('[/.-]', $dob);
-		if($month == 00)	{ $month = '';	}
-		if($month == 01)	{ $month = 'January';	}
-		if($month == 02)	{ $month = 'February';	}
-		if($month == 03)	{ $month = 'March';	}
-		if($month == 04)	{ $month = 'April';	}
-		if($month == 05)	{ $month = 'May';	}
-		if($month == 06)	{ $month = 'June';	}
-		if($month == 07)	{ $month = 'July';	}
-		if($month == 08)	{ $month = 'August';	}
-		if($month == 09)	{ $month = 'September';	}
-		if($month == 10)	{ $month = 'October';	}
-		if($month == 11)	{ $month = 'November';	}
-		if($month == 12)	{ $month = 'December';	}
+		list($year, $months, $day) = explode('-', substr($dob, 0, 10)); 
+		if($months == 00)	{ $month = '';	}
+		if($months == 01)	{ $month = 'January';	}
+		if($months == 02)	{ $month = 'February';	}
+		if($months == 03)	{ $month = 'March';	}
+		if($months == 04)	{ $month = 'April';	}
+		if($months == 05)	{ $month = 'May';	}
+		if($months == 06)	{ $month = 'June';	}
+		if($months == 07)	{ $month = 'July';	}
+		if($months == 08)	{ $month = 'August';	}
+		if($months == 09)	{ $month = 'September';	}
+		if($months == 10)	{ $month = 'October';	}
+		if($months == 11)	{ $month = 'November';	}
+		if($months == 12)	{ $month = 'December';	}
 		$gender=$userINFO["Gender"];
 		$address1=$userINFO["Address1"];
 		$address2=$userINFO["Address2"];
@@ -52,7 +53,8 @@
 			{
 				echo '<div id="admin_menu"><a href="../User_Profile/user_profile.php?id=' . $userid . '">' . $username . '</a>  &ndash;
         			<a href="../admin_site/product_form.php">Add Product </a>&ndash;
-					<a href="../admin_site/user_list.php">User Listing</a></div>';
+					<a href="../admin_site/user_list.php">User Listing</a>&ndash;
+					<a href="../admin_site/sitestatus_updateform.php">Site Status</a></div>';
 			}
 		?>
 				<div class="smallfont"><br/>

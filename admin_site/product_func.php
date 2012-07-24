@@ -18,7 +18,6 @@ session_start();
 	<?php  
 	// connect to your MySQL database here 
 	include "../server.php"; 
-	session_start(); 
 
 	$brand = mysql_real_escape_string($_POST['brand']);
 	$model = mysql_real_escape_string($_POST['model']);
@@ -27,7 +26,6 @@ session_start();
 	$category = mysql_real_escape_string($_POST['category']);
 	$availability = mysql_real_escape_string($_POST['availablity']);
 	$description = mysql_real_escape_string($_POST['description']);
-	$image = mysql_real_escape_string($_POST['image']);
 	
 	$product_check=mysql_query("SELECT * FROM product_list WHERE Brand='$brand' and Model='$model' LIMIT 1");
 	$productcheck = mysql_num_rows($product_check);
@@ -39,7 +37,7 @@ session_start();
 	{
 		$getid=mysql_query("SELECT * FROM product_list WHERE product_id = (select Max(product_id) from product_list);");
 		$getId = mysql_fetch_array($getid);
-		$max_id = $getId["Product_Id"];
+		$max_id = $getId["product_id"];
 		$productid = $max_id + 1;
 
 		$product_insert = "INSERT INTO product_list(product_id,Brand, Model, market_price, auction_price, Category, Availability,Description) VALUES('$productid','$brand','$model','$marketprice','$auctionprice','$category','$availability','$description')";  
@@ -47,7 +45,7 @@ session_start();
 		
 		//insert to product_images
 		$productname="$productid.jpg";
-		move_uploaded_file($_FILES["image"]["tmp_name"],"product_image/$productname");
+		move_uploaded_file($_FILES["image"]["tmp_name"],"../Product/product_image/$productname");
 	
 		if($productinsert == 1)
 		{

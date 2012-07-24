@@ -1,7 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset=utf-8 />
 </head>
 <body>
 <div id="wrapper">
@@ -14,7 +14,6 @@
 	<?php  
 	// connect to your MySQL database here 
 	include "../server.php"; 
-	session_start();
 	// Set some values to go into the table fields for this person(record) 
 	$userid = mysql_real_escape_string($_POST['userid']);
 	$newusername = mysql_real_escape_string($_POST['username']);
@@ -29,11 +28,7 @@
 	$newzip = mysql_real_escape_string($_POST['zip']);
 	$newstate = mysql_real_escape_string($_POST['state']);
 	$newmobile = mysql_real_escape_string($_POST['mobile']);
-	
-	//$newpasswords = md5($newpassword); //MD5 encryption.	
-	//$sqlCommand = "UPDATE user_account SET Username='$newusername', Password='$newpassword', Hash_password='$newpasswords', First_Name='$newfirstname', Last_Name='$newlastname', Address1='$newadd1', Address2='$newadd2', City='$newcity', Zip='$newzip', Mobile='$newmobile' WHERE user_id='$userid'";
-		//$query = mysql_query($sqlCommand) or die (mysql_error()); 
-		
+			
 		$to = "$newemails";
 		$from = "hychan_89@hotmail.com";
 		$subject = "Complete your registration";

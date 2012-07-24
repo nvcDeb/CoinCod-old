@@ -70,7 +70,7 @@ function LeadingZero(Time) {
 				
 							$highest_bidder=mysql_query("SELECT * FROM product_log WHERE auction_price=(select max(auction_price) from product_log)");
 							$highest=mysql_fetch_array($highest_bidder);
-							$highest_user=$highest["User"];
+							$highest_user=$highest["Username"];
 			
 							$token_needed=$data["total_bid"];
 							if($token_needed <= 200)									{	$tokenneed = 1;		}
