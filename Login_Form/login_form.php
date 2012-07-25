@@ -22,7 +22,7 @@
 			</tr>
 			<tr>
 				<td class="login_label_field">
-					<a href="http://localhost/CoinCod/Forgot_Password/forgotpassword_form.php">Forgot Password?</a>
+					<a href="http://localhost/CoinCod/Forgot_Password/">Forgot Password?</a>
 				</td>
 				<td class="login_label_field">
 					<a href="http://localhost/CoinCod/Registration/register_form.php">Sign Up</a>

@@ -116,7 +116,7 @@ function LeadingZero(Time) {
 								</tr>
 								<tr>
 									<td class="login_label_field">
-										<a href="Forgot_Password/forgotpassword_form.php">Forgot Password?</a>
+										<a href="Forgot_Password/">Forgot Password?</a>
 									</td>
 									<td class="login_label_field">
 										<a href="Registration/register_form.php">Sign Up</a>
