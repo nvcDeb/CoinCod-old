@@ -393,7 +393,7 @@ function LeadingZero(Time) {
 				<a href="../CoinCod"><img src="template/template_image/logo2.png" width="80px" border="0"></a>
 			</div>  <!--end div logo_image-->	
 	 		<div class="payment_image">
-	 			<p/><a href="http://www.netbuilder.com/"><img src="template/template_image/payment.png" width="700" border="0"></a>
+	 			<p/><a href="#"><img src="template/template_image/payment.png" width="700" border="0"></a>
 	 		</div>  <!--end div payment_image-->
 	 		<div class="copyright">
 	 			<p>Copyright &copy; 2012 NexVend. All rights reserved.</p>
