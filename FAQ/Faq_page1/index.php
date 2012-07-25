@@ -11,16 +11,15 @@
 
 <body>
 <div id="wrapper">
-    <?php
-				include($_SERVER['DOCUMENT_ROOT']."/CoinCod/template/templateheader.php");
-				
+     <?php
+			include '../../template/templateheader.php';
 	?>
      <section id="content_container">
 		<h1><a href="index.php"><img src="../../template/template_image/header/faq.png" ></a></h1>
 		
-    	<section class="auction_container">
+    	<article class="auction_container">
 		
-		<article class="answer">
+		<section class="answer">
 		<ol>
         
 		<li><a name="Question1">What is CoinCod?</a></li>
@@ -39,9 +38,9 @@
         True, there is a possibility that it might happen. This is when the auction winner turns out to be fraudulent – for example someone who has registered multiple accounts in our system without entering any personal data and automatically received free bids for each username created. All bids by such fraud users will be considered void and the auction will be re-listed from the same point when it ended so that real users can have a possibility to win it. Our support team is doing its best on a daily basis to filter such cases.
 
 		</ol>
-		</article>  <!--end div faq-->  
+		</section>  <!--end div faq-->  
 			<h1><img src="../../template/template_image/bottom/faq.png"></h1>
-	  	</section>  <!--end div auction_container-->
+	  	</article>  <!--end div auction_container-->
 	</section>  <!--end div content_container-->
 </div>  <!--wrapper-->
 	<?php
