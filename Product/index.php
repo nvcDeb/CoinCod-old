@@ -112,7 +112,7 @@ function LeadingZero(Time) {
 							
 							if(!isset($_SESSION['user_id']))
 							{
-								echo '<form action="../Login_Form/loginpage.php" method="post">
+								echo '<form action="../loginpage/" method="post">
 						 	  		  <div class="bid_button">
 						      		  <input name="login"  class="button" type="submit" value="LOGIN" />
 						      		  </div></form>';

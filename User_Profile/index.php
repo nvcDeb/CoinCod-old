@@ -51,7 +51,7 @@
         <?php
         	if($userid == 1)
 			{
-				echo '<div id="admin_menu"><a href="../User_Profile/user_profile.php?id=' . $userid . '">' . $username . '</a>  &ndash;
+				echo '<div id="admin_menu"><a href="../User_Profile/?id=' . $userid . '">' . $username . '</a>  &ndash;
         			<a href="../admin_site/product_form.php">Add Product </a>&ndash;
 					<a href="../admin_site/user_list.php">User Listing</a>&ndash;
 					<a href="../admin_site/sitestatus_updateform.php">Site Status</a></div>';
