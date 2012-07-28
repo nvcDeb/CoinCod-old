@@ -32,7 +32,7 @@ if(($user_login != 1) && ($valid_userlogin == 1))
         mysql_query("UPDATE user_account SET last_login=now() WHERE user_id='$id'"); 
 		if($id == 1)
 		{
-			header("location: ../User_Profile/user_profile.php?id=$id"); 
+			header("location: ../User_Profile/?id=$id"); 
 			exit();
 		}
 		else
@@ -50,7 +50,7 @@ if(($user_login != 1) && ($valid_userlogin == 1))
 	<title>CoinCod Login</title>
 	<link href="../template/style.css" rel="stylesheet" type="text/css" />
 	
-	<!--[if lt IE 10]>
+	<!--[if lte IE 9]>
 	<link href="template/style_ie.css" rel="stylesheet" type="text/css"  />
 	<![endif]-->
 	
@@ -80,7 +80,7 @@ if (($user_login != 1) && ($valid_userlogin != 1))
 
 ?>
 	<div id="login">
-	<form action="login_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+	<form action="./" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 					<table>
 					<tr>
 						<td>
