@@ -787,7 +787,7 @@ fieldset { /* each fieldset spacing size */
 .price .current_bid_price { /* current bid price style and position */
 	font-size: 23px;
 	width: 150px;
-	margin-top: 0px;
+	margin-top: -8px;
 	text-align: center;
 	font-weight: bold;
 	color: #dc8c00;
@@ -799,7 +799,7 @@ fieldset { /* each fieldset spacing size */
 	width: 180px;
 	height: 40px;
 	padding-top: 10px;
-	margin-top: -50px;
+	margin-top: -63px;
 	float: right;
 	text-align: center;
 	font-weight: bold;
@@ -813,7 +813,7 @@ fieldset { /* each fieldset spacing size */
 	text-align: center;
 	width: 180px;
 	height: 40px;
-	padding-top: 50px;
+	padding-top: 25px;
 	padding-bottom: 50px;
 	margin-top: -80px;
 	margin-left: 200px;
