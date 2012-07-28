@@ -10,7 +10,7 @@
 	<title>CoinCod</title>
 	<link href="template/style.css" rel="stylesheet" type="text/css" />
 
-	<!--[if lt IE 10]>
+	<!--[if lte IE 9]>
 	<link href="template/style_ie.css" rel="stylesheet" type="text/css"  />
 	<![endif]-->
 	
@@ -84,7 +84,7 @@ function LeadingZero(Time) {
 							<div id="after_log_in">
 							<div class="user_name">
 							<img src="'.$grav_url.'" alt="" />
-								<a href="User_Profile/user_profile.php?id=' . $userid . '">' . $username . '
+								<a href="User_Profile/?id=' . $userid . '">' . $username . '
 								</a>
 							</div>
 							<div id="logout">
@@ -100,7 +100,7 @@ function LeadingZero(Time) {
 					else 
 					{
 						echo '
-							<form action="Login_Form/login_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+							<form action="Login_Form/" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 							<table cellspacing="0">
 							<tbody>
 								<tr>
@@ -116,10 +116,10 @@ function LeadingZero(Time) {
 								</tr>
 								<tr>
 									<td class="login_label_field">
-										<a href="Forgot_Password/forgotpassword_form.php">Forgot Password?</a>
+										<a href="Forgot_Password/">Forgot Password?</a>
 									</td>
 									<td class="login_label_field">
-										<a href="Registration/register_form.php">Sign Up</a>
+										<a href="Registration/">Sign Up</a>
 									</td>
 								</tr>                   
 							</tbody>
@@ -137,7 +137,7 @@ function LeadingZero(Time) {
 			</div>  <!--end div search-->
 
 				<div id="logo">
-					<a href="../CoinCod"></a>
+					<a href="./"></a>
 				</div>  <!--end div logo-->
 	
 				<nav class="menu">
@@ -147,7 +147,7 @@ function LeadingZero(Time) {
 							<td>
 								<ul class="top_nav logged_out">
 									<li>
-										<a href="../CoinCod">Home</a>
+										<a href="./">Home</a>
                                    	</li>
 									<li>
 										<a href="How_It_Works">How It Works</a>
@@ -250,7 +250,7 @@ function LeadingZero(Time) {
 										
 												if(!isset($_SESSION['user_id']))
 												{
-													echo '<form action="Login_Form/loginpage.php" method="post">
+													echo '<form action="loginpage/" method="post">
 														  <div class="bid_button">
 														  <input name="login"  class="button" type="submit" value="LOGIN" />
 														  </div></form>';
@@ -390,10 +390,10 @@ function LeadingZero(Time) {
      <div id="lower_footer_wrap">
 	 	<div class="container">
 			<div class="logo_image">
-				<a href="../CoinCod"><img src="template/template_image/logo2.png" width="80px" border="0"></a>
+				<a href="./"><img src="template/template_image/logo2.png" width="80px" border="0"></a>
 			</div>  <!--end div logo_image-->	
 	 		<div class="payment_image">
-	 			<p/><a href="http://www.netbuilder.com/"><img src="template/template_image/payment.png" width="700" border="0"></a>
+	 			<p/><a href="#"><img src="template/template_image/payment.png" width="700" border="0"></a>
 	 		</div>  <!--end div payment_image-->
 	 		<div class="copyright">
 	 			<p>Copyright &copy; 2012 NexVend. All rights reserved.</p>
