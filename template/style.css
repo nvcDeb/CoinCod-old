@@ -1255,9 +1255,19 @@ privacy ul li {
 	margin-left: 25px;
 	}
 	
-#lower_footer_wrap .payment_image { /* lower footer online payment image position */
+#lower_footer_wrap .logo_image img{ /* lower footer logo images position */
+	width: 80px;
+	border: none;
+	}	
+	
+#lower_footer_wrap .payment_image { /* lower footer online payment position */
 	margin-top: -10px;
 	text-align: center
+	}
+	
+#lower_footer_wrap .payment_image img{ /* lower footer online payment images position */
+	width: 900px;
+	border: none;
 	}
 	
 #lower_footer_wrap .copyright { /* lower footer copyright issues */

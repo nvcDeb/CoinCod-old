@@ -390,10 +390,10 @@ function LeadingZero(Time) {
      <div id="lower_footer_wrap">
 	 	<div class="container">
 			<div class="logo_image">
-				<a href="../CoinCod"><img src="template/template_image/logo2.png" width="80px" border="0"></a>
+				<a href="../CoinCod"><img src="template/template_image/logo2.png"></a>
 			</div>  <!--end div logo_image-->	
 	 		<div class="payment_image">
-	 			<p/><a href="#"><img src="template/template_image/payment.png" width="700" border="0"></a>
+	 			<p/><a href="#"><img src="template/template_image/payment.png"></a>
 	 		</div>  <!--end div payment_image-->
 	 		<div class="copyright">
 	 			<p>Copyright &copy; 2012 NexVend. All rights reserved.</p>
