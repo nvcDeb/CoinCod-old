@@ -7,7 +7,7 @@ html, body {
 	
 body{ 
 	margin:0px;
-	background: #edfbfd;  /* the body color */
+	background: #fefefe;  /* the body color */
 
 }
 
@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5,h6{
 	overflow:none;
 	padding-bottom: 190px;	
 	width: 1015px; 
-	margin: 0px auto 0px auto;	
+	margin: 0px auto 0px auto;
 }
 
 /* ---------- HEADER ---------- */
@@ -32,7 +32,7 @@ h1,h2,h3,h4,h5,h6{
 #header_content{ /* the header design */
 
 	position:relative;
-	background: url(template_image/header_bg.png) repeat-x;
+	background: #c5292c;
 	height: 60px;
 	border-bottom: 1px solid #9c9c9c;
 }
@@ -198,7 +198,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .login_label_field a{ /* the text below the login email/password box */
-	color:#000;
+	color:#ffdbdb;
 	padding-left:5px;
 	text-decoration: none;
 }
@@ -242,6 +242,7 @@ h1,h2,h3,h4,h5,h6{
 	margin-left: 5px;
 	margin-top: 10px;
 	text-decoration: none;
+	max-width: 100px;
 	}
 	
 .user_name img { /* "welcome back" & "token left" image position */
@@ -311,19 +312,20 @@ h1 { /* the h1 title position */
 	margin-top: 25px;
 	min-width: 1000px;
 	min-height: 200px;
-	border: 1px solid #000;
-	box-shadow: 1px 1px 2px #666666;
+	background: url(template_image/banner.png) no-repeat;
+	margin-left:10px;
 	}
 
 .auction_container { /*the content background */
 	/*-moz-border-radius: 30px;
 	box-shadow: 8px 8px 12px #666666;
-	background: #e3e8fd;*/
+	background: #e3e8fd;
 	border-radius: 10px;
-	border: 1px solid #666666;
-	/*position: absolute;*/
-	background: #D9F7FB;
-	box-shadow: 1px 1px 2px #666666;
+	border-top: none;*/
+	/*position: absolute;	
+	box-shadow: 1px 1px 2px #666666;*/
+	border-top: 1px solid #9c9c9c;
+	background: none;
 	padding: 10px 150px 10px 150px;
 	margin-bottom: 20px;
 	text-align: justify;
@@ -333,6 +335,18 @@ h1 { /* the h1 title position */
 	min-width: 700px;
 	min-height: 150px;
 }
+	
+.auction_container h1 img {/* the bottom image position and size */
+	margin-left: 600px;
+	max-width: 180px;
+	}
+	
+.auction_container .location  img{ /* the location page image */
+	margin-left: 600px;
+	margin-top: -150px;
+	max-width: 180px;
+	}
+
 /*---------- SHARE CONTENT END ----------*/
 
 
@@ -419,6 +433,7 @@ h1 { /* the h1 title position */
 	font-family: Trebuchet MS;
 	font-size: 14px;
 	padding-bottom: 20px;
+	border: 2px solid #9c9c9c;
 }
 
 .registration fieldset { /* the form width and position */
@@ -510,6 +525,19 @@ fieldset { /* each fieldset spacing size */
 	margin-left: 410px;
 	
 	}
+	
+#recaptcha span { /* the position of the recaptcha "type the two words" */
+	font-size: 14px;
+	position: relative;
+	top: -100px;
+	left: 198px;
+	
+	}
+	
+#recaptcha { /* position of the recaptcha */
+	margin-top: 42px;
+	margin-left: 90px;
+	}
 
 /*---------- REGISTRATION register form PAGE END ----------*/
 
@@ -559,6 +587,7 @@ fieldset { /* each fieldset spacing size */
 .site_body { /*standardize for all page */
 	width:1000px;
 	margin:0pt auto;
+	padding-top: 20px;
 }
 
 .auction_box { /* the single box for each auction item */
@@ -572,7 +601,7 @@ fieldset { /* each fieldset spacing size */
 	width: 190px;
 	height: 340px;
 	list-style: none;
-	background: #d9f7fb;
+	background: #fedadc;
 	font-family: Trebuchet MS;
 }
 
@@ -850,6 +879,50 @@ fieldset { /* each fieldset spacing size */
 
 /*---------- Buy_Tokens PAGE ----------*/
 
+#graphics {
+	text-align: center;
+	padding-bottom: 50px;
+	margin-left: -100px;
+	margin-top: -50px;
+	width: 1000px;
+	}
+	
+#graphics img {
+	width: 200px;
+	margin-top: 80px;
+	}
+	
+#graphics a{
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-weight: bold;
+	color: #575857;
+	border: 1px solid #f4e831;
+	background: url(template_image/price_button.png) repeat-x;
+	padding: 5px 10px 5px 10px;
+	text-decoration: none;
+	position: relative;
+	top: 30px;
+	left: -140px;
+	}
+	
+#graphics a:hover { /* button on mouseover */
+	background: url(template_image/price_button_hover.png) repeat-x;
+	}
+	
+#graphics a:active { /*button on click */
+	background: url(template_image/price_button_active.png) repeat-x;
+	}
+	
+	
+
+
+/*---------- Buy_Tokens PAGE END ----------*/
+
+
+
+/*---------- Buy_Tokens PAGE ----------*/
+
 .buy_tokens { /* description sentence position and size */
 	min-width: 720px;
 	text-align:justify;
@@ -889,7 +962,7 @@ fieldset { /* each fieldset spacing size */
 
 .token_nav .token_value { /* content under "token packages" container size */
 	padding: 5px 20px 5px 20px;	
-	border: 2px solid #E3E8FD; /* to make the border same color with the background */
+	border: 2px solid #EDFBFD; /* to make the border same color with the background */
 	}
 
 /* price button for each package */
@@ -917,11 +990,6 @@ fieldset { /* each fieldset spacing size */
 	background: url(template_image/price_button_active.png) repeat-x;
 	}
 /* price button for each package end */
-
-	
-.package2 { /* for buy_tokens table bottom spacing */
-	font-size: 1px;
-	}
 	
 /*---------- Buy_Tokens PAGE END ----------*/
 
@@ -1088,11 +1156,15 @@ privacy ul li {
 	
 .status_left { /* background left image position and size */
 	background: url(template_image/left.png) no-repeat;
-	max-width: 270px;
+	min-width: 270px;
 	min-height: 110px;
 	font-size: 18px;
 	padding: 20px 15px 0px 15px;
 	float: left;
+	}
+	
+.status_left .left{ /* background left image position and size */
+	max-width: 240px;
 	}
 	
 .status_right { /* background left image position and size */
@@ -1102,6 +1174,10 @@ privacy ul li {
 	font-size: 18px;
 	padding: 20px 15px 0px 15px;
 	float: right;
+	}
+
+.status_right .right {
+	max-width: 270px;
 	}
 
 /*---------- SITE STATUS PAGE END ----------*/
@@ -1123,7 +1199,7 @@ privacy ul li {
 	overflow:hidden;
 	border-top: 1px solid #9c9c9c;
 	box-shadow:0pt -1px 0pt white inset;
-	background: #d9f7fb url(template_image/footer_bg.png) repeat-x;
+	background: #c5292c;;
 }
 
 #footer_wrap .upper_footer_wrap .ul { /* upper footer position */
@@ -1140,11 +1216,11 @@ privacy ul li {
 #footer_wrap .upper_footer_wrap ul.footer_nav h4{ /* upper footer menu title design */
 	font-size:15px;
 	text-transform: uppercase;
-	color:#000;
+	color:#fff;
 	margin-top: -15px;
 	margin-bottom:5px;
 	padding-bottom:5px;
-	border-bottom:1px solid #9c9c9c;
+	border-bottom:1px solid #fefefe;
 }
 
 #footer_wrap li{ /* upper menu sub menu design */
@@ -1155,7 +1231,7 @@ privacy ul li {
 #footer_wrap a{ /* upper menu sub menu (with link) design */
 	line-height: 12px;
 	font-size: 13px;
-	color:#000;
+	color:#fff;
 	text-decoration:none;
 }
 
@@ -1167,10 +1243,10 @@ privacy ul li {
 
 /* lower footer content*/
 #lower_footer_wrap{ /* lower footer design */
-	border-top: 1px solid #d7f7fb;
+	border-top: 1px solid #000;
 	margin-top: -10px;
 	font-size: 15px;
-	background: url(template_image/lower_footer_bg.png) repeat-x;
+	background: #000;
 }
 
 #lower_footer_wrap .logo_image { /* lower footer logo position */
@@ -1179,9 +1255,19 @@ privacy ul li {
 	margin-left: 25px;
 	}
 	
-#lower_footer_wrap .payment_image { /* lower footer online payment image position */
+#lower_footer_wrap .logo_image img{ /* lower footer logo images position */
+	width: 80px;
+	border: none;
+	}	
+	
+#lower_footer_wrap .payment_image { /* lower footer online payment position */
 	margin-top: -10px;
 	text-align: center
+	}
+	
+#lower_footer_wrap .payment_image img{ /* lower footer online payment images position */
+	width: 900px;
+	border: none;
 	}
 	
 #lower_footer_wrap .copyright { /* lower footer copyright issues */
@@ -1189,6 +1275,7 @@ privacy ul li {
 	margin-top: -10px;
 	font-weight: bold;
 	text-align: center;
+	color: #fff;
 	}
 /* lower footer end */
 
