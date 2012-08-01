@@ -1,12 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="text/html; charset=utf-8" />
 </head>
 
 <body>
 </br>
-	<form action="<?php echo $SITE;?>Login_Form/" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+	<form action="../Login_Form/" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 	<table cellspacing="0">
 		<tbody>
 			<tr>
