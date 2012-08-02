@@ -54,7 +54,7 @@
 			} 
 			else 
 			{
-				include $_SERVER['DOCUMENT_ROOT'].$PATH.'Login_Form/login_form.php';
+				include ("login_form.php");
 			}
 		?>
 </body>
