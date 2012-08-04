@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 	<link href="../template/style.css" rel="stylesheet" type="text/css"  />
 	<link rel="shortcut icon" href="../template/template_image/favicon.ico" />
@@ -11,18 +11,18 @@
     	<div class="container">
            	<div class="login">
 				<?php
-				include("$_SERVER[DOCUMENT_ROOT]/CoinCod/Login_Form/check_login.php");
+				include $domain.$path."/Login_Form/check_login.php";
 				?>
             </div>  <!--end div login-->	
 	
 			<div id="search">
-				<form action="http://<?php echo $_SERVER['HTTP_HOST']; ?>/CoinCod/Search" enctype="multipart/form-data" name="searchForm" id="myForm" method="GET">
+				<form action="http://<?php echo $_SERVER['HTTP_HOST']; ?>/Search" enctype="multipart/form-data" name="searchForm" id="myForm" method="GET">
          			<input type="text" class="search_input" name="search" placeholder="Enter Search..." value="<?php echo isset($searchTerms)?htmlspecialchars($searchTerms):''; ?>" />
       			</form>
 			</div>  <!--end div search-->
                 
 			<div id="logo">
-				<a href="../../CoinCod"></a>
+				<a href=".././"></a>
 			</div>  <!--end div logo-->	
 		
 			<nav class="menu">
@@ -31,13 +31,13 @@
 					<tr>
 						<td>
 							<ul class="top_nav">
-								<li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/CoinCod">Home</a>
+								<li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>">Home</a>
                                 </li>
 								<li>
-									<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/CoinCod/How_It_Works">How It Works</a>
+									<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/How_It_Works">How It Works</a>
 								</li>
 								<li>
-									<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/CoinCod/Buy_Tokens">Buy Tokens</a>
+									<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/Buy_Tokens">Buy Tokens</a>
 								</li>
 								<!--<li>
 									<a href="Winners">Winners</a>			
