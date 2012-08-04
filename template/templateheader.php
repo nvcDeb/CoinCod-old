@@ -1,3 +1,7 @@
+<?php
+	include "path.php";
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
