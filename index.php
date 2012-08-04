@@ -1,6 +1,7 @@
 <?php
 	session_start();
 	include "server.php";
+	include "path.php";
 ?>
 <!DOCTYPE html>
 <html>
