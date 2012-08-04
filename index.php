@@ -73,7 +73,7 @@ function LeadingZero(Time) {
 							$get=mysql_fetch_array($user);
 							$token=$get["Token"];
 							$gravatar_image=$get["Email"];
-							$default = "http://auction12345.site50.net/template/template_image/favicon.ico";
+							$default = "http://www.coincod.com/template/template_image/favicon.ico";
 							$size = 40;
 
 							$grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $gravatar_image ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;
