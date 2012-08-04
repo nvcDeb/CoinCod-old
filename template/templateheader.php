@@ -1,10 +1,8 @@
-<<<<<<< HEAD
+
 <?php
 	include "path.php";
 ?>
 
-=======
->>>>>>> 6a0af32d84007291da63a7126307f5bbaf21fa8a
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,11 +16,8 @@
     	<div class="container">
            	<div class="login">
 				<?php
-<<<<<<< HEAD
+
 				include $domain.$path."/Login_Form/check_login.php";
-=======
-				include("../Login_Form/check_login.php");
->>>>>>> 6a0af32d84007291da63a7126307f5bbaf21fa8a
 				?>
             </div>  <!--end div login-->	
 	
