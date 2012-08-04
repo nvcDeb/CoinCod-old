@@ -1,12 +1,11 @@
 <?php
-	error_reporting(E_ALL ^ E_NOTICE);
 	session_start();
 	include "server.php";
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="text/html; charset=utf-8" />
 	<title>CoinCod</title>
 	<link href="template/style.css" rel="stylesheet" type="text/css" />
 
