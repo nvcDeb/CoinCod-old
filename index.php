@@ -6,11 +6,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
 	<meta content="text/html; charset=utf-8" />
-=======
 	<meta content="charset=utf-8" />
->>>>>>> 6a0af32d84007291da63a7126307f5bbaf21fa8a
 	<title>CoinCod</title>
 	<link href="template/style.css" rel="stylesheet" type="text/css" />
 
