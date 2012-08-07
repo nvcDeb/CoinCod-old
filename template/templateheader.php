@@ -17,7 +17,7 @@
            	<div class="login">
 				<?php
 
-				include $domain.$path."/Login_Form/check_login.php";
+				include("$_SERVER[DOCUMENT_ROOT]/Login_Form/check_login.php");
 				?>
             </div>  <!--end div login-->	
 	
@@ -28,7 +28,7 @@
 			</div>  <!--end div search-->
                 
 			<div id="logo">
-				<a href=".././"></a>
+				<a href="./"></a>
 			</div>  <!--end div logo-->	
 		
 			<nav class="menu">
