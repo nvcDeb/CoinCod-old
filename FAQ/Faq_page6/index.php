@@ -5,7 +5,7 @@ session_start();
 <html>
 <head>
 	<link href="../../template/style.css" rel="stylesheet" type="text/css"  />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8" />
 <title>FAQ</title>
 </head>
 
