@@ -1,10 +1,10 @@
 <?php
 session_start();
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8" />
 <title>Security</title>
 </head>
 
@@ -13,9 +13,11 @@ session_start();
     <?php
 		include "../template/templateheader.php";
 	?>
-    <div id="content_container">
+    <section id="content_container">
 			<h1><img src="../template/template_image/header/security.png"></h1>
-			<div class="auction_container">
+			<section class="auction_container">
+			<article>
+			
 			<h4>Physical Security</h4>
 			<li> Data center access limited to Amazon Web Services data center technicians</li>
 			<li> The infrastructure is housed in Amazon-controlled data centers throughout the world</li>
@@ -33,11 +35,13 @@ session_start();
 		
 		<h4>Security Contact</h4>
 			Have a question, concern, or comment about Coincod security?Please email <a href = "mailto:security@coincod.com">security@coincod.com</a> for all inquires.
+		
+		</article>	
 			
 			<h1><img src="../template/template_image/bottom/security.png"></h1>
-     
-		</div>
-	</div>
+			
+		</section>
+	</section>
 </div><!--wrapper-->
 	<?php
 		include "../template/templatefooter.html";

@@ -2,10 +2,10 @@
 session_start();
 include "../server.php";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset=utf-8" />
+<meta charset="utf-8" />
 <link href="style.css" rel="stylesheet" type="text/css" />
 <title>Buy Tokens</title>
 </head>
@@ -15,9 +15,9 @@ include "../server.php";
     <?php
 		include "../template/templateheader.php";
 	?>
-    <div id="content_container">
+    <section id="content_container">
 	<h1><img src="../template/template_image/header/buy_tokens.png"></h1>
-		<div class="auction_container">	 
+		<section class="auction_container">	 
 			<div class="buy_tokens">Choose your package by clicking on the button. Please take note that your payment is processed by Netbuilder.The Name of NbePay will be shown on your Credit Card / Bank Statement and you will also receive a notification e-mail from Netbuilder on this transaction.
 			</div>
 		
@@ -105,8 +105,8 @@ include "../server.php";
 			</div>
 		
 			<h1><img src="../template/template_image/bottom/buy_tokens.png"></h1>
-		</div>  <!--end div auction_container-->
-	</div>  <!--end div content_container-->
+		</section>  <!--end div auction_container-->
+	</section>  <!--end div content_container-->
 </div>  <!--wrapper-->
 	<?php
 		include "../template/templatefooter.html";

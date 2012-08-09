@@ -5,7 +5,7 @@
 <html>
 <head>
 	<link href="../../template/style.css" rel="stylesheet" type="text/css"  />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>FAQ</title>
 </head>
 
@@ -26,7 +26,7 @@
 Note: Product cost refers to the final cost of product at which bidding stopped. It is referred on CoinCod as "Current price". It is NOT the retail price of the item.
         
 		<li><a name="Question17">How can I buy bids on CoinCod?</a></li>
-        At present you can buy bid packages online. Bid packages can be purchased using all e-payment methods that are supported by our electronic payments trading partner NetBuilder.com.my
+        At present you can buy bid packages online. Bid packages can be purchased using all e-payment methods that are supported by our electronic payments trading partner.
 		<ul>
 		<li>Visa</li>
 		<li>Mastercard</li>

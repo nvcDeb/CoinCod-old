@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>Result Update</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="validation/css/validation.css" type="text/css" />

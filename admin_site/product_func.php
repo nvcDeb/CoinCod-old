@@ -4,7 +4,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>Product Result</title>
 	<link href="../template/style.css" rel="stylesheet" type="text/css" />
 </head>
