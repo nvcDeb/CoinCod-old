@@ -4,8 +4,8 @@
 	<?php
 		include "../template/templateheader.php";
 	?>
-  <div id="content_container">
-    <div class="auction_container">
+  <section id="content_container">
+    <section class="auction_container">
 	<?php  
 	// connect to your MySQL database here 
 	include "../server.php"; 
@@ -70,6 +70,8 @@
 		$from = "wilson@nexvend.com";
 		$subject = "Complete your registration";
 		$message = '<html>
+					<body>
+					<article>
 					Dear ' . $username . ',
 					<br /><br />
 					Congratulations for the successful registeration with CoinCod.  
@@ -89,6 +91,7 @@
 					<br /><br /> 
 					Best Regards,
 					CoinCod Management Team
+					</article>
 					</body>
 					</html>';
 			// end of message
@@ -112,8 +115,8 @@
 		mysql_close(); 
 		}
 ?>
-	</div><!--end div auction_container-->
-  </div><!--end div content_container-->
+	</section><!--end div auction_container-->
+  </section><!--end div content_container-->
 </div><!--end div wrapper-->
 	<?php
 		include "../template/templatefooter.html";
