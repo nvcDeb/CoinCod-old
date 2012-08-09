@@ -4,7 +4,7 @@
 <!DOCTYPE html">
 <html>
 <head>
-	<meta charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>LoginPage</title>
 </head>
 
@@ -13,9 +13,9 @@
     <?php
 		include "../template/templateheader.php";
 	?>
-    <div id="content_container">
+    <section id="content_container">
 	<h1><img src="../template/template_image/header/login_form.png"></h1>
-    	<div class="auction_container">
+    	<section class="auction_container">
 		        
         <form action="<?php echo $SITE;?>Login_Form/" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 					<table width="650" cellpadding="0" cellspacing="10">
@@ -52,8 +52,8 @@
 					</tr>
 					</table> 
         </form>
-	  </div><!--auction_container-->
-	</div><!--content_container-->
+	  </section><!--auction_container-->
+	</section><!--content_container-->
 	</div><!--wrapper-->
 	<?php
 		include "../template/templatefooter.html";

@@ -5,7 +5,7 @@
 <html>
 <head>
 	<link href="../../template/style.css" rel="stylesheet" type="text/css"  />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>FAQ</title>
 </head>
 
@@ -24,7 +24,7 @@
         We use high-security 128-bit encoding (SSL) to protect your payment details when processing the online payment. This service is provided to us by NetBuilder.com.my who have a long term reliable and stable reputation in that field. Your credit card details will not be entered nor stored into our database and they cannot be seen by any of our staff. Besides the security that were provided by NetBuilder, our security team will ensure leaks during the transaction will not happen by providing more encryption and security.
         
 		<li><a name="Question22"><strong>How do I pay for the product that I have won?</strong></a></li>
-        You can pay for your item through all e-payment methods that are available on our website and supported by NetBuilder.com.my
+        You can pay for your item through all e-payment methods that are available on our website.
 			<ul>
 			<li>Visa</li>
 			<li>Mastercard</li>

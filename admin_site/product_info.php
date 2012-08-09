@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>Product</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="validation/css/validation.css" type="text/css" />
