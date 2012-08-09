@@ -1,8 +1,3 @@
-
-<?php
-	include "path.php";
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +23,7 @@
 			</div>  <!--end div search-->
                 
 			<div id="logo">
-				<a href="./"></a>
+				<a href="/"></a>
 			</div>  <!--end div logo-->	
 		
 			<nav class="menu">
