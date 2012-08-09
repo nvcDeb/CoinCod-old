@@ -16,9 +16,23 @@ session_start();
 	<div id="content_container">
 			<h1><img src="../template/template_image/header/graphics.png"></h1>
 		<div class="auction_container">
-			<img src="../template/template_image/Coming-soon.gif" width="540px" height="380px"><p>
+		
+		<div id="graphics">
 			
-			<h1><img src="../template/template_image/bottom/sorry.png"></h1>
+			<img src="../template/template_image/bottom/buy_tokens.png"><a href="graphics.php?file=buy_tokens.png">Download</a>
+			<img src="../template/template_image/bottom/careers.png"><a href="graphics.php?file=careers.png">Download</a>
+			<img src="../template/template_image/bottom/contacts.png"><a href="graphics.php?file=contacts.png">Download</a>
+			<img src="../template/template_image/bottom/faq.png"><a href="graphics.php?file=faq.png">Download</a>
+			<img src="../template/template_image/bottom/graphics.png"><a href="graphics.php?file=graphics.png">Download</a>
+			<img src="../template/template_image/bottom/how_it_works.png"><a href="graphics.php?file=how_it_works.png">Download</a>
+			<img src="../template/template_image/bottom/location.png"><a href="graphics.php?file=location.png">Download</a>
+			<img src="../template/template_image/bottom/privacy.png"><a href="graphics.php?file=privacy.png">Download</a>
+			<img src="../template/template_image/bottom/security.png"><a href="graphics.php?file=security.png">Download</a>
+			<img src="../template/template_image/bottom/site_status.png"><a href="graphics.php?file=site_status.png">Download</a>
+			<img src="../template/template_image/bottom/sorry.png"><a href="graphics.php?file=sorry.png">Download</a>
+			<img src="../template/template_image/bottom/term_of_service.png"><a href="graphics.php?file=term_of_service.png">Download</a>
+			
+		</div>	
 		</div>
 	 
 	</div>
