@@ -3,6 +3,25 @@
 <head>
 	<link href="../template/style.css" rel="stylesheet" type="text/css"  />
 	<link rel="shortcut icon" href="../template/template_image/favicon.ico" />
+	
+<!--[if lte IE 9]>
+	<link href="template/style_ie.css" rel="stylesheet" type="text/css"  />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="template/placeholder.js"></script>
+	<script>
+		$(function(){
+			$("[placeholder]").placeholder();
+		})
+	</script>
+<![endif]-->
+
+<?php
+$SERVER = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+$HOST_NAME = $_SERVER['HTTP_HOST'];
+$PATH = "/CoinCod/";
+$SITE = $SERVER.$HOST_NAME.$PATH;
+?>
+
 </head>
 
 <body>
@@ -11,18 +30,18 @@
     	<div class="container">
            	<div class="login">
 				<?php
-				include("$_SERVER[DOCUMENT_ROOT]/CoinCod/Login_Form/check_login.php");
+				include $_SERVER['DOCUMENT_ROOT'].$PATH.'Login_Form/check_login.php';
 				?>
             </div>  <!--end div login-->	
 	
 			<div id="search">
-				<form action="http://<?php echo $_SERVER['HTTP_HOST']; ?>/CoinCod/Search" enctype="multipart/form-data" name="searchForm" id="myForm" method="GET">
+				<form action="<?php echo $SITE;?>Search" enctype="multipart/form-data" name="searchForm" id="myForm" method="GET">
          			<input type="text" class="search_input" name="search" placeholder="Enter Search..." value="<?php echo isset($searchTerms)?htmlspecialchars($searchTerms):''; ?>" />
       			</form>
 			</div>  <!--end div search-->
                 
 			<div id="logo">
-				<a href="../../CoinCod"></a>
+				<a href="<?php echo $SITE;?>"></a>
 			</div>  <!--end div logo-->	
 		
 			<nav class="menu">
@@ -31,13 +50,13 @@
 					<tr>
 						<td>
 							<ul class="top_nav">
-								<li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/CoinCod">Home</a>
+								<li><a href="<?php echo $SITE;?>">Home</a>
                                 </li>
 								<li>
-									<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/CoinCod/How_It_Works">How It Works</a>
+									<a href="<?php echo $SITE;?>How_It_Works">How It Works</a>
 								</li>
 								<li>
-									<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/CoinCod/Buy_Tokens">Buy Tokens</a>
+									<a href="<?php echo $SITE;?>Buy_Tokens">Buy Tokens</a>
 								</li>
 								<!--<li>
 									<a href="Winners">Winners</a>			
