@@ -1,12 +1,13 @@
 <?php
-	error_reporting(E_ALL ^ E_NOTICE);
 	session_start();
 	include "server.php";
+	include "path.php";
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="text/html; charset=utf-8" />
+	<meta content="charset=utf-8" />
 	<title>CoinCod</title>
 	<link href="template/style.css" rel="stylesheet" type="text/css" />
 
@@ -74,7 +75,7 @@ function LeadingZero(Time) {
 							$get=mysql_fetch_array($user);
 							$token=$get["Token"];
 							$gravatar_image=$get["Email"];
-							$default = "http://auction12345.site50.net/template/template_image/favicon.ico";
+							$default = "http://www.coincod.com/template/template_image/favicon.ico";
 							$size = 40;
 
 							$grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $gravatar_image ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;
