@@ -2,10 +2,10 @@
 	session_start();
 	  include "../server.php";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>Feedback</title>
 	<link href="../template/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../validation/css/validation.css" type="text/css" />
@@ -17,9 +17,9 @@
 		<?php
 	  		include "../template/templateheader.php";
 		?>
-	<div id="content_container">
+	<section id="content_container">
 		<h1><img src="../template/template_image/header/feedback.png"></h1>
-    	<div class="auction_container">	
+    	<section class="auction_container">	
 		<div id="feedback">
 		<ul>
 			<div class="column_first">
@@ -58,7 +58,7 @@
 
 <ul>
 
-<div class="column_last">
+<section class="column_last">
       <h3>Why is your feedback crucial to CoinCod?</h3>
       <ul class="checklist">
         <li>We will able to challenge the status quo together by having a mutual understanding of each other.</li>
@@ -75,11 +75,11 @@
 
       <img alt="fisheart" class="fisheart" src="../template/template_image/fisheart.png">
 
-</div>
+</section>
 </ul>
 	</div>
-		</div>
-	</div>
+		</section>
+	</section>
 		
 </div>
 		<?php
