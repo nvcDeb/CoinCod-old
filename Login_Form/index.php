@@ -37,7 +37,7 @@ if(($user_login != 1) && ($valid_userlogin == 1))
 		}
 		else
 		{
-			header("location:.././"); 
+			header("location:./"); 
 			exit();
 		}
     } 
