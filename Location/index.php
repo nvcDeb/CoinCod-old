@@ -4,7 +4,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8" />
 <title>Location</title>
 </head>
 
@@ -21,10 +21,12 @@ session_start();
 			<address><ul>
 			<li>Address: </li>
 			<li>NexVend Sdn Bhd </li>
-			<li>No.70, Jalan 4, </li> 
-			<li>Taman Dato Senu, </li>
-			<li>Sentul, </li>
-			<li>51000 Kuala Lumpur. </li>
+			<li>Unit No. 2.17, 2nd Floor, </li> 
+			<li>Lobby No. 5, Block A, </li>
+			<li>Damansara Intan, No. 1, </li>
+			<li>Jalan SS 20/27, </li>
+			<li>47400 Petaling Jaya,</li>
+			<li>Selangor Darul Ehsan, Malaysia</li>
 			</ul>
 			</address>
 		        
