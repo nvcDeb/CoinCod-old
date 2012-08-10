@@ -1,12 +1,11 @@
 <?php
 	session_start();
 	include "server.php";
-	include "path.php";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<meta content="charset=utf-8" />
 	<title>CoinCod</title>
 	<link href="template/style.css" rel="stylesheet" type="text/css" />
