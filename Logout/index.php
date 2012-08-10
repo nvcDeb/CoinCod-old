@@ -14,7 +14,7 @@
 		session_start();
 		session_destroy();
 		unset( $_SESSION );
-		include"../server.php";
+		include"../config.php";
 		include "../template/templateheader.php";
 	?>
 		<section id="content_container">

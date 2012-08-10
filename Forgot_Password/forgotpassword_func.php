@@ -10,7 +10,7 @@
     <section id="content_container">
 		<section class="auction_container">
 		<?php
-			include "../server.php";
+			include "../config.php";
 			$emails = stripslashes($_POST['emails']);
 
 			$password_check = mysql_query("SELECT * FROM user_account WHERE Email='$emails'");

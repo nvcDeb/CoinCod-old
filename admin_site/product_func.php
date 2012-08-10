@@ -17,7 +17,7 @@ session_start();
 		<section class="auction_container">
 	<?php  
 	// connect to your MySQL database here 
-	include "../server.php"; 
+	include "../config.php"; 
 
 	$brand = mysql_real_escape_string($_POST['brand']);
 	$model = mysql_real_escape_string($_POST['model']);
