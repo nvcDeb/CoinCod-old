@@ -21,9 +21,9 @@
 			<section class="auction_container">
 			
 		  <div class="registration">
-				<div class="smallfont">
+				<article class="smallfont">
                     All Fields are required to be filled.
-				</div>
+				</article>
         	<form action="register_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
         		<fieldset>
 					<legend>ID and Password</legend>
