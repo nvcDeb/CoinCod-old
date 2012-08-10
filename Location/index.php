@@ -20,7 +20,7 @@ session_start();
 			
 			<address><ul>
 			<li>Address: </li>
-			<li>NexVend, </li>
+			<li>NexVend Sdn Bhd </li>
 			<li>No.70, Jalan 4, </li> 
 			<li>Taman Dato Senu, </li>
 			<li>Sentul, </li>
