@@ -2,10 +2,10 @@
 	session_start();
 	include "../server.php";
 ?>
-<!DOCTYPE html">
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset=utf-8" />
+<meta charset="utf-8" />
 <link href="../style.css" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript">  
@@ -76,8 +76,8 @@ function LeadingZero(Time) {
 		
 	?>
     <title><?php echo $product_brand; echo $product_model; ?></title>
-    <div id="content_container">
-	<div class="auction_container">
+    <section id="content_container">
+	<section class="auction_container">
 	<div id="product">
 		<div class="name">
 				<?php echo $product_brand;	echo " ";	echo $product_model;	?> 
@@ -206,8 +206,8 @@ function LeadingZero(Time) {
           </table>
 	  </div>
     	
-  </div>
-	</div>
+  </section>
+	</section>
 	</div><!--wrapper-->
 	<?php
 		include "../template/templatefooter.html";

@@ -2,10 +2,10 @@
 	session_start();
 	include "../server.php";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>Registration</title>
     <link rel="stylesheet" href="../validation/css/validation.css" type="text/css" />
   	<script type="text/javascript" src="../validation/livevalidation_standalone.compressed.js"></script>
@@ -16,14 +16,14 @@
 		<?php
 	  		include "../template/templateheader.php";
 		?>
-		<div id="content_container">
+		<section id="content_container">
 			<h1><img src="../template/template_image/header/registration.png"></h1>
-			<div class="auction_container">
+			<section class="auction_container">
 			
 		  <div class="registration">
-				<div class="smallfont">
+				<article class="smallfont">
                     All Fields are required to be filled.
-				</div>
+				</article>
         	<form action="register_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
         		<fieldset>
 					<legend>ID and Password</legend>
@@ -364,8 +364,8 @@
 				</fieldset>
                 </form>
 		</div> <!--end div registration-->
-	  </div>  <!--end div auction container-->
-	</div>  <!--end div content_container-->
+	  </section>  <!--end div auction container-->
+	</section>  <!--end div content_container-->
 </div>  <!--end div wrapper-->
 <?php
 	include "../template/templatefooter.html";

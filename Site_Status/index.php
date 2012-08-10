@@ -2,10 +2,10 @@
 	session_start();
 	include "../server.php";
 ?>
-<!DOCTYPE html">
-<html">
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset=utf-8" />
+<meta charset="utf-8" />
 <title>Site Status</title>
 </head>
 
@@ -14,9 +14,9 @@
     <?php
 		include "../template/templateheader.php";
 	?>
-   <div id="content_container">
+   <section id="content_container">
 		<h1><img src="../template/template_image/header/site_status.png"></h1>
-		<div class="auction_container">
+		<section class="auction_container">
 		
 			<div class="status_box">
 				<div class="status_left"><div class="left">How is CoinCod doing today?
@@ -35,8 +35,8 @@
 				</div>
 			</div>
         <h1><img src="../template/template_image/bottom/site_status.png"></h1>
-		</div>
-	</div>
+		</section>
+	</section>
 </div><!--wrapper-->
 	<?php
 		include "../template/templatefooter.html";
