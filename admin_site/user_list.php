@@ -11,7 +11,7 @@
 <body>
 <div id="wrapper">
     <?php
-		include "../server.php";
+		include "../config.php";
 		include "../template/templateheader.php";
 	?>
     <section id="content_container">

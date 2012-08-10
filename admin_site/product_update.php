@@ -20,7 +20,7 @@
     <section div class="auction_container">
 	<?php  
 	// connect to your MySQL database here 
-	include "../server.php"; 
+	include "../config.php"; 
 	session_start();
 	// Set some values to go into the table fields for this person(record) 
 	$pid = mysql_real_escape_string($_POST['pid']);

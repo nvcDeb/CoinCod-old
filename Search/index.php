@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	include "../server.php";
+	include "../config.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,9 +40,7 @@ function LeadingZero(Time) {
 	?>
      <section id="content_container">
 		<section class="site_body">
-		<?php
-			include "../server.php";
-			
+		<?php			
 			if (isset($_GET['search'])) 
 			{
 				$search_terms = trim($_GET['search']);
