@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../server.php';
+include '../config.php';
 
 $email = stripslashes($_POST['email']);
 $email = strip_tags($email);

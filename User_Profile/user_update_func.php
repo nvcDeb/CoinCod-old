@@ -13,7 +13,7 @@
 		<div class="auction_container">
 	<?php  
 	// connect to your MySQL database here 
-	include "../server.php"; 
+	include "../config.php"; 
 	// Set some values to go into the table fields for this person(record) 
 	$userid = mysql_real_escape_string($_POST['userid']);
 	$newusername = mysql_real_escape_string($_POST['username']);

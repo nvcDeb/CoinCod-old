@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	include "server.php";
+	include "config.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -65,7 +65,6 @@ function LeadingZero(Time) {
 						{ 
 							$_SESSION['start_reset'] = time();
 							$_SESSION['expire'] = $_SESSION['start_reset'] + (30 * 60) ;
-							include "server.php";
 							$userid = $_SESSION['user_id'];
 							$username = $_SESSION['user_username'];
 							
