@@ -11,8 +11,7 @@
     	<div class="container">
            	<div class="login">
 				<?php
-
-				include(include "/Login_Form/check_login.php");
+				include "/Login_Form/check_login.php";
 				?>
             </div>  <!--end div login-->	
 	

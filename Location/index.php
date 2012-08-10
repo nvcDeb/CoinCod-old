@@ -20,11 +20,13 @@ session_start();
 			
 			<address><ul>
 			<li>Address: </li>
-			<li>NexVend, </li>
-			<li>No.70, Jalan 4, </li> 
-			<li>Taman Dato Senu, </li>
-			<li>Sentul, </li>
-			<li>51000 Kuala Lumpur. </li>
+			<li>NexVend Sdn Bhd </li>
+			<li>Unit No. 2.17, 2nd Floor, </li> 
+			<li>Lobby No. 5, Block A, </li>
+			<li>Damansara Intan, No. 1, </li>
+			<li>Jalan SS 20/27, </li>
+			<li>47400 Petaling Jaya,</li>
+			<li>Selangor Darul Ehsan, Malaysia</li>
 			</ul>
 			</address>
 		        
