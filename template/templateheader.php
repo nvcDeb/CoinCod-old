@@ -22,7 +22,7 @@
 			</div>  <!--end div search-->
                 
 			<div id="logo">
-				<a href="./"></a>
+				<a href="/"></a>
 			</div>  <!--end div logo-->	
 		
 			<nav class="menu">

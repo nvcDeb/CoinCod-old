@@ -70,6 +70,8 @@
 		$from = "wilson@nexvend.com";
 		$subject = "Complete your registration";
 		$message = '<html>
+					<body>
+					<article>
 					Dear ' . $username . ',
 					<br /><br />
 					Congratulations for the successful registeration with CoinCod.  
@@ -89,6 +91,7 @@
 					<br /><br /> 
 					Best Regards,
 					CoinCod Management Team
+					</article>
 					</body>
 					</html>';
 			// end of message
