@@ -11,7 +11,7 @@
 <body>
 <div id="wrapper">
     <?php
-		include"../server.php";
+		include"../config.php";
 		include "../template/templateheader.php";
 		$userid = $_SESSION['user_id'];
 		$user_info=mysql_query("SELECT * FROM user_account WHERE user_id = '$userid'");

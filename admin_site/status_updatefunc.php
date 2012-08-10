@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	include "../server.php";
+	include "../config.php";
 	if(isset($_POST['status']))
 	{
 		$status=$_POST['status'];

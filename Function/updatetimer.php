@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "../server.php";
+include "../config.php";
 if((isset($_POST['pid'])) && (isset($_POST['uid'])))
 {
 	$pid=$_POST['pid'];
