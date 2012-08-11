@@ -15,7 +15,7 @@
 		include "../template/templateheader.php";
 	?>
    <section id="content_container">
-		<h1><img src="../template/template_image/header/site_status.png"></h1>
+		<h1><img src="<?php echo $PREFIX; ?>/template/template_image/header/site_status.png"></h1>
 		<section class="auction_container">
 		
 			<div class="status_box">
@@ -34,7 +34,7 @@
 				</div>
 				</div>
 			</div>
-        <h1><img src="../template/template_image/bottom/site_status.png"></h1>
+        <h1><img src="<?php echo $PREFIX; ?>/template/template_image/bottom/site_status.png"></h1>
 		</section>
 	</section>
 </div><!--wrapper-->

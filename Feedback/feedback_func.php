@@ -16,7 +16,6 @@
     <div id="content_container">
 		<div class="auction_container">
 	<?php
-include "../server.php";
 
 $emails = mysql_real_escape_string($_POST['emails']);
 $names = mysql_real_escape_string($_POST['names']);

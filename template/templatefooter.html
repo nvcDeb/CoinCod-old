@@ -1,10 +1,13 @@
+<?php
+	include "../config.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
-<link href="../template/style.css" rel="stylesheet" type="text/css"  />
+<link href="<?php echo $PREFIX; ?>/template/style.css" rel="stylesheet" type="text/css"  />
 <!--[if lt IE 10]>
-	<link href="../template/style_ie.css" rel="stylesheet" type="text/css"  />
+	<link href="<?php echo $PREFIX; ?>/template/style_ie.css" rel="stylesheet" type="text/css"  />
 	<![endif]-->
 </head>
 
@@ -17,29 +20,29 @@
                 <ul class="footer_nav">
                 	<h4>Coincod</h4>
                 	<li>
-                		<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/About_Us">About Us</a>
+                		<a href="<?php echo $PREFIX; ?>/About_Us">About Us</a>
                 	</li>
                 	<li>
-                		<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/FAQ">FAQ</a>
+                		<a href="<?php echo $PREFIX; ?>/FAQ">FAQ</a>
                 	</li>
                 	<li>
-                		<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/Career">Careers</a>
+                		<a href="<?php echo $PREFIX; ?>/Career">Careers</a>
                 	</li>
                 	<li>
-                		<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/Feedback">Feedback</a>
+                		<a href="<?php echo $PREFIX; ?>/Feedback">Feedback</a>
                 	</li>
                 </ul>
                 
                 <ul class="footer_nav">
                 	<h4>Other Features</h4>
                 	<li>
-                		<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/Location">Location</a>
+                		<a href="<?php echo $PREFIX; ?>/Location">Location</a>
                 	</li>
                 	<li>
-                	<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/Graphics">Graphics</a>
+						<a href="<?php echo $PREFIX; ?>/Graphics">Graphics</a>
                 	</li>
                 	<li>
-                		<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/Site_Status">Site Status</a>
+                		<a href="<?php echo $PREFIX; ?>/Site_Status">Site Status</a>
                 	</li>
                 </ul> 
                 
@@ -65,13 +68,13 @@
                 <ul class="footer_nav">
                 	<h4>Legal</h4>
                 	<li>
-                		<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/Terms">Terms of Service</a>
+                		<a href="<?php echo $PREFIX; ?>/Terms">Terms of Service</a>
                 	</li>
                 	<li>
-                		<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/Privacy">Privacy</a>
+                		<a href="<?php echo $PREFIX; ?>/Privacy">Privacy</a>
                 	</li>
                 	<li>
-                		<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/Security">Security</a>
+                		<a href="<?php echo $PREFIX; ?>/Security">Security</a>
                 	</li>
                 </ul>
 			</div> <!--end div ul-->
@@ -84,11 +87,11 @@
 	<div id="lower_footer_wrap">
 		<div class="container">
 			<div class="logo_image">
-				<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/template/template_image/logo2.png" width="80px" border="0"></a>
+				<a href="<?php echo $PREFIX; ?>"><img src="<?php echo $PREFIX; ?>/template/template_image/logo2.png" width="80px" border="0"></a>
 			</div>  <!--end div logo_image-->
 								
 	 		<div class="payment_image">
-	 			<p/><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/template/template_image/payment.png" width="700" border="0"></a>
+	 			<p/><img src="<?php echo $PREFIX; ?>/template/template_image/payment.png" width="700" border="0"></a>
 	 		</div>  <!--end div payment_image-->
 	 
      		<div class="copyright">

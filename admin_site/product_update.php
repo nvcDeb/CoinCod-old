@@ -1,14 +1,15 @@
 <?php
 	session_start();
+	include "../config.php";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8" />
 	<title>Result Update</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="validation/css/validation.css" type="text/css" />
-  	<script type="text/javascript" src="validation/livevalidation_standalone.compressed.js"></script>
+	<link href="<?php echo $PREFIX; ?>/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="<?php echo $PREFIX; ?>/validation/css/validation.css" type="text/css" />
+  	<script type="text/javascript" src="<?php echo $PREFIX; ?>/validation/livevalidation_standalone.compressed.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -20,7 +21,6 @@
     <section div class="auction_container">
 	<?php  
 	// connect to your MySQL database here 
-	include "../config.php"; 
 	session_start();
 	// Set some values to go into the table fields for this person(record) 
 	$pid = mysql_real_escape_string($_POST['pid']);
@@ -50,7 +50,7 @@
   </section><!--end div content_container-->
 </div><!--end div wrapper-->
 	<?php
-		include "templatefooter.html";
+		include "../templatefooter.html";
 	?>
 	
 	</body>

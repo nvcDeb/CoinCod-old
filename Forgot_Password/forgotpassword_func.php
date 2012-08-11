@@ -1,6 +1,8 @@
+<?php
+	include "../config.php";
+?>
 <!DOCTYPE html>
 <html>
-
 <body>
 <title>Forgot Password</title>
 <div id="wrapper">
@@ -10,7 +12,6 @@
     <section id="content_container">
 		<section class="auction_container">
 		<?php
-			include "../config.php";
 			$emails = stripslashes($_POST['emails']);
 
 			$password_check = mysql_query("SELECT * FROM user_account WHERE Email='$emails'");

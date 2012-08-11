@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	include "../config.php;"
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,21 +12,19 @@
 <body>
 <div id="wrapper">
     <?php
-		include "../config.php";
 		include "../template/templateheader.php";
 	?>
     <section id="content_container">
     	<section div class="auction_container">
 		<section id="user_list">
 		
-        <?php
-			
+        <?php		
 			if($userid == 1)
 			{
-				echo '<div id="admin_menu"><a href="../User_Profile/user_profile.php?id=' . $userid . '">' . $username . '</a>  &ndash;
-        			<a href="../admin_site/product_form.php">Add Product</a>&ndash;
-					<a href="../admin_site/user_list.php">User Listing</a>&ndash;
-					<a href="../admin_site/sitestatus_updateform.php">Site Status</a></div>
+				echo '<div id="'.$PREFIX.'/admin_menu"><a href="'.$PREFIX.'/User_Profile/user_profile.php?id=' . $userid . '">' . $username . '</a>  &ndash;
+        			<a href="'.$PREFIX.'/admin_site/product_form.php">Add Product</a>&ndash;
+					<a href="'.$PREFIX.'/admin_site/user_list.php">User Listing</a>&ndash;
+					<a href="'.$PREFIX.'/admin_site/sitestatus_updateform.php">Site Status</a></div>
 					';
 					
 			}
@@ -34,7 +33,7 @@
 			$userLIST=mysql_num_rows($user_list);
     		if($userLIST>0)
 			{	 
-					echo '<h1><img src="../template/template_image/header/user_list.png" border="0"></h1><div class="title_bold"><table border="0">
+					echo '<h1><img src="'.$PREFIX.'/template/template_image/header/user_list.png" border="0"></h1><div class="title_bold"><table border="0">
 						  <tr width="100">
 						  <td width="100">User Id</td>
 						  <td width="100">Username</td>

@@ -7,11 +7,11 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Product</title>
-    <link rel="stylesheet" href="../validation/css/validation.css" type="text/css" />
-  	<script type="text/javascript" src="../validation/livevalidation_standalone.compressed.js"></script>
+    <link rel="stylesheet" href="<?php echo $PREFIX; ?>/validation/css/validation.css" type="text/css" />
+  	<script type="text/javascript" src="<?php echo $PREFIX; ?>/validation/livevalidation_standalone.compressed.js"></script>
 	
 <!-- TinyMCE -->
-<script type="text/javascript" src="../TinyMce/jscripts/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript" src="<?php echo $PREFIX; ?>/TinyMce/jscripts/tiny_mce/tiny_mce.js"></script>
 <script type="text/javascript">
 	tinyMCE.init({
 		// General options
@@ -62,17 +62,17 @@
      		<?php
             if($userid == 1)
 			{
-				echo '<div id="admin_menu"><a href="../User_Profile/user_profile.php?id=' . $userid . '">' . $username . '</a>  &ndash;
-        			<a href="../admin_site/product_form.php">Add Product</a>&ndash;
-					<a href="../admin_site/user_list.php">User Listing</a>&ndash;
-					<a href="../admin_site/sitestatus_updateform.php">Site Status</a></div>';
+				echo '<div id="'.$PREFIX.'/admin_menu"><a href="'.$PREFIX.'/User_Profile/user_profile.php?id=' . $userid . '">' . $username . '</a>  &ndash;
+        			<a href="'.$PREFIX.'/admin_site/product_form.php">Add Product</a>&ndash;
+					<a href="'.$PREFIX.'/admin_site/user_list.php">User Listing</a>&ndash;
+					<a href="'.$PREFIX.'/admin_site/sitestatus_updateform.php">Site Status</a></div>';
 			}
 			?>	
-				<h1><img src="../template/template_image/header/product_information.png" border="0"></h1>
+				<h1><img src="<?php echo $PREFIX; ?>/template/template_image/header/product_information.png" border="0"></h1>
 				<div class="smallfont">
                     All Fields are required to be filled.
 				</div>
-        	<form action="product_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+        	<form action="<?php echo $PREFIX; ?>/product_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
         		<fieldset width="700">
 					<legend><font size="5"><strong>Information</strong></legend>
 					<table width="650" cellpadding="0" cellspacing="10">
