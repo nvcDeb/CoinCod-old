@@ -1,12 +1,13 @@
 <?php
-session_start();
+	session_start();
+	include "../config.php";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8" />
 	<title>Product Result</title>
-	<link href="../template/style.css" rel="stylesheet" type="text/css" />
+	<link href="<?php echo $PREFIX; ?>/template/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="wrapper">
@@ -17,7 +18,6 @@ session_start();
 		<section class="auction_container">
 	<?php  
 	// connect to your MySQL database here 
-	include "../config.php"; 
 
 	$brand = mysql_real_escape_string($_POST['brand']);
 	$model = mysql_real_escape_string($_POST['model']);
@@ -45,7 +45,7 @@ session_start();
 		
 		//insert to product_images
 		$productname="$productid.jpg";
-		move_uploaded_file($_FILES["image"]["tmp_name"],"../Product/product_image/$productname");
+		move_uploaded_file($_FILES["image"]["tmp_name"],"'.$PREFIX.'/Product/product_image/$productname");
 	
 		if($productinsert == 1)
 		{

@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	include "../config.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,7 +12,6 @@
 <body>
 <div id="wrapper">
     <?php
-		include "../config.php";
 		include "../template/templateheader.php";
 	?>
     <section id="content_container">
@@ -19,14 +19,14 @@
 		<?php
         	if($userid == 1)
 			{
-				echo '<div id="admin_menu"><a href="../User_Profile/user_profile.php?id=' . $userid . '">' . $username . '</a>  &ndash;
-        			<a href="../admin_site/product_form.php">Add Product </a>&ndash;
-					<a href="../admin_site/user_list.php">User Listing</a>&ndash;
-					<a href="../admin_site/sitestatus_updateform.php">Site Status</a></div></br>';
+				echo '<div id="'.$PREFIX.'/admin_menu"><a href="'.$PREFIX.'/User_Profile/user_profile.php?id=' . $userid . '">' . $username . '</a>  &ndash;
+        			<a href="'.$PREFIX.'/admin_site/product_form.php">Add Product </a>&ndash;
+					<a href="'.$PREFIX.'/admin_site/user_list.php">User Listing</a>&ndash;
+					<a href="'.$PREFIX.'/admin_site/sitestatus_updateform.php">Site Status</a></div></br>';
 			}
 		?>
 		
-		<form action="status_updatefunc.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+		<form action="<?php echo $PREFIX; ?>/status_updatefunc.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 			<td>
 				<select id="status" name="status" size="1">
 					<option value="Well as usual running like charm.">Well as usual running like charm.</option>

@@ -1,12 +1,15 @@
+<?php
+	include "../config.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
-<meta content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 </head>
 
 <body>
 </br>
-	<form action="../Login_Form/" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+	<form action="<?php echo $PREFIX; ?>/Login_Form" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 	<table cellspacing="0">
 		<tbody>
 			<tr>
@@ -22,10 +25,10 @@
 			</tr>
 			<tr>
 				<td class="login_label_field">
-					<a href="<?php echo $SITE;?>Forgot_Password/">Forgot Password?</a>
+					<a href="<?php echo $PREFIX; ?>/Forgot_Password">Forgot Password?</a>
 				</td>
 				<td class="login_label_field">
-					<a href="<?php echo $SITE;?>Registration/">Sign Up</a>
+					<a href="<?php echo $PREFIX; ?>/Registration">Sign Up</a>
 				</td>
 			</tr>                   
 		</tbody>

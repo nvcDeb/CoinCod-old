@@ -7,13 +7,13 @@
 <head>
 	<meta charset="utf-8" />
 	<title>CoinCod</title>
-	<link href="template/style.css" rel="stylesheet" type="text/css" />
+	<link href="<?php echo $PREFIX; ?>/template/style.css" rel="stylesheet" type="text/css" />
 
 	<!--[if lte IE 9]>
-	<link href="template/style_ie.css" rel="stylesheet" type="text/css"  />
+	<link href="<?php echo $PREFIX; ?>/template/style_ie.css" rel="stylesheet" type="text/css"  />
 	<![endif]-->
 	
-    <link rel="shortcut icon" href="template/template_image/favicon.ico" />
+    <link rel="shortcut icon" href="<?php echo $PREFIX; ?>/template/template_image/favicon.ico" />
     
 <script type="text/javascript">  
   
@@ -57,7 +57,7 @@ function LeadingZero(Time) {
 						{
 							session_destroy();
 							echo "<script language='javascript'>";
-							echo "window.location='index.php';";
+							echo "window.location='$PREFIX/';";
 							echo "alert('Timeout!!!Please login to continue browsing the site');";
 							echo "</script>";
 						}
@@ -72,7 +72,7 @@ function LeadingZero(Time) {
 							$get=mysql_fetch_array($user);
 							$token=$get["Token"];
 							$gravatar_image=$get["Email"];
-							$default = "http://www.coincod.com/template/template_image/favicon.ico";
+							$default = "$PREFIX/template/template_image/favicon.ico";
 							$size = 40;
 
 							$grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $gravatar_image ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;
@@ -82,15 +82,15 @@ function LeadingZero(Time) {
 							<div id="after_log_in">
 							<div class="user_name">
 							<img src="'.$grav_url.'" alt="" />
-								<a href="User_Profile/?id=' . $userid . '">' . $username . '
+								<a href="'.$PREFIX.'/User_Profile/?id=' . $userid . '">' . $username . '
 								</a>
 							</div>
 							<div id="logout">
-								<a href="Logout">Log Out</a>
+								<a href="'.$PREFIX.'/Logout">Log Out</a>
 						
 							</div>
 							<div class="token_left">
-								<img src="template/template_image/header/token_left.png" border="0" width="30%"> '.$token.'
+								<img src="'.$PREFIX.'/template/template_image/header/token_left.png" border="0" width="30%"> '.$token.'
 							</div>
 							</div></div>';
 						}
@@ -98,7 +98,7 @@ function LeadingZero(Time) {
 					else 
 					{
 						echo '
-							<form action="Login_Form/" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+							<form action="'.$PREFIX.'/Login_Form" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 							<table cellspacing="0">
 							<tbody>
 								<tr>
@@ -114,10 +114,10 @@ function LeadingZero(Time) {
 								</tr>
 								<tr>
 									<td class="login_label_field">
-										<a href="Forgot_Password/">Forgot Password?</a>
+										<a href="'.$PREFIX.'/Forgot_Password">Forgot Password?</a>
 									</td>
 									<td class="login_label_field">
-										<a href="Registration/">Sign Up</a>
+										<a href="'.$PREFIX.'/Registration">Sign Up</a>
 									</td>
 								</tr>                   
 							</tbody>
@@ -128,14 +128,14 @@ function LeadingZero(Time) {
 				</div>	<!--end div login-->
 	
 				<div id="search"> 
-				<form action="Search" enctype="multipart/form-data" name="searchForm" id="myForm" method="GET">
+				<form action="<?php echo $PREFIX; ?>/Search" enctype="multipart/form-data" name="searchForm" id="myForm" method="GET">
          			<input type="text" class="search_input" name="search" placeholder="Enter Search..." value="<?php echo isset($searchTerms)?htmlspecialchars($searchTerms):''; ?>" />
       			</form>
 
 			</div>  <!--end div search-->
 
 				<div id="logo">
-					<a href="./"></a>
+					<a href="<?php echo $PREFIX; ?>"></a>
 				</div>  <!--end div logo-->
 	
 				<nav class="menu">
@@ -145,13 +145,13 @@ function LeadingZero(Time) {
 							<td>
 								<ul class="top_nav logged_out">
 									<li>
-										<a href="./">Home</a>
+										<a href="<?php echo $PREFIX; ?>">Home</a>
                                    	</li>
 									<li>
-										<a href="How_It_Works">How It Works</a>
+										<a href="<?php echo $PREFIX; ?>/How_It_Works">How It Works</a>
 									</li>
 									<li>
-										<a href="Buy_Tokens">Buy Tokens</a>
+										<a href="<?php echo $PREFIX; ?>/Buy_Tokens">Buy Tokens</a>
 									</li>
 									<!--<li>
 										<a href="header/winners">Winners</a>			
@@ -169,7 +169,7 @@ function LeadingZero(Time) {
   <div id="content_container">
     
 	<section id="banner_image">
-	<img src="template/template_image/banner.png" width="1015px" border="0">
+	<img src="<?php echo $PREFIX; ?>/template/template_image/banner.png" width="1015px" border="0">
 	</section>
 	
 		<section class="site_body">
@@ -223,16 +223,16 @@ function LeadingZero(Time) {
 											<ul id="auction_list_ul" class="auction_box">
 												<li>
 													<div class="title">
-														<form id="myForm" name="postlink" action="Product/product_description.php" method="post">
+														<form id="myForm" name="postlink" action="'.$PREFIX.'/Product/product_description.php" method="post">
 															<input type="hidden" name="pid" value='.$productID.' />
 															<input name="link"  class="button_title" type="submit" value="'.$Brand.' '.$Model.'" />	
 														</form>
 													</div>
 									
 													<div class="image">				  
-														<form id="myForm" name="postlink" action="Product/product_description.php" method="post">
+														<form id="myForm" name="postlink" action="'.$PREFIX.'/Product/product_description.php" method="post">
 															<input type="hidden" name="pid" value='.$productID.' />
-															<input type="image" src="Product/product_image/'.$productID.'.jpg" width="210" height="150" input name="link"  type="submit" value="'.$Brand.' '.$Model.'" />				  	
+															<input type="image" src="'.$PREFIX.'/Product/product_image/'.$productID.'.jpg" width="210" height="150" input name="link"  type="submit" value="'.$Brand.' '.$Model.'" />				  	
 														</form>                	
 													</div>
 									
@@ -248,7 +248,7 @@ function LeadingZero(Time) {
 										
 												if(!isset($_SESSION['user_id']))
 												{
-													echo '<form action="loginpage/" method="post">
+													echo '<form action="'.$PREFIX.'/loginpage" method="post">
 														  <div class="bid_button">
 														  <input name="login"  class="button" type="submit" value="LOGIN" />
 														  </div></form>';
@@ -256,7 +256,7 @@ function LeadingZero(Time) {
 												else {
 												if($userid == 1 && $auctiontime >0)
 												{
-													echo '<form action="admin_site/product_info.php" method="post">
+													echo '<form action="'.$PREFIX.'/admin_site/product_info.php" method="post">
 														  <input type="hidden" name="uid" value='.$userid.' />
 														  <input type="hidden" name="pid" value='.$productID.' />
 														  <div class="bid_button">
@@ -265,7 +265,7 @@ function LeadingZero(Time) {
 												}
 												else if($userid == 1 && $auctiontime <0)
 												{
-													echo '<form action="admin_site/product_info.php" method="post">
+													echo '<form action="'.$PREFIX.'/admin_site/product_info.php" method="post">
 														  <input type="hidden" name="uid" value='.$userid.' />
 														  <input type="hidden" name="pid" value='.$productID.' />
 														  <div class="bid_button">
@@ -276,7 +276,7 @@ function LeadingZero(Time) {
 											
 												else if($userid > 0 && $auctiontime >0)
 												{
-													echo '<form action="Function/updatetimer.php" method="post">
+													echo '<form action="'.$PREFIX.'/Function/updatetimer.php" method="post">
 														  <input type="hidden" name="uid" value='.$userid.' />
 														  <input type="hidden" name="pid" value='.$productID.' />
 														  <div class="bid_button">
@@ -292,7 +292,7 @@ function LeadingZero(Time) {
 										}
 										echo'
 													<div id="read_more">						
-														<form id="myForm" name="postlink" action="Product/product_description.php" method="post">
+														<form id="myForm" name="postlink" action="'.$PREFIX.'/Product/product_description.php" method="post">
 															<input type="hidden" name="pid" value='.$productID.' />
 															<input name="link"  class="read_more" type="submit" value="Read More..." />	
 														</form>
@@ -326,28 +326,28 @@ function LeadingZero(Time) {
             	<ul class="footer_nav">
                 	<h4>Coincod</h4>
                 	<li>
-                		<a href="About_Us">About Us</a>
+                		<a href="<?php echo $PREFIX; ?>/About_Us">About Us</a>
                 	</li>
                 	<li>
-                		<a href="FAQ">FAQ</a>
+                		<a href="<?php echo $PREFIX; ?>/FAQ">FAQ</a>
                 	</li>
                 	<li>
-                		<a href="Career">Careers</a>
+                		<a href="<?php echo $PREFIX; ?>/Career">Careers</a>
                 	</li>
                 	<li>
-                		<a href="Feedback">Feedback</a>
+                		<a href="<?php echo $PREFIX; ?>/Feedback">Feedback</a>
                 	</li>
                 </ul>
                 <ul class="footer_nav">
                 	<h4>Other Features</h4>
                 	<li>
-                		<a href="Location">Location</a>
+                		<a href="<?php echo $PREFIX; ?>/Location">Location</a>
                 	</li>
                 	<li>
-                		<a href="Graphics">Graphics</a>
+                		<a href="<?php echo $PREFIX; ?>/Graphics">Graphics</a>
                 	</li>
                 	<li>
-                		<a href="Site_Status">Site Status</a>
+                		<a href="<?php echo $PREFIX; ?>/Site_Status">Site Status</a>
                 	</li>
                 </ul> 
                 <ul class="footer_nav">
@@ -371,13 +371,13 @@ function LeadingZero(Time) {
                 <ul class="footer_nav">
                 	<h4>Legal</h4>
                 	<li>
-                		<a href="Terms">Terms of Service</a>
+                		<a href="<?php echo $PREFIX; ?>/Terms">Terms of Service</a>
                 	</li>
                 	<li>
-                		<a href="Privacy">Privacy</a>
+                		<a href="<?php echo $PREFIX; ?>/Privacy">Privacy</a>
                 	</li>
                 	<li>
-                		<a href="Security">Security</a>
+                		<a href="<?php echo $PREFIX; ?>/Security">Security</a>
                 	</li>
                 </ul>
 			</div>  <!--endl div class ul-->
@@ -388,10 +388,10 @@ function LeadingZero(Time) {
      <div id="lower_footer_wrap">
 	 	<div class="container">
 			<div class="logo_image">
-				<a href="./"><img src="template/template_image/logo2.png" width="80px" border="0"></a>
+				<a href="<?php echo $PREFIX; ?>"><img src="<?php echo $PREFIX; ?>/template/template_image/logo2.png" width="80px" border="0"></a>
 			</div>  <!--end div logo_image-->	
 	 		<div class="payment_image">
-	 			<p/><a href="#"><img src="template/template_image/payment.png" width="700" border="0"></a>
+	 			<p/><a href="#"><img src="<?php echo $PREFIX; ?>/template/template_image/payment.png" width="700" border="0"></a>
 	 		</div>  <!--end div payment_image-->
 	 		<div class="copyright">
 	 			<p>Copyright &copy; 2012 NexVend. All rights reserved.</p>

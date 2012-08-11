@@ -7,8 +7,8 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Registration</title>
-    <link rel="stylesheet" href="../validation/css/validation.css" type="text/css" />
-  	<script type="text/javascript" src="../validation/livevalidation_standalone.compressed.js"></script>
+    <link rel="stylesheet" href="<?php echo $PREFIX; ?>/validation/css/validation.css" type="text/css" />
+  	<script type="text/javascript" src="<?php echo $PREFIX; ?>/validation/livevalidation_standalone.compressed.js"></script>
 </head>
 
 <body>
@@ -17,14 +17,14 @@
 	  		include "../template/templateheader.php";
 		?>
 		<section id="content_container">
-			<h1><img src="../template/template_image/header/registration.png"></h1>
+			<h1><img src="<?php echo $PREFIX; ?>/template/template_image/header/registration.png"></h1>
 			<section class="auction_container">
 			
 		  <div class="registration">
 				<article class="smallfont">
                     All Fields are required to be filled.
 				</article>
-        	<form action="register_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+        	<form action="<?php echo $PREFIX; ?>/Registration/register_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
         		<fieldset>
 					<legend>ID and Password</legend>
 					<table>
