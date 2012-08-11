@@ -1,18 +1,18 @@
 <?php
 	session_start();
-	 include "../config.php";
+	include "../config.php";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8" />
 	<title>Product</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="validation/css/validation.css" type="text/css" />
-  	<script type="text/javascript" src="validation/livevalidation_standalone.compressed.js"></script>
+	<link href="<?php echo $PREFIX; ?>/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="<?php echo $PREFIX; ?>/validation/css/validation.css" type="text/css" />
+  	<script type="text/javascript" src="<?php echo $PREFIX; ?>/validation/livevalidation_standalone.compressed.js"></script>
 	
 	<!-- TinyMCE -->
-<script type="text/javascript" src="../TinyMce/jscripts/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript" src="<?php echo $PREFIX; ?>/TinyMce/jscripts/tiny_mce/tiny_mce.js"></script>
 <script type="text/javascript">
 	tinyMCE.init({
 		// General options
@@ -69,12 +69,12 @@
 		?>
 		<section id="content_container">
 			<section class="auction_container">
-			<h1><img src="../template/template_image/header/product_information.png" border="0"></h1>
+			<h1><img src=".<?php echo $PREFIX; ?>/template/template_image/header/product_information.png" border="0"></h1>
 			<article class="smallfont">
            All Fields are required to be filled.
 			</article>
         	
-					<form action="../admin_site/product_update.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+					<form action="<?php echo $PREFIX; ?>/admin_site/product_update.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
         			<fieldset width="700">
 					<legend><font size="5"><strong>Information</strong></legend>
 					<table width="650" cellpadding="0" cellspacing="10">

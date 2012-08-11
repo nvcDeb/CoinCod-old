@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset=utf-8 />
+<meta charset="utf-8" />
 </head>
 <body>
 <div id="wrapper">
@@ -54,7 +54,7 @@
 			$newpasswords = md5($newpassword); //MD5 encryption.	
 			$sqlCommand = "UPDATE user_account SET Username='$newusername', Password='$newpassword', hash_password='$newpasswords', first_name='$newfirstname', last_name='$newlastname', Gender='$newgender', Address1='$newadd1', Address2='$newadd2', City='$newcity', Zip='$newzip', State='$newstate', Mobile='$newmobile' WHERE user_id='$userid'";
 			$query = mysql_query($sqlCommand) or die (mysql_error()); 		
-			header("Location: ../User_Profile/user_profile.php");
+			header("Location: $PREFIX/User_Profile/user_profile.php");
 				
 			}
 			else

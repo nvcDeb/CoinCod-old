@@ -1,15 +1,15 @@
 <?php
 	session_start();
-	  include "../config.php";
+	include "../config.php";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8" />
 	<title>Feedback</title>
-	<link href="../template/style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="../validation/css/validation.css" type="text/css" />
-  	<script type="text/javascript" src="../validation/livevalidation_standalone.compressed.js"></script>
+	<link href="<?php echo $PREFIX; ?>/template/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="<?php echo $PREFIX; ?>/validation/css/validation.css" type="text/css" />
+  	<script type="text/javascript" src="<?php echo $PREFIX; ?>/validation/livevalidation_standalone.compressed.js"></script>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
 	  		include "../template/templateheader.php";
 		?>
 	<section id="content_container">
-		<h1><img src="../template/template_image/header/feedback.png"></h1>
+		<h1><img src="<?php echo $PREFIX; ?>/template/template_image/header/feedback.png"></h1>
     	<section class="auction_container">	
 		<div id="feedback">
 		<ul>
@@ -73,7 +73,7 @@
 
       If you have any special request <strong>just shoot CoinCod an email</strong>, we are always available.
 
-      <img alt="fisheart" class="fisheart" src="../template/template_image/fisheart.png">
+      <img alt="fisheart" class="fisheart" src="<?php echo $PREFIX; ?>/template/template_image/fisheart.png">
 
 </section>
 </ul>

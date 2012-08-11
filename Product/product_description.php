@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo $PREFIX; ?>/style.css" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript">  
   
@@ -87,7 +87,7 @@ function LeadingZero(Time) {
 		<div id="description">
 		  <table width="900" border="0">
             <tr>
-              <td width="412"><div class="product_image"> <?php echo'<img alt="" src="../Product/product_image/'.$productId.'.jpg" width="390" height="275" border="0"/>'; ?>
+              <td width="412"><div class="product_image"> <?php echo'<img alt="" src="'.$PREFIX.'/Product/product_image/'.$productId.'.jpg" width="390" height="275" border="0"/>'; ?>
 			  </div></td>
               <td width="100">&nbsp;</td>
               <td width="432" rowspan="3">
@@ -135,7 +135,7 @@ function LeadingZero(Time) {
 				<?php
 				if(!isset($_SESSION['user_id']))
 				{
-					echo '<form action="../loginpage/" method="post">
+					echo '<form action="'.$PREFIX.'/loginpage" method="post">
 				  		  <div class="bid_button">
 				   		  <input name="login"  class="button" type="submit" value="LOGIN" />
 				   		  </div></form>';
@@ -143,7 +143,7 @@ function LeadingZero(Time) {
 				else {
                if($userid == 1 && $product_time >0)
 				{
-					echo '<form action="../admin_site/product_info.php" method="post">
+					echo '<form action="'.$PREFIX.'/admin_site/product_info.php" method="post">
 				  		  <input type="hidden" name="uid" value='.$userid.' />
 				  		  <input type="hidden" name="pid" value='.$productId.' />
 				  		  <div class="bid_button">
@@ -152,7 +152,7 @@ function LeadingZero(Time) {
 				}
 				else if($userid == 1 && $product_time <0)
 				{
-					echo '<form action="../admin_site/product_info.php" method="post">
+					echo '<form action="'.$PREFIX.'/admin_site/product_info.php" method="post">
 				  		  <input type="hidden" name="uid" value='.$userid.' />
 				  		  <input type="hidden" name="pid" value='.$productId.' />
 				  		  <div class="bid_button">
@@ -163,7 +163,7 @@ function LeadingZero(Time) {
 				
 				else if($userid > 0 && $product_time >0)
 				{
-					echo '<form action="../Function/updatetimer.php" method="post">
+					echo '<form action="'.$PREFIX.'/Function/updatetimer.php" method="post">
 				 		  <input type="hidden" name="uid" value='.$userid.' />
 				  		  <input type="hidden" name="pid" value='.$productId.' />
 				  		  <div class="bid_button">

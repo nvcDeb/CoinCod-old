@@ -1,13 +1,14 @@
 <?php
 	ob_start();
+	include "../config.php";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Forgot Password</title>
   	<meta charset="utf-8" />
-  	<link rel="stylesheet" href="../validation/css/validation.css" type="text/css" />
-  	<script type="text/javascript" src="../validation/livevalidation_standalone.compressed.js"></script>
+  	<link rel="stylesheet" href="<?php echo $PREFIX; ?>/validation/css/validation.css" type="text/css" />
+  	<script type="text/javascript" src="<?php echo $PREFIX; ?>/validation/livevalidation_standalone.compressed.js"></script>
     
 </head>
 <body>
@@ -16,9 +17,9 @@
 		include "../template/templateheader.php";
 	?>
 	<section id="content_container">
-	<h1><img src="../template/template_image/header/identify_your_account.png"></h1>
+	<h1><img src="<?php echo $PREFIX; ?>/template/template_image/header/identify_your_account.png"></h1>
 		<section class="auction_container">
-		<form action="forgotpassword_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+		<form action="<?php echo $PREFIX; ?>/Forgot_Password/forgotpassword_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 	
 			<section class="forgot">
 			<table>
