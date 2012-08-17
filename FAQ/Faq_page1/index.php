@@ -1,10 +1,11 @@
 <?php
 	session_start();
+	include "../../config.php";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="../../template/style.css" rel="stylesheet" type="text/css"  />
+	<link href="<?php echo $PREFIX; ?>/template/style.css" rel="stylesheet" type="text/css"  />
 	<meta charset="utf-8" />
 	<title>FAQ</title>
 </head>
@@ -15,7 +16,7 @@
 			include '../../template/templateheader.php';
 	?>
      <section id="content_container">
-		<h1><a href="index.php"><img src="../../template/template_image/header/faq.png" ></a></h1>
+		<h1><a href="index.php"><img src="<?php echo $PREFIX; ?>/template/template_image/header/faq.png" ></a></h1>
 		
     	<article class="auction_container">
 		
@@ -39,7 +40,7 @@
 
 		</ol>
 		</section>  <!--end div faq-->  
-			<h1><img src="../../template/template_image/bottom/faq.png"></h1>
+			<h1><img src="<?php echo $PREFIX; ?>/template/template_image/bottom/faq.png"></h1>
 	  	</article>  <!--end div auction_container-->
 	</section>  <!--end div content_container-->
 </div>  <!--wrapper-->

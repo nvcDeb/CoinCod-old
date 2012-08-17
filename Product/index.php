@@ -1,11 +1,11 @@
 <?php
 	session_start();
-	include "../server.php";
+	include "../config.php";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset=utf-8" />
+	<meta charset="utf-8" />
     
 <script type="text/javascript">  
   
@@ -89,14 +89,14 @@ function LeadingZero(Time) {
 			
 						<ul class="auction_box">
         		  			<li>
-				  					<form id="myForm" name="postlink" action="../Product/product_description.php" method="post">
+				  					<form id="myForm" name="postlink" action="'.$PREFIX.'/Product/product_description.php" method="post">
 				  	  					<input type="hidden" name="pid" value='.$productID.' />
 				 	   					<input name="link"  class="button_title" type="submit" value="'.$Brand.' '.$Model.'" />	
 									</form>
 							  
-					  				<form id="myForm" name="postlink" action="../Product/product_description.php" method="post">
+					  				<form id="myForm" name="postlink" action="'.$PREFIX.'/Product/product_description.php" method="post">
 					  					<input type="hidden" name="pid" value='.$productID.' />
-				  	    				<input type="image" src="../Product/product_image/'.$productID.'.jpg" width="210" height="150" input name="link"  class="button_image"  type="submit" value="'.$Brand.' '.$Model.'" />				  	
+				  	    				<input type="image" src="'.$PREFIX.'/Product/product_image/'.$productID.'.jpg" width="210" height="150" input name="link"  class="button_image"  type="submit" value="'.$Brand.' '.$Model.'" />				  	
 									</form>   
 				
 				  				<div class="bid_current">
@@ -112,7 +112,7 @@ function LeadingZero(Time) {
 							
 							if(!isset($_SESSION['user_id']))
 							{
-								echo '<form action="../loginpage/" method="post">
+								echo '<form action="'.$PREFIX.'/loginpage" method="post">
 						 	  		  <div class="bid_button">
 						      		  <input name="login"  class="button" type="submit" value="LOGIN" />
 						      		  </div></form>';
@@ -120,7 +120,7 @@ function LeadingZero(Time) {
 							else {
 							if($userid == 1 && $auctiontime >0)
 							{
-								echo '<form action="../admin_site/product_info.php" method="post">
+								echo '<form action="'.$PREFIX.'/admin_site/product_info.php" method="post">
 							  		  <input type="hidden" name="uid" value='.$userid.' />
 							  		  <input type="hidden" name="pid" value='.$productID.' />
 						 	  		  <div class="bid_button">
@@ -129,7 +129,7 @@ function LeadingZero(Time) {
 							}
 							else if($userid == 1 && $auctiontime <0)
 							{
-								echo '<form action="../admin_site/product_info.php" method="post">
+								echo '<form action="'.$PREFIX.'/admin_site/product_info.php" method="post">
 							  		  <input type="hidden" name="uid" value='.$userid.' />
 							  		  <input type="hidden" name="pid" value='.$productID.' />
 						 	  		  <div class="bid_button">
@@ -140,7 +140,7 @@ function LeadingZero(Time) {
 							
 							else if($userid > 0 && $auctiontime >0)
 							{
-								echo '<form action="../Function/updatetimer.php" method="post">
+								echo '<form action="'.$PREFIX.'/Function/updatetimer.php" method="post">
 							  		  <input type="hidden" name="uid" value='.$userid.' />
 							  		  <input type="hidden" name="pid" value='.$productID.' />
 						 	  		  <div class="bid_button">

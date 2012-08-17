@@ -1,5 +1,6 @@
 <?php
-session_start();
+	session_start();
+	include "../config.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,11 +15,11 @@ session_start();
 		include "../template/templateheader.php";
 	?>
 	<section id="content_container">
-			<h1><img src="../template/template_image/header/graphics.png"></h1>
+			<h1><img src="<?php echo $PREFIX; ?>/template/template_image/header/graphics.png"></h1>
 		<section class="auction_container">
-			<img src="../template/template_image/Coming-soon.gif" width="540px" height="380px"><p>
+			<img src="<?php echo $PREFIX; ?>/template/template_image/Coming-soon.gif" width="540px" height="380px"><p>
 			
-			<h1><img src="../template/template_image/bottom/sorry.png"></h1>
+			<h1><img src="<?php echo $PREFIX; ?>/template/template_image/bottom/sorry.png"></h1>
 		</section>
 	 
 	</section>

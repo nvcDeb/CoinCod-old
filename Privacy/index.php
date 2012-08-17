@@ -1,5 +1,6 @@
 <?php
-session_start();
+	session_start();
+	include "../config.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,7 +15,7 @@ session_start();
 		include "../template/templateheader.php";
 	?>
     <section id="content_container">
-		<h1><img src="../template/template_image/header/privacy.png"></h1>
+		<h1><img src="<?php echo $PREFIX; ?>/template/template_image/header/privacy.png"></h1>
 		<section class="auction_container">
 		<privacy>
 		<article><ul><li>
@@ -84,7 +85,7 @@ This document is incorporated on the Terms of services of CoinCod. Through accep
 		</ul></li>
 		</article>
 		</privacy> <!-- What is this?? Can we remove this?? -->
-		<h1><img src="../template/template_image/bottom/privacy.png"></h1>
+		<h1><img src="<?php echo $PREFIX; ?>/template/template_image/bottom/privacy.png"></h1>
 		</section>
 	 
 	</section>

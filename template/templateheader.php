@@ -1,8 +1,11 @@
+<?php
+	include "../config.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="../template/style.css" rel="stylesheet" type="text/css"  />
-	<link rel="shortcut icon" href="../template/template_image/favicon.ico" />
+	<link href="<?php echo $PREFIX; ?>/template/style.css" rel="stylesheet" type="text/css"  />
+	<link rel="shortcut icon" href="<?php echo $PREFIX; ?>/template/template_image/favicon.ico" />
 </head>
 
 <body>
@@ -11,13 +14,12 @@
     	<div class="container">
            	<div class="login">
 				<?php
-
-				include(include "/Login_Form/check_login.php");
+				include "../Login_Form/check_login.php";
 				?>
             </div>  <!--end div login-->	
 	
 			<div id="search">
-				<form action="http://<?php echo $_SERVER['HTTP_HOST']; ?>/Search" enctype="multipart/form-data" name="searchForm" id="myForm" method="GET">
+				<form action="<?php echo $PREFIX; ?>/Search" enctype="multipart/form-data" name="searchForm" id="myForm" method="GET">
          			<input type="text" class="search_input" name="search" placeholder="Enter Search..." value="<?php echo isset($searchTerms)?htmlspecialchars($searchTerms):''; ?>" />
       			</form>
 			</div>  <!--end div search-->
@@ -32,13 +34,13 @@
 					<tr>
 						<td>
 							<ul class="top_nav">
-								<li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>">Home</a>
+								<li><a href="<?php echo $PREFIX; ?>">Home</a>
                                 </li>
 								<li>
-									<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/How_It_Works">How It Works</a>
+									<a href="<?php echo $PREFIX; ?>/How_It_Works">How It Works</a>
 								</li>
 								<li>
-									<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/Buy_Tokens">Buy Tokens</a>
+									<a href="<?php echo $PREFIX; ?>/Buy_Tokens">Buy Tokens</a>
 								</li>
 								<!--<li>
 									<a href="Winners">Winners</a>			

@@ -1,10 +1,11 @@
 <?php
 	ob_start();
+	include "../config.php";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset=utf-8 />
+	<meta charset="utf-8" />
 	<title>Logout</title>
 </head>
 
@@ -14,12 +15,11 @@
 		session_start();
 		session_destroy();
 		unset( $_SESSION );
-		include"../server.php";
 		include "../template/templateheader.php";
 	?>
 		<section id="content_container">
 		<section id="banner_image">
-		<img src="../template/template_image/banner.png" width="1015px" border="0">
+		<img src="<?php echo $PREFIX; ?>/template/template_image/banner.png" width="1015px" border="0">
 		</section>
 		<?php	
 			include "../Product/index.php";

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../server.php';
+include '../config.php';
 
 $email = stripslashes($_POST['email']);
 $email = strip_tags($email);
@@ -32,12 +32,12 @@ if(($user_login != 1) && ($valid_userlogin == 1))
         mysql_query("UPDATE user_account SET last_login=now() WHERE user_id='$id'"); 
 		if($id == 1)
 		{
-			header("location: ../User_Profile/?id=$id"); 
+			header("location: $PREFIX/User_Profile/?id=$id"); 
 			exit();
 		}
 		else
 		{
-			header("location:./"); 
+			header("location:$PREFIX"); 
 			exit();
 		}
     } 
@@ -46,12 +46,12 @@ if(($user_login != 1) && ($valid_userlogin == 1))
 <!DOCTYPE html>
 <html>
 <head>
-	<meta content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>CoinCod Login</title>
-	<link href="../template/style.css" rel="stylesheet" type="text/css" />
+	<link href="<?php echo $PREFIX; ?>/template/style.css" rel="stylesheet" type="text/css" />
 	
 	<!--[if lte IE 9]>
-	<link href="template/style_ie.css" rel="stylesheet" type="text/css"  />
+	<link href="<?php echo $PREFIX; ?>/template/style_ie.css" rel="stylesheet" type="text/css"  />
 	<![endif]-->
 	
 </head>
@@ -62,7 +62,7 @@ if(($user_login != 1) && ($valid_userlogin == 1))
 	  		include "../template/templateheader.php";
 		?>
 	<div id="content_container">
-		<h1><img src="../template/template_image/header/coincod_login.png"></h1>
+		<h1><img src="<?php echo $PREFIX; ?>/template/template_image/header/coincod_login.png"></h1>
     	<div class="auction_container">	
 <?php 
 if(($user_login == 1) && ($valid_userlogin != 1))
