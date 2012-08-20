@@ -605,6 +605,14 @@ fieldset { /* each fieldset spacing size */
 	font-family: Trebuchet MS;
 }
 
+.auction_box:hover { /* the single box for each auction item mouseover color */
+	background: #1E90FF;
+	}
+	
+.auction_box:hover .button_title, .auction_box:hover .read_more { /* the single box title and read more text color change */
+	color: #fff;
+	}
+	
 .button_title { /* the position & design of each auction item title */
 	background: none;
 	border: none;
@@ -1251,7 +1259,7 @@ privacy ul li {
 
 #lower_footer_wrap .logo_image { /* lower footer logo position */
 	position: absolute;
-	margin-top: -125px;
+	margin-top: -135px;
 	margin-left: 25px;
 	}
 	
@@ -1345,12 +1353,16 @@ privacy ul li {
 	}
 
 #after_log_in { /* after log in box container position */
-	margin-top: 45px;
+	margin-top: 40px;
 	}
 	
 #after_log_in .user_name a{ /* username position */
 	margin-left: 20px;
 	margin-top:-10px;
+	}
+	
+.user_name img { /* "welcome back" & "token left" image position */
+	margin-top: -10px;
 	}
 
 /* ---------- AFTER LOGIN @ HEADER END ---------- */

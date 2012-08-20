@@ -167,11 +167,7 @@ function LeadingZero(Time) {
 	</header><!--end div menu-->
         
   <div id="content_container">
-    
-	<section id="banner_image">
-	<img src="<?php echo $PREFIX; ?>/template/template_image/banner.png" width="1015px" border="0">
-	</section>
-	
+
 		<section class="site_body">
 			<?php	
 				$product_list=mysql_query("SELECT * FROM product_list");
