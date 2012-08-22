@@ -212,8 +212,16 @@ h1,h2,h3,h4,h5,h6{
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	background: #f2efef;
-	border: 1px solid #000;
+	border: 2px solid #9c9c9c;
 	height: 20px;
+	}
+	
+.inputtext:focus { /* the login email/password box & content on mouseover design */
+	
+	border: 2px solid #00D5FF;
+	-moz-box-shadow: 1px 1px 1px 1px #9c9c9c;
+	-webkit-box-shadow: 1px 1px 1px 1px #9c9c9c;
+	box-shadow: 1px 1px 1px 1px #9c9c9c;
 	}
 
 /* ---------- LOGIN @ HEADER END ---------- */
