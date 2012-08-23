@@ -16,7 +16,7 @@ include "../config.php";
 		include "../template/templateheader.php";
 	?>
     <section id="content_container">
-	<h1><img src="<?php echo $PREFIX; ?>/template/template_image/header/buy_tokens.png"></h1>
+	<h5>Buy Tokens</h5>
 		<section class="auction_container">	 
 			<div class="buy_tokens">Choose your package by clicking on the button. Please take note that your payment is processed by Netbuilder.The Name of NbePay will be shown on your Credit Card / Bank Statement and you will also receive a notification e-mail from Netbuilder on this transaction.
 			</div>

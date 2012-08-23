@@ -316,6 +316,14 @@ h1 { /* the h1 title position */
 	margin-left: 50px;
 	}
 	
+h5 { /* the h5 title design */
+	font-size: 35px;
+	font-family: 'Exo';
+	margin-top: 20px;
+	margin-bottom: 10px;	
+	margin-left: 30px;
+	}
+	
 #banner_image { /*adjusting the banner image on homepage */
 	margin-top: 25px;
 	min-width: 1000px;

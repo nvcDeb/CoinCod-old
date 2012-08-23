@@ -15,7 +15,7 @@
 		include "../template/templateheader.php";
 	?>
 	<section id="content_container">
-			<h1><img src="<?php echo $PREFIX; ?>/template/template_image/header/graphics.png"></h1>
+			<h5>Graphics</h5>
 		<section class="auction_container">
 			<img src="<?php echo $PREFIX; ?>/template/template_image/Coming-soon.gif" width="540px" height="380px"><p>
 			
