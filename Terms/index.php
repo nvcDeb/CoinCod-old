@@ -15,7 +15,7 @@
 		include "../template/templateheader.php";
 	?>
     <section id="content_container">
-		<h1><img src="<?php echo $PREFIX; ?>/template/template_image/header/term_of_service.png"></h1>
+		<h5>Terms of Service</h5>
 		<section class="auction_container">
 		
 		<terms>

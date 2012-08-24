@@ -15,7 +15,7 @@
 		include "../template/templateheader.php";
 	?>
     <section id="content_container">
-	<h1><img src="<?php echo $PREFIX; ?>/template/template_image/header/careers.png"></h1>
+	<h5>Careers</h5>
     		<section class="auction_container">					
 		Sorry, currently there are no available job openings. Please check with us again soon and hopefully we can provide you one in coming few months time.
 

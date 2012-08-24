@@ -16,7 +16,7 @@
 		include "../../template/templateheader.php";
 	?>
      <section id="content_container">
-	 <h1><a href="index.php"><img src="<?php echo $PREFIX; ?>/template/template_image/header/faq.png"></a></h1>
+	 <h5>FAQ</h5>
     	<section class="auction_container">
 				
 		<article class="answer">
