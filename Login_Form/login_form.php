@@ -9,7 +9,7 @@
 
 <body>
 </br>
-	<form action="<?php echo $PREFIX; ?>/Login_Form" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+	<form action="<?php echo $PREFIX; ?>/Login_Form/" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 	<table cellspacing="0">
 		<tbody>
 			<tr>
