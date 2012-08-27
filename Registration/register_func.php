@@ -57,7 +57,8 @@
 	}
 	else if (!$resp->is_valid) 
 	{
-		echo "The reCAPTCHA wasn't entered correctly. Go back and try it again.";
+		echo "The reCAPTCHA wasn't entered correctly.Please ";
+		echo '<a href="'.$PREFIX.'/Registration" >Registration</a> again!';
     } 
 	else
 	{
