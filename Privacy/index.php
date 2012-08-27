@@ -15,7 +15,7 @@
 		include "../template/templateheader.php";
 	?>
     <section id="content_container">
-		<h1><img src="<?php echo $PREFIX; ?>/template/template_image/header/privacy.png"></h1>
+		<h5>Privacy</h5>
 		<section class="auction_container">
 		<privacy>
 		<article><ul><li>

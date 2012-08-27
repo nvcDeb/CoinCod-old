@@ -68,7 +68,7 @@
 					<a href="'.$PREFIX.'/admin_site/sitestatus_updateform.php">Site Status</a></div>';
 			}
 			?>	
-				<h1><img src="<?php echo $PREFIX; ?>/template/template_image/header/product_information.png" border="0"></h1>
+				<h5>Product Information</h5>
 				<div class="smallfont">
                     All Fields are required to be filled.
 				</div>

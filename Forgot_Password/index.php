@@ -17,7 +17,7 @@
 		include "../template/templateheader.php";
 	?>
 	<section id="content_container">
-	<h1><img src="<?php echo $PREFIX; ?>/template/template_image/header/identify_your_account.png"></h1>
+	<h5>Identify Your Account</h5>
 		<section class="auction_container">
 		<form action="<?php echo $PREFIX; ?>/Forgot_Password/forgotpassword_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 	

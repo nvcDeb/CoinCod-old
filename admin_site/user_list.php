@@ -33,7 +33,7 @@
 			$userLIST=mysql_num_rows($user_list);
     		if($userLIST>0)
 			{	 
-					echo '<h1><img src="'.$PREFIX.'/template/template_image/header/user_list.png" border="0"></h1><div class="title_bold"><table border="0">
+					echo '<h5>User Lists</h5><div class="title_bold"><table border="0">
 						  <tr width="100">
 						  <td width="100">User Id</td>
 						  <td width="100">Username</td>

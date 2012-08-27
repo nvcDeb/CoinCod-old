@@ -62,7 +62,7 @@ if(($user_login != 1) && ($valid_userlogin == 1))
 	  		include "../template/templateheader.php";
 		?>
 	<div id="content_container">
-		<h1><img src="<?php echo $PREFIX; ?>/template/template_image/header/coincod_login.png"></h1>
+		<h5>CoinCod Login</h5>
     	<div class="auction_container">	
 <?php 
 if(($user_login == 1) && ($valid_userlogin != 1))
