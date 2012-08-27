@@ -12,3 +12,5 @@ $DOMAIN = "http://coincod.com";
 $PATH = "";
 $PREFIX = $DOMAIN.$PATH;
 ?>
+
+<link href='http://fonts.googleapis.com/css?family=Exo:400,600' rel='stylesheet' type='text/css'>

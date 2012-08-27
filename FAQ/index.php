@@ -16,7 +16,7 @@
 	?>
    	
 	<section id="content_container">
-	<h1><img src="<?php echo $PREFIX; ?>/template/template_image/header/faq.png"></h1>
+	<h5>FAQ</h5>
 		<section class="auction_container">
 		<article class="faq">
 		<ol>

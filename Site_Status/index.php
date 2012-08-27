@@ -15,7 +15,7 @@
 		include "../template/templateheader.php";
 	?>
    <section id="content_container">
-		<h1><img src="<?php echo $PREFIX; ?>/template/template_image/header/site_status.png"></h1>
+		<h5>Site Status</h5>
 		<section class="auction_container">
 		
 			<div class="status_box">
