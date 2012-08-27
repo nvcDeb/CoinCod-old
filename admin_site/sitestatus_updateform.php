@@ -26,7 +26,7 @@
 			}
 		?>
 		
-		<form action="<?php echo $PREFIX; ?>/status_updatefunc.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+		<form action="<?php echo $PREFIX; ?>/admin_site/status_updatefunc.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 			<td>
 				<select id="status" name="status" size="1">
 					<option value="Well as usual running like charm.">Well as usual running like charm.</option>

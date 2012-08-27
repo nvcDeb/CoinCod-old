@@ -6,6 +6,6 @@
 		$status=$_POST['status'];
 		$updatestatus = "UPDATE status SET site_status='$status'";
 		$querystatus = mysql_query($updatestatus) or die (mysql_error());
-		header("location:'.$PREFIX.'");
+		header("location:$PREFIX");
 	}
 ?>
