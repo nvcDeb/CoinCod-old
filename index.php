@@ -98,7 +98,7 @@ function LeadingZero(Time) {
 					else 
 					{
 						echo '
-							<form action="'.$PREFIX.'/Login_Form" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+							<form action="'.$PREFIX.'/Login_Form/" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 							<table cellspacing="0">
 							<tbody>
 								<tr>
