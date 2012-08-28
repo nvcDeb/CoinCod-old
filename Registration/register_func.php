@@ -30,22 +30,12 @@
 	$zip = mysql_real_escape_string($_POST['zip']);
 	$country = "Malaysia";
 	$mobile = mysql_real_escape_string($_POST['mobile']);
-	$captcha = @$_POST['ct_captcha'];
-
-	
 	
 	$username_check = mysql_query("SELECT * FROM user_account WHERE Username='$username' LIMIT 1");
 	$username_checks = mysql_num_rows($username_check);
 	$email_check = mysql_query("SELECT * FROM user_account WHERE Email='$emails' LIMIT 1");
 	$email_checks = mysql_num_rows($email_check);
 	$result = mysql_query($query);
-	
-	require_once('recaptchalib.php');
-	$privatekey = "6LdlXNMSAAAAADBEPyiox0uXh-GsvdCpzfLw5YL9";
-	$resp = recaptcha_check_answer ($privatekey,
-                               $_SERVER["REMOTE_ADDR"],
-                               $_POST["recaptcha_challenge_field"],
-                               $_POST["recaptcha_response_field"]);
 	
 	if ($username_checks > 0)
 	{
@@ -54,12 +44,7 @@
 	else if ($email_checks > 0)
 	{
 		echo " your email already register.Please go forgot password.";
-	}
-	else if (!$resp->is_valid) 
-	{
-		echo "The reCAPTCHA wasn't entered correctly.Please ";
-		echo '<a href="'.$PREFIX.'/Registration" >Registration</a> again!';
-    } 
+	} 
 	else
 	{
 		$getid=mysql_query("SELECT * FROM user_account WHERE user_id = (select Max(user_id) from user_account);");
