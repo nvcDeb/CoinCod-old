@@ -20,8 +20,6 @@
 	<section class="site_body">
     <section div class="auction_container">
 	<?php  
-	// connect to your MySQL database here 
-	session_start();
 	// Set some values to go into the table fields for this person(record) 
 	$pid = mysql_real_escape_string($_POST['pid']);
 	$newbrand = mysql_real_escape_string($_POST['brand']);
@@ -30,7 +28,7 @@
 	$newauctionprice = mysql_real_escape_string($_POST['auctionprice']);
 	$newcategory=mysql_real_escape_string($_POST['category']);
 	$newavailability=mysql_real_escape_string($_POST['availability']);
-	$newdescription=mysql_real_escape_string($_POST['description']);
+	$newdescription=mysql_real_escape_string($_POST['tinyeditor']);
 	
 	$update_product = "UPDATE product_list SET Brand='$newbrand', Model='$newmodel', market_price='$newmarketprice', auction_price='$newauctionprice', Category='$newcategory', Availability='$newavailability',Description='$newdescription' WHERE product_id='$pid'";
 		$update = mysql_query($update_product) or die (mysql_error()); 
@@ -50,7 +48,7 @@
   </section><!--end div content_container-->
 </div><!--end div wrapper-->
 	<?php
-		include "../templatefooter.html";
+		include "../template/templatefooter.html";
 	?>
 	
 	</body>
