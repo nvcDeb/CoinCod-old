@@ -30,7 +30,7 @@
 	$newauctionprice = mysql_real_escape_string($_POST['auctionprice']);
 	$newcategory=mysql_real_escape_string($_POST['category']);
 	$newavailability=mysql_real_escape_string($_POST['availability']);
-	$newdescription=mysql_real_escape_string($_POST['description']);
+	$newdescription=mysql_real_escape_string($_POST['tinyeditor']);
 	
 	$update_product = "UPDATE product_list SET Brand='$newbrand', Model='$newmodel', market_price='$newmarketprice', auction_price='$newauctionprice', Category='$newcategory', Availability='$newavailability',Description='$newdescription' WHERE product_id='$pid'";
 		$update = mysql_query($update_product) or die (mysql_error()); 
