@@ -25,7 +25,9 @@
 	$auctionprice = mysql_real_escape_string($_POST['auctionprice']);
 	$category = mysql_real_escape_string($_POST['category']);
 	$availability = mysql_real_escape_string($_POST['availablity']);
-	$description = mysql_real_escape_string($_POST['description']);
+	$description = mysql_real_escape_string($_POST['tinyeditor']);
+	echo "123";
+	echo $description;
 	
 	$product_check=mysql_query("SELECT * FROM product_list WHERE Brand='$brand' and Model='$model' LIMIT 1");
 	$productcheck = mysql_num_rows($product_check);
