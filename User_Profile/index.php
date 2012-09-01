@@ -150,7 +150,7 @@
 								<td>
                                 <input type="hidden" name="date_birth" value="" id="date_birth">
 									<select id="date_birth_year" name="" size="1">
-										<option value=""><?php echo $year;?></option>
+										<option value="<?php echo $year;?>"><?php echo $year;?></option>
 										<option value="2001">2001</option>
                                         <option value="2000">2000</option>
                                         <option value="1999">1999</option>
@@ -207,7 +207,7 @@
 								</td>								
 								<td>
 									<select id="date_birth_month" name="" size="1">
-										<option value=""><?php echo $month;?></option>
+										<option value="<?php echo $month;?>"><?php echo $month;?></option>
 										<option value="01">January</option>
 										<option value="02">February</option>
 										<option value="03">March</option>
@@ -224,7 +224,7 @@
 								</td>
 								<td>
 									<select id="date_birth_day" name="" size="1">
-										<option value=""><?php echo $day;?></option>
+										<option value="<?php echo $day;?>"><?php echo $day;?></option>
 										<option value="01">1</option>
 										<option value="02">2</option>
 										<option value="03">3</option>
@@ -268,7 +268,7 @@
 						</td>
 						<td width="75%">
 							<select id="gender" name="gender" size="1" tabindex="3">
-                            	<option value=""><?php echo $gender;?></option>
+                            	<option value="<?php echo $gender;?>"><?php echo $gender;?></option>
 								<option value="Male">Male</option>
 								<option value="Female">Female</option>
 							</select> 
@@ -304,7 +304,7 @@
 						</td>
 						<td width="75%">
 							<select id="state" name="state" size="1" tabindex="7">
-								<option value=""><?php echo $state;?></option>
+								<option value="<?php echo $state;?>"><?php echo $state;?></option>
 								<option value="Johor">Johor</option>
 								<option value="Kedah">Kedah</option>
 								<option value="Kelantan">Kelantan</option>

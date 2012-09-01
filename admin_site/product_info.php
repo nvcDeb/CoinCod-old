@@ -11,43 +11,10 @@
     <link rel="stylesheet" href="<?php echo $PREFIX; ?>/validation/css/validation.css" type="text/css" />
   	<script type="text/javascript" src="<?php echo $PREFIX; ?>/validation/livevalidation_standalone.compressed.js"></script>
 	
-	<!-- TinyMCE -->
-<script type="text/javascript" src="<?php echo $PREFIX; ?>/TinyMce/jscripts/tiny_mce/tiny_mce.js"></script>
-<script type="text/javascript">
-	tinyMCE.init({
-		// General options
-		mode : "textareas",
-		theme : "advanced",
-		skin : "o2k7",
-		plugins : "autolink,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,inlinepopups,autosave",
-
-		// Theme options
-		theme_advanced_buttons1 : "save,newdocument,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,|,styleselect,formatselect,fontselect,fontsizeselect",
-		theme_advanced_buttons2 : "cut,copy,paste,pastetext,pasteword,|,search,replace,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|,link,unlink,anchor,image,cleanup,help,code,|,insertdate,inserttime,preview,|,forecolor,backcolor",
-		theme_advanced_buttons3 : "tablecontrols,|,hr,removeformat,visualaid,|,sub,sup,|,charmap,emotions,iespell,media,advhr,|,print,|,ltr,rtl,|,fullscreen",
-		theme_advanced_buttons4 : "insertlayer,moveforward,movebackward,absolute,|,styleprops,|,cite,abbr,acronym,del,ins,attribs,|,visualchars,nonbreaking,template,pagebreak,restoredraft",
-		theme_advanced_toolbar_location : "top",
-		theme_advanced_toolbar_align : "left",
-		theme_advanced_statusbar_location : "bottom",
-		theme_advanced_resizing : true,
-
-		// Example word content CSS (should be your site CSS) this one removes paragraph margins
-		content_css : "../TinyMce/css/word.css",
-
-		// Drop lists for link/image/media/template dialogs
-		template_external_list_url : "../TinyMce/lists/template_list.js",
-		external_link_list_url : "../TinyMce/lists/link_list.js",
-		external_image_list_url : "../TinyMce/lists/image_list.js",
-		media_external_list_url : "../TinyMce/lists/media_list.js",
-
-		// Replace values for the template plugin
-		template_replace_values : {
-			username : "Some User",
-			staffid : "991234"
-		}
-	});
-</script>
-<!-- /TinyMCE -->
+<!-- TinyEditor -->
+<script type="text/javascript" src="<?php echo $PREFIX; ?>/tinyeditor/tiny.editor.packed.js"></script>
+<link rel="stylesheet" href="<?php echo $PREFIX; ?>/tinyeditor/tinyeditor.css" type="text/css" />	
+<!-- TinyEditor -->
 
 </head>
 
@@ -74,7 +41,7 @@
            All Fields are required to be filled.
 			</article>
         	
-					<form action="<?php echo $PREFIX; ?>/admin_site/product_update.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+					<form action="<?php echo $PREFIX; ?>/admin_site/product_update.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post" onsubmit="editor.post()">
         			<fieldset width="700">
 					<legend><font size="5"><strong>Information</strong></legend>
 					<table width="650" cellpadding="0" cellspacing="10">
@@ -132,7 +99,7 @@
 						</td>
 						<td width="75%">
 							<select id="category" name="category" size="1" tabindex="3">
-                            	<option value=""><?php echo $category;?></option>
+                            	<option value="<?php echo $category;?>"><?php echo $category;?></option>
 								<option value="Laptop">Laptop</option>
 								<option value="Smartphone">Smartphone</option>
                                 <option value="Camera">Camera</option>
@@ -150,7 +117,7 @@
 						</td>
 						<td width="75%">
 							<select id="availablity" name="availability" size="1" tabindex="3">
-                            	<option value=""><?php echo $availability; ?></option>
+                            	<option value="<?php echo $availability; ?>"><?php echo $availability; ?></option>
 								<option value="available">Available</option>
 								<option value="comingsoon">Coming Soon</option>
 							</select>
@@ -159,8 +126,32 @@
                    <tr>
 						<td>Description</td>
 						<td><label>
-                        <textarea id="description" name="description" rows="15" cols="80" style="width: 80%">
+                        <textarea id="tinyeditor" name="tinyeditor" rows="15" cols="80" style="width: 80%">
+						<?php echo $description; ?>
 						</textarea>
+						<script>
+							var editor = new TINY.editor.edit('editor', {
+							id: 'tinyeditor',
+							width: 584,
+							height: 175,
+							cssclass: 'tinyeditor',
+							controlclass: 'tinyeditor-control',
+							rowclass: 'tinyeditor-header',
+							dividerclass: 'tinyeditor-divider',
+							controls: ['bold', 'italic', 'underline', 'strikethrough', '|', 'subscript', 'superscript', '|',
+										'orderedlist', 'unorderedlist', '|', 'outdent', 'indent', '|', 'leftalign',
+										'centeralign', 'rightalign', 'blockjustify', '|', 'unformat', '|', 'undo', 'redo', 'n',
+										'font', 'size', 'style', '|', 'image', 'hr', 'link', 'unlink', '|', 'print'],
+							footer: true,
+							fonts: ['Verdana','Arial','Georgia','Trebuchet MS'],
+							xhtml: true,
+							cssfile: 'custom.css',
+							bodyid: 'editor',
+							footerclass: 'tinyeditor-footer',
+							toggle: {text: 'source', activetext: 'wysiwyg', cssclass: 'toggle'},
+							resize: {cssclass: 'resize'}
+							});
+						</script>
                        		</label>
                         </td>
 					</tr>
