@@ -21,7 +21,7 @@
         <?php		
 			if($userid == 1)
 			{
-				echo '<div id="'.$PREFIX.'/admin_menu"><a href="'.$PREFIX.'/User_Profile/user_profile.php?id=' . $userid . '">' . $username . '</a>  &ndash;
+				echo '<div id="admin_menu"><a href="'.$PREFIX.'/User_Profile/?id=' . $userid . '">' . $username . '</a>  &ndash;
         			<a href="'.$PREFIX.'/admin_site/product_form.php">Add Product</a>&ndash;
 					<a href="'.$PREFIX.'/admin_site/user_list.php">User Listing</a>&ndash;
 					<a href="'.$PREFIX.'/admin_site/sitestatus_updateform.php">Site Status</a></div>
