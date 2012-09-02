@@ -99,7 +99,7 @@
 						</td>
 						<td width="75%">
 							<select id="category" name="category" size="1" tabindex="3">
-                            	<option value=""><?php echo $category;?></option>
+                            	<option value="<?php echo $category;?>"><?php echo $category;?></option>
 								<option value="Laptop">Laptop</option>
 								<option value="Smartphone">Smartphone</option>
                                 <option value="Camera">Camera</option>
@@ -117,7 +117,7 @@
 						</td>
 						<td width="75%">
 							<select id="availablity" name="availability" size="1" tabindex="3">
-                            	<option value=""><?php echo $availability; ?></option>
+                            	<option value="<?php echo $availability; ?>"><?php echo $availability; ?></option>
 								<option value="available">Available</option>
 								<option value="comingsoon">Coming Soon</option>
 							</select>
