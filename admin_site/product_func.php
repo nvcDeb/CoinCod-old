@@ -26,8 +26,11 @@
 	$category = mysql_real_escape_string($_POST['category']);
 	$availability = mysql_real_escape_string($_POST['availablity']);
 	$description = mysql_real_escape_string($_POST['tinyeditor']);
+<<<<<<< HEAD
+=======
 	echo "123";
 	echo $description;
+>>>>>>> b9f153296a204391deaf5e45d6bb344d8280186d
 	
 	$product_check=mysql_query("SELECT * FROM product_list WHERE Brand='$brand' and Model='$model' LIMIT 1");
 	$productcheck = mysql_num_rows($product_check);
@@ -47,7 +50,7 @@
 		
 		//insert to product_images
 		$productname="$productid.jpg";
-		move_uploaded_file($_FILES["image"]["tmp_name"],"'.$PREFIX.'/Product/product_image/$productname");
+		move_uploaded_file($_FILES["image"]["tmp_name"],"$PREFIX/Product/product_image/$productname");
 	
 		if($productinsert == 1)
 		{

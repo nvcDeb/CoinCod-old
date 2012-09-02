@@ -20,8 +20,6 @@
 	<section class="site_body">
     <section div class="auction_container">
 	<?php  
-	// connect to your MySQL database here 
-	session_start();
 	// Set some values to go into the table fields for this person(record) 
 	$pid = mysql_real_escape_string($_POST['pid']);
 	$newbrand = mysql_real_escape_string($_POST['brand']);
@@ -50,7 +48,7 @@
   </section><!--end div content_container-->
 </div><!--end div wrapper-->
 	<?php
-		include "../templatefooter.html";
+		include "../template/templatefooter.html";
 	?>
 	
 	</body>
