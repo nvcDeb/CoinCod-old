@@ -999,10 +999,13 @@ fieldset { /* each fieldset spacing size */
 .token_nav a { /* remove the token buy button underline text */
 	text-decoration: none;
 	}
+	
+.token_nav .price_button { /* button style, font and position */
+  	moz-border-radius: 10px;
+	padding: 0px 20px 11px 20px;
+	}	  	
+		
 
-.token_nav form { /* the paypal button image position */
-	margin-bottom: -4px;
-	}
 /* price button for each package end */
 	
 /*---------- Buy_Tokens PAGE END ----------*/
