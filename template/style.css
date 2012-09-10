@@ -959,7 +959,7 @@ fieldset { /* each fieldset spacing size */
 	}
 	
 .package_value { /* the token package container width */
-	min-width: 800px;	
+	margin-left: 100px;	
 	}
 	
 .package_value .token_nav{ /* the token package border line and shadow */
@@ -999,25 +999,9 @@ fieldset { /* each fieldset spacing size */
 .token_nav a { /* remove the token buy button underline text */
 	text-decoration: none;
 	}
-	
-.token_nav .price_button { /* button style, font and position */
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	max-width: 60px;
-	padding: 5px 20px 5px 20px;
-	margin-left: 70px;
-	font-weight: bold;
-	color: #575857;
-	border: 2px solid #f4e831;
-	background: url(template_image/price_button.png) repeat-x;
-	}
-	
-.token_nav .price_button:hover { /* button on mouseover */
-	background: url(template_image/price_button_hover.png) repeat-x;
-	}
-	
-.token_nav .price_button:active { /*button on click */
-	background: url(template_image/price_button_active.png) repeat-x;
+
+.token_nav form { /* the paypal button image position */
+	margin-bottom: -4px;
 	}
 /* price button for each package end */
 	
