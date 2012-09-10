@@ -322,6 +322,7 @@ h5 { /* the h5 title design */
 	margin-top: 20px;
 	margin-bottom: 10px;	
 	margin-left: 30px;
+	text-shadow: 0 0 2px black, 3px 3px 0 #CCC;
 	}
 	
 #banner_image { /*adjusting the banner image on homepage */
@@ -622,10 +623,10 @@ fieldset { /* each fieldset spacing size */
 }
 
 .auction_box:hover { /* the single box for each auction item mouseover color */
-	background: #1E90FF;
+	background: #02498D;
 	}
 	
-.auction_box:hover .button_title, .auction_box:hover .read_more { /* the single box title and read more text color change */
+.auction_box:hover .button_title, .auction_box:hover .read_more , .auction_box:hover .bid_current, .auction_box:hover .bid_timer, .auction_box:hover .bid_spot, .auction_box:hover .bid_current_color { /* the single box title and read more text color change */
 	color: #fff;
 	}
 	
@@ -665,7 +666,7 @@ fieldset { /* each fieldset spacing size */
 	color: #0F80AC;
 	position: absolute;
 	z-index: 1;
-	margin-top: 78px;
+	margin-top: 60px;
 	margin-left: -85px;
 	}
 	
@@ -912,8 +913,13 @@ fieldset { /* each fieldset spacing size */
 	}
 	
 #graphics img {
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 10px solid #ccc;
 	width: 200px;
 	margin-top: 80px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	}
 	
 #graphics a{
