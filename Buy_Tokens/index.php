@@ -50,56 +50,64 @@ include "../config.php";
 					</ul>
                 
 					<ul class="token_nav">
-						<h4>Debit/Credit Card(RM)</h4>
+						<h4>Paypal (RM)</h4>
 							<li>
-								<a href="#"><div class="price_button">15.00</div></a>
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="D83KWGJ6FX9YA">
+									<input type="image" src="http://coincod.com/template/price_button/15.png" width="104" height="34" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+								</form>
 							</li>
 							<li>
-								<a href="#"><div class="price_button">30.00</div></a>
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="X24J6YZZDUN48">
+									<input type="image" src="http://coincod.com/template/price_button/30.png" width="104" height="34" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+								</form>
 							</li>
 							<li>
-								<a href="#"><div class="price_button">60.00</div></a>
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="BXDZPNG8VAQCA">
+									<input type="image" src="http://coincod.com/template/price_button/60.png" width="104" height="34" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+								</form>
 							</li>
 							<li>
-								<a href="#"><div class="price_button">142.50</div></a>
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="QBD5BC7F7S5YW">
+									<input type="image" src="http://coincod.com/template/price_button/142.50.png" width="104" height="34" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+								</form>
 							</li>
 							<li>
-								<a href="#"><div class="price_button">270.00</div></a>
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="QRQHHTB6L7AK2">
+									<input type="image" src="http://coincod.com/template/price_button/270.png" width="104" height="34" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+								</form>
 							</li>
 							<li>
-								<a href="#"><div class="price_button">600.00</div></a>
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="VGJA9EG9CZ2QJ">
+									<input type="image" src="http://coincod.com/template/price_button/600.png" width="104" height="34" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+								</form>
 							</li>
 							<li>
-								<a href="#"><div class="price_button">1125.00</div></a>
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="AZR4JZBCWDX2L">
+									<input type="image" src="http://coincod.com/template/price_button/1125.png" width="104" height="34" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+								</form>
 							</li>
-					</ul> 
-                
-					<ul class="token_nav">
-						<h4>PayPal(RM)</h4>
-							<li>
-								<a href="#"><div class="price_button">15.00</div></a>
-							</li>
-							<li>
-								<a href="#"><div class="price_button">30.00</div></a>
-							</li>
-							<li>
-								<a href="#"><div class="price_button">60.00</div></a>
-							</li>
-							<li>
-								<a href="#"><div class="price_button">142.50</div></a>
-							</li>
-							<li>
-								<a href="#"><div class="price_button">270.00</div></a>
-							</li>
-							<li>
-								<a href="#"><div class="price_button">600.00</div></a>
-							</li>
-							<li>
-								<a href="#"><div class="price_button">1125.00</div></a>
-							</li>
-					</ul>
-                
-               
+					</ul>              
 				</div>
 			
 			</div>
