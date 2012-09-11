@@ -1000,10 +1000,11 @@ fieldset { /* each fieldset spacing size */
 	text-decoration: none;
 	}
 	
-.token_nav .price_button { /* button style, font and position */
-  	moz-border-radius: 10px;
-	padding: 0px 20px 11px 20px;
-	}	  	
+.token_nav form { /* the paypal button image position */          
+	margin-bottom: 25px;
+	text-align: center;
+	margin-left: -40px;
+}  	
 		
 
 /* price button for each package end */
