@@ -39,7 +39,34 @@ function LeadingZero(Time) {
 
 </script>      
     
-    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>	
+<script >
+$(document).ready(function(){
+
+	// hide #back-top first
+	$("#back-top").hide();
+	
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+
+});
+</script>      
 </head>
 
 <body>
@@ -393,7 +420,11 @@ function LeadingZero(Time) {
 	 			<p>Copyright &copy; 2012 NexVend. All rights reserved.</p>
 	 		</div>  <!--end div copyright-->
 	 	</div>  <!--end div container clearfix-->	 
-	</div>  <!--end div lower_footer_wrap-->         
+	</div>  <!--end div lower_footer_wrap--> 
+
+	<section id="back-top">
+		<a href="#top"><span></span>Back To Top</a>
+	</section>
 </footer><!--footer_wrap--> 
 <!--end footer-->    
 </body>
