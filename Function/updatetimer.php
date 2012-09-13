@@ -55,7 +55,7 @@ if((isset($_POST['pid'])) && (isset($_POST['uid'])))
 		$querytimer = mysql_query($updatetimer) or die (mysql_error()); 
 	
 		//insert to product listing
-		$insert_product_listing = "INSERT INTO product_log (product_id,user_id,Username,Email,auction_price,Time)VALUES('$pid','$uid','$username','$emails','$newauctionprice',now())";  		
+		$insert_product_listing = "INSERT INTO product_log (product_id,user_id,Username,user_email,auction_price,Time)VALUES('$pid','$uid','$username','$emails','$newauctionprice',now())";  		
 		$queryinsert = mysql_query($insert_product_listing) or die (mysql_error()); 
 
 		header("location:$PREFIX");
