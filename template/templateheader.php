@@ -4,8 +4,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="<?php echo $PREFIX; ?>/template/style.css" rel="stylesheet" type="text/css"  />
 	<link rel="shortcut icon" href="<?php echo $PREFIX; ?>/template/template_image/favicon.ico" />
+	<link href="<?php echo $PREFIX; ?>/template/style.css" rel="stylesheet" type="text/css"  />
+	<!--[if lt IE 10]>
+		<link href="<?php echo $PREFIX; ?>/template/style_ie.css" rel="stylesheet" type="text/css"  />
+	<![endif]-->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>	
+	<script >
+	$(document).ready(function(){
+
+		// hide #back-top first
+		$("#back-top").hide();
+	
+		// fade in #back-top
+		$(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('#back-top').fadeIn();
+				} else {
+					$('#back-top').fadeOut();
+				}
+			});
+	
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+			});
+		});
+
+	});
+	</script>
 </head>
 
 <body>
