@@ -17,9 +17,9 @@
      <section id="content_container">
 				<h5>How It Works</h5>
     		<section class="auction_container">
-					<img src="<?php echo $PREFIX; ?>/template/template_image/Coming-soon.gif" width="540px" height="380px">
+					<img src="<?php echo $PREFIX; ?>/template/template_image/Coming-soon.gif" alt="coming soon" width="540px" height="380px">
 					
-					<h1><img src="<?php echo $PREFIX; ?>/template/template_image/bottom/sorry.png"></h1>
+					<h1><img src="<?php echo $PREFIX; ?>/template/template_image/bottom/sorry.png" alt="how works"></h1>
 	  		</section>  <!--end div auction_container-->
 	</section>  <!--end div content_container-->
 </div>  <!--wrapper-->

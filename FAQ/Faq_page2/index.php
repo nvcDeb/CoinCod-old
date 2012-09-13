@@ -40,7 +40,7 @@
         
 		</ol>
 		</article>  <!--end div faq-->  
-			<h1><img src="<?php echo $PREFIX; ?>/template/template_image/bottom/faq.png"></h1>
+			<h1><img src="<?php echo $PREFIX; ?>/template/template_image/bottom/faq.png" alt="questions"></h1>
 	  	</section>  <!--end div auction_container-->
 	</section>  <!--end div content_container-->
 </div>  <!--end div wrapper-->

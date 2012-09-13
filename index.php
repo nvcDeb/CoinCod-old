@@ -39,7 +39,7 @@ function LeadingZero(Time) {
 
 </script>      
     
-    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>	
 </head>
 
 <body>
@@ -393,8 +393,13 @@ function LeadingZero(Time) {
 	 			<p>Copyright &copy; 2012 NexVend. All rights reserved.</p>
 	 		</div>  <!--end div copyright-->
 	 	</div>  <!--end div container clearfix-->	 
-	</div>  <!--end div lower_footer_wrap-->         
+	</div>  <!--end div lower_footer_wrap--> 
+
+	<section id="back-top">
+		<a href="#top"><span></span>Back To Top</a>
+	</section>
 </footer><!--footer_wrap--> 
-<!--end footer-->    
+<!--end footer-->  
+<script src="<?php echo $PREFIX; ?>/template/js/back-top.js"></script>  
 </body>
 </html>
