@@ -9,7 +9,6 @@
 	<?php  
 	// connect to your MySQL database here 
 	include "../config.php"; 
-	session_start();
 	// Set some values to go into the table fields for this person(record) 
 
 	$emails = mysql_real_escape_string($_POST['emails']);
