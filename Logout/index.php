@@ -9,16 +9,6 @@
 	<title>Logout</title>
 </head>
 
-<body>
-	<div id="wrapper">
-	<?php
-		session_start();
-		session_destroy();
-		unset( $_SESSION );
-	?>
-		<section id="content_container">
-		If this site doesn't redirect automatically, please <a href="<?php $PREFIX ?>">Click Here</a>
-		</section>  <!--end div content_container-->
-	</div>  <!--end div wrapper-->        
+<body>  
 </body>
 </html>
