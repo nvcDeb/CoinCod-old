@@ -15,18 +15,10 @@
 		session_start();
 		session_destroy();
 		unset( $_SESSION );
-		include "../template/templateheader.php";
 	?>
 		<section id="content_container">
-		<?php	
-			include "../Product/index.php";
-		?>
+		If this site doesn't redirect automatically, please <a href="<?php $PREFIX ?>">Click Here</a>
 		</section>  <!--end div content_container-->
-	</div>  <!--end div wrapper-->
-			
-	 <?php	
-	 	include "../template/templatefooter.html";
-	?>
-        
+	</div>  <!--end div wrapper-->        
 </body>
 </html>
