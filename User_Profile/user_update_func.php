@@ -6,6 +6,7 @@
 <body>
 <div id="wrapper">
 	<?php
+	session_start();
 		include "../template/templateheader.php";
 	?>
    <div id="content_container">
@@ -53,7 +54,7 @@
 			$newpasswords = md5($newpassword); //MD5 encryption.	
 			$sqlCommand = "UPDATE user_account SET Username='$newusername', Password='$newpassword', hash_password='$newpasswords', first_name='$newfirstname', last_name='$newlastname', Gender='$newgender', Address1='$newadd1', Address2='$newadd2', City='$newcity', Zip='$newzip', State='$newstate', Mobile='$newmobile' WHERE user_id='$userid'";
 			$query = mysql_query($sqlCommand) or die (mysql_error()); 		
-			header("Location: $PREFIX/User_Profile/?id=$userid");
+			header("Location: $PREFIX/User_Profile/user_profile.php");
 				
 			}
 			else

@@ -60,6 +60,7 @@
 			else
 			{
 				echo "Sorry, this email cannot be found";
+    			header("Location: forgotpassword_func.php?send=Email address not found");
 			}
 			?>
 		</section><!--end div auction_container-->
