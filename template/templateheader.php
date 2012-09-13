@@ -11,7 +11,7 @@
 	<![endif]-->
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>	
-	<script src="<?php echo $PREFIX; ?>/template/js/back-top.js"></script>
+	
 </head>
 
 <body>
@@ -61,5 +61,6 @@
 		</div>  <!--end div header_content-->
 	</div>  <!--end div container-->
 </header>  <!--end div header-->
+<script src="<?php echo $PREFIX; ?>/template/js/back-top.js"></script>
 </body>
 </html>
