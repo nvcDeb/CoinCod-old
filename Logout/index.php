@@ -17,7 +17,7 @@
 		unset( $_SESSION );
 	?>
 		<section id="content_container">
-		The homepage will be redirect automatically. If it still the same, please <a href="<?php $PREFIX ?>">Click Here</a>
+		If this site doesn't redirect automatically, please <a href="<?php $PREFIX ?>">Click Here</a>
 		</section>  <!--end div content_container-->
 	</div>  <!--end div wrapper-->        
 </body>
