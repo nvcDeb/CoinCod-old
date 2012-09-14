@@ -39,7 +39,7 @@
 		
 		</article>	
 			
-			<h1><img src="<?php echo $PREFIX; ?>/template/template_image/bottom/security.png"></h1>
+			<h1><img src="<?php echo $PREFIX; ?>/template/template_image/bottom/security.png" alt="shield"></h1>
 			
 		</section>
 	</section>
