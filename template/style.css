@@ -667,7 +667,7 @@ fieldset { /* each fieldset spacing size */
 	position: absolute;
 	z-index: 1;
 	margin-top: 60px;
-	margin-left: -85px;
+	margin-left: 0px;
 	}
 	
 .read_more:hover { /* read more design on mouseover */
@@ -1199,6 +1199,53 @@ privacy ul li {
 	}
 
 /*---------- SITE STATUS PAGE END ----------*/
+
+
+
+/* back to top button */
+
+#footer_wrap #back-top {
+	position: fixed;
+	bottom: 80px;
+	margin-left: 1150px;
+}
+#footer_wrap #back-top a {
+	width: 60px;
+	display: block;
+	text-align: center;
+	font: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #3c3c3c;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	}
+	
+#footer_wrap #back-top a:hover {
+	color: #fff;	
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+#footer_wrap #back-top span {
+	width: 60px;
+	height: 60px;
+	border: none;
+	display: block;
+	margin-bottom: 7px;
+	background: url(template_image/back-top.png) no-repeat center center;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	}
+	
+#footer_wrap #back-top a:hover span {
+	background:url(template_image/back-top_hover.png) no-repeat center center;
+	}
+
+/* back to top button end */
 
 
 
