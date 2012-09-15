@@ -34,7 +34,7 @@
 				</div>
 				</div>
 			</div>
-        <h1><img src="<?php echo $PREFIX; ?>/template/template_image/bottom/site_status.png" alt="communicating"></h1>
+       <img class="bottom" src="<?php echo $PREFIX; ?>/template/template_image/bottom/site_status.png" alt="communicating">
 		</section>
 	</section>
 </div><!--wrapper-->

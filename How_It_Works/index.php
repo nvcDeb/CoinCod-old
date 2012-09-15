@@ -19,7 +19,7 @@
     		<section class="auction_container">
 					<img src="<?php echo $PREFIX; ?>/template/template_image/Coming-soon.gif" width="540px" height="380px">
 					
-					<h1><img src="<?php echo $PREFIX; ?>/template/template_image/bottom/sorry.png" alt="sorry look"></h1>
+					<img class="bottom" src="<?php echo $PREFIX; ?>/template/template_image/bottom/sorry.png" alt="sorry look">
 	  		</section>  <!--end div auction_container-->
 	</section>  <!--end div content_container-->
 </div>  <!--wrapper-->

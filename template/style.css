@@ -353,7 +353,7 @@ h5 { /* the h5 title design */
 	min-height: 150px;
 }
 	
-.auction_container h1 img {/* the bottom image position and size */
+.auction_container .bottom {/* the bottom image position and size */
 	margin-left: 600px;
 	max-width: 180px;
 	}

@@ -54,7 +54,7 @@
 
 </ol>
 		</article>  <!--end div answer--> 
-		<h1><img src="<?php echo $PREFIX; ?>/template/template_image/bottom/faq.png" alt="questions"></h1>
+		<img class="bottom" src="<?php echo $PREFIX; ?>/template/template_image/bottom/faq.png" alt="questions">
       	</section>  <!--end div auction_container-->
 	</section>  <!--end div content_container-->
 </div>  <!--end div wrapper-->

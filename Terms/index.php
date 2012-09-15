@@ -243,7 +243,7 @@ Note:</li><li>
 		</li><li>
         </terms>
 		
-		<h1><img src="<?php echo $PREFIX; ?>/template/template_image/bottom/term_of_service.png" alt="focus"></h1>
+		<img class="bottom" src="<?php echo $PREFIX; ?>/template/template_image/bottom/term_of_service.png" alt="focus">
 		</section>
 	</section>
 </div><!--wrapper-->
