@@ -14,32 +14,6 @@
 	<![endif]-->
 	
     <link rel="shortcut icon" href="<?php echo $PREFIX; ?>/template/template_image/favicon.ico" />
-    
-<script type="text/javascript">  
-  
-window.setTimeout("Tick()", 1000);  
-var Timer = {};
-  
-function Tick() {
-    UpdateTimer();
-    window.setTimeout("Tick()", 1000);
-}
-function UpdateTimer() {
-	var eta;
-	for ( var i in Timer ) {
-		eta = Timer[i];
-		//eta = "00:" + LeadingZero(Timer[i]);
-		document.getElementById("bid_timer_" + i).innerHTML = ( (eta <= 0) ? 0 : eta );
-		Timer[i] -= 1;
-	}
-}
-function LeadingZero(Time) {  
-    return (Time < 10) ? "0" + Time : + Time;  
-}
-
-</script>      
-    
-    
 </head>
 
 <body>
@@ -394,7 +368,65 @@ function LeadingZero(Time) {
 	 		</div>  <!--end div copyright-->
 	 	</div>  <!--end div container clearfix-->	 
 	</div>  <!--end div lower_footer_wrap-->         
+	<section id="back-top">
+		<a href="#top"><span></span>Back To Top</a>
+	</section>	
+	
 </footer><!--footer_wrap--> 
-<!--end footer-->    
+<!--end footer-->  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>	    
+<script type="text/javascript">  
+  
+window.setTimeout("Tick()", 1000);  
+var Timer = {};
+  
+function Tick() {
+    UpdateTimer();
+    window.setTimeout("Tick()", 1000);
+}
+function UpdateTimer() {
+	var eta;
+	for ( var i in Timer ) {
+		eta = Timer[i];
+		//eta = "00:" + LeadingZero(Timer[i]);
+		document.getElementById("bid_timer_" + i).innerHTML = ( (eta <= 0) ? 0 : eta );
+		Timer[i] -= 1;
+	}
+}
+function LeadingZero(Time) {  
+    return (Time < 10) ? "0" + Time : + Time;  
+}
+
+</script>    
+
+<script >
+$(document).ready(function(){
+
+	// hide #back-top first
+	$("#back-top").hide();
+	
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+
+});
+</script>    
+
 </body>
 </html>
