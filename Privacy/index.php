@@ -85,7 +85,7 @@ This document is incorporated on the Terms of services of CoinCod. Through accep
 		</ul></li>
 		</article>
 		</privacy> <!-- What is this?? Can we remove this?? -->
-		<h1><img src="<?php echo $PREFIX; ?>/template/template_image/bottom/privacy.png"></h1>
+		<img class="bottom" src="<?php echo $PREFIX; ?>/template/template_image/bottom/privacy.png" alt="lock">
 		</section>
 	 
 	</section>

@@ -31,7 +31,7 @@
 			</ul>
 			</address>
 		        
-			<div class="location"><img src="<?php echo $PREFIX; ?>/template/template_image/bottom/location.png"></div></article>
+			<div class="location"><img src="<?php echo $PREFIX; ?>/template/template_image/bottom/location.png" alt="pointer"></div></article>
 		</section>
 	</section>
 </div><!--wrapper-->
