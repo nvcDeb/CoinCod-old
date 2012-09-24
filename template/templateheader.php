@@ -5,7 +5,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<meta name="description" content="CoinCod is a unique auction system built to draw users closer to their dream products." />
+	<meta name="description" content="Welcome to CoinCod - a unique auction system built to draw everyone closer to their dream products." />
 	<link href="<?php echo $PREFIX; ?>/template/style.css" rel="stylesheet" type="text/css"  />
 	<link rel="shortcut icon" href="<?php echo $PREFIX; ?>/template/template_image/favicon.ico" />
 </head>
