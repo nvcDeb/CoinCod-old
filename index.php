@@ -364,7 +364,7 @@
 	 			<p/><a href="#"><img src="<?php echo $PREFIX; ?>/template/template_image/payment.png" width="700" border="0"></a>
 	 		</div>  <!--end div payment_image-->
 	 		<div class="copyright">
-	 			<p>Copyright &copy; 2012 NexVend. All rights reserved.</p>
+	 			<p>Copyright &copy; 2012 NexVend Sdn Bhd. All rights reserved.</p>
 	 		</div>  <!--end div copyright-->
 	 	</div>  <!--end div container clearfix-->	 
 	</div>  <!--end div lower_footer_wrap-->         
