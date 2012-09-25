@@ -1207,7 +1207,7 @@ privacy ul li {
 #footer_wrap #back-top {
 	position: fixed;
 	bottom: 80px;
-	margin-left: 1150px;
+	margin-left: 1200px;
 }
 #footer_wrap #back-top a {
 	width: 60px;
@@ -1294,7 +1294,7 @@ privacy ul li {
 }
 
 #footer_wrap a{ /* upper menu sub menu (with link) design */
-	line-height: 12px;
+	line-height: 20px;
 	font-size: 13px;
 	color:#fff;
 	text-decoration:none;

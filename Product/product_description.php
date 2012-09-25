@@ -80,7 +80,7 @@ function LeadingZero(Time) {
 	<section class="auction_container">
 	<div id="product">
 		<div class="name">
-				<?php echo $product_brand;	echo " ";	echo $product_model;	?> 
+				<h5><?php echo $product_brand;	echo " ";	echo $product_model;	?> </h5>
 		</div>
 	</div>
 	

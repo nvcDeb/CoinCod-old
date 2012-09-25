@@ -10,6 +10,7 @@
 		include "../template/templateheader.php";
 	?>
     <section id="content_container">
+	<h5>Account Reset</h5>
 		<section class="auction_container">
 		<?php
 			$emails = stripslashes($_POST['emails']);
