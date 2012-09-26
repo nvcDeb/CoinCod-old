@@ -15,9 +15,8 @@
 		session_start();
 		session_destroy();
 		unset( $_SESSION );
-		
+	?>	
 	</div>  <!--end div wrapper-->
-	?>
         
 </body>
 </html>
