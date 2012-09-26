@@ -79,44 +79,6 @@ if (($user_login != 1) && ($valid_userlogin != 1))
 }
 
 ?>
-	<div id="login">
-	<form action="./" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
-					<table>
-					<tr>
-						<td>
-							Email
-						</td>
-						<td>
-							<input type="text" name="email" value="" class="text" id="email"  placeholder="Email" size="33" maxlength="50" tabindex="10">
-                            <script type="text/javascript">
-								var email = new LiveValidation('email');
-									email.add(Validate.Presence);
-									email.add(Validate.Email, {failureMessage: 'Email Not Valid!'});		
-							</script>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							Password
-						</td>
-						<td>
-							<input type="password" name="password" value="" class="text" id="password" placeholder="Password" size="33" maxlength="50" tabindex="12">
-                            <script type="text/javascript">
-								var password = new LiveValidation('password');
-									password.add(Validate.Presence);	
-									password.add(Validate.Length, { minimum: 6 } );
-							</script>
-						</td>
-					</tr>
-                    <tr>
-						<td>
-							<input name="button" type="submit" class="form_button" value="Login">
-						</td>
-					</tr>
-					</table> 
-       
-        </form>
-	 </div> <!--end div login-->
 	</div><!--end div auction_container-->
   </div><!--end div content_container-->
 </div><!--end div wrapper-->
