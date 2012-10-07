@@ -57,11 +57,11 @@
 							<div id="after_log_in">
 							<div class="user_name">
 							<img src="'.$grav_url.'" alt="" />
-								<a href="'.$PREFIX.'/User_Profile/?id=' . $userid . '">' . $username . '
+								<a href="'.$PREFIX.'/user_profile/?id=' . $userid . '">' . $username . '
 								</a>
 							</div>
 							<div id="logout">
-								<a href="'.$PREFIX.'/Logout">Log Out</a>
+								<a href="'.$PREFIX.'/logout">Log Out</a>
 						
 							</div>
 							<div class="token_left">
@@ -73,7 +73,7 @@
 					else 
 					{
 						echo '
-							<form action="'.$PREFIX.'/Login_Form/" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+							<form action="'.$PREFIX.'/login_form/" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 							<table cellspacing="0">
 							<tbody>
 								<tr>
@@ -89,10 +89,10 @@
 								</tr>
 								<tr>
 									<td class="login_label_field">
-										<a href="'.$PREFIX.'/Forgot_Password">Forgot Password?</a>
+										<a href="'.$PREFIX.'/forgot_password">Forgot Password?</a>
 									</td>
 									<td class="login_label_field">
-										<a href="'.$PREFIX.'/Registration">Sign Up</a>
+										<a href="'.$PREFIX.'/registration">Sign Up</a>
 									</td>
 								</tr>                   
 							</tbody>
@@ -123,10 +123,10 @@
 										<a href="<?php echo $PREFIX; ?>">Home</a>
                                    	</li>
 									<li>
-										<a href="<?php echo $PREFIX; ?>/How_It_Works">How It Works</a>
+										<a href="<?php echo $PREFIX; ?>/how_it_works">How It Works</a>
 									</li>
 									<li>
-										<a href="<?php echo $PREFIX; ?>/Buy_Tokens">Buy Tokens</a>
+										<a href="<?php echo $PREFIX; ?>/buy_tokens">Buy Tokens</a>
 									</li>
 									<!--<li>
 										<a href="header/winners">Winners</a>			
@@ -297,28 +297,28 @@
             	<ul class="footer_nav">
                 	<h4>Coincod</h4>
                 	<li>
-                		<a href="<?php echo $PREFIX; ?>/About_Us">About Us</a>
+                		<a href="<?php echo $PREFIX; ?>/about_us">About Us</a>
                 	</li>
                 	<li>
-                		<a href="<?php echo $PREFIX; ?>/FAQ">FAQ</a>
+                		<a href="<?php echo $PREFIX; ?>/faq">FAQ</a>
                 	</li>
                 	<li>
-                		<a href="<?php echo $PREFIX; ?>/Career">Careers</a>
+                		<a href="<?php echo $PREFIX; ?>/career">Careers</a>
                 	</li>
                 	<li>
-                		<a href="<?php echo $PREFIX; ?>/Feedback">Feedback</a>
+                		<a href="<?php echo $PREFIX; ?>/feedback">Feedback</a>
                 	</li>
                 </ul>
                 <ul class="footer_nav">
                 	<h4>Other Features</h4>
                 	<li>
-                		<a href="<?php echo $PREFIX; ?>/Location">Location</a>
+                		<a href="<?php echo $PREFIX; ?>/location">Location</a>
                 	</li>
                 	<li>
-                		<a href="<?php echo $PREFIX; ?>/Graphics">Graphics</a>
+                		<a href="<?php echo $PREFIX; ?>/graphics">Graphics</a>
                 	</li>
                 	<li>
-                		<a href="<?php echo $PREFIX; ?>/Site_Status">Site Status</a>
+                		<a href="<?php echo $PREFIX; ?>/site_status">Site Status</a>
                 	</li>
                 </ul> 
                 <ul class="footer_nav">
@@ -342,13 +342,13 @@
                 <ul class="footer_nav">
                 	<h4>Legal</h4>
                 	<li>
-                		<a href="<?php echo $PREFIX; ?>/Terms">Terms of Service</a>
+                		<a href="<?php echo $PREFIX; ?>/terms">Terms of Service</a>
                 	</li>
                 	<li>
-                		<a href="<?php echo $PREFIX; ?>/Privacy">Privacy</a>
+                		<a href="<?php echo $PREFIX; ?>/privacy">Privacy</a>
                 	</li>
                 	<li>
-                		<a href="<?php echo $PREFIX; ?>/Security">Security</a>
+                		<a href="<?php echo $PREFIX; ?>/security">Security</a>
                 	</li>
                 </ul>
 			</div>  <!--endl div class ul-->
