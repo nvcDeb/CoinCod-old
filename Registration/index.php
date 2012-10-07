@@ -24,7 +24,7 @@
 				<article class="smallfont">
                     All Fields are required to be filled.
 				</article>
-        	<form action="<?php echo $PREFIX; ?>/Registration/register_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+        	<form action="<?php echo $PREFIX; ?>/registration/register_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
         		<fieldset>
 					<legend>ID and Password</legend>
 					<table>

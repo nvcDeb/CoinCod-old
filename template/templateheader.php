@@ -20,7 +20,7 @@
             </div>  <!--end div login-->	
 	
 			<div id="search">
-				<form action="<?php echo $PREFIX; ?>/Search" enctype="multipart/form-data" name="searchForm" id="myForm" method="GET">
+				<form action="<?php echo $PREFIX; ?>/search" enctype="multipart/form-data" name="searchForm" id="myForm" method="GET">
          			<input type="text" class="search_input" name="search" placeholder="Enter Search..." value="<?php echo isset($searchTerms)?htmlspecialchars($searchTerms):''; ?>" />
       			</form>
 			</div>  <!--end div search-->
@@ -38,10 +38,10 @@
 								<li><a href="<?php echo $PREFIX; ?>">Home</a>
                                 </li>
 								<li>
-									<a href="<?php echo $PREFIX; ?>/How_It_Works">How It Works</a>
+									<a href="<?php echo $PREFIX; ?>/how_it_works">How It Works</a>
 								</li>
 								<li>
-									<a href="<?php echo $PREFIX; ?>/Buy_Tokens">Buy Tokens</a>
+									<a href="<?php echo $PREFIX; ?>/buy_tokens">Buy Tokens</a>
 								</li>
 								<!--<li>
 									<a href="Winners">Winners</a>			

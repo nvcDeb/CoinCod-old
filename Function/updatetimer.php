@@ -62,7 +62,7 @@ if((isset($_POST['pid'])) && (isset($_POST['uid'])))
 	}
 	else
 	{
-		header("location:$PREFIX/Buy_Tokens");
+		header("location:$PREFIX/buy_tokens");
 	}
 }
 ?>
