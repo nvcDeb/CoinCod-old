@@ -18,7 +18,7 @@
 	<h1><img src="<?php echo $PREFIX; ?>/template/template_image/header/login_form.png"></h1>
     	<section class="auction_container">
 		        
-        <form action="<?php echo $PREFIX; ?>/Login_Form" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+        <form action="<?php echo $PREFIX; ?>/login_form" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 					<table width="650" cellpadding="0" cellspacing="10">
 					<tr>
 						<td width="25%">

@@ -99,14 +99,14 @@ function LeadingZero(Time) {
 			
 								  <ul class="auction_box">
        		  					      <li>
-				  						<form id="myForm" name="postlink" action="'.$PREFIX.'/Product/product_description.php" method="post">
+				  						<form id="myForm" name="postlink" action="'.$PREFIX.'/product/product_description.php" method="post">
 				  	  						<input type="hidden" name="pid" value='.$productID.' />
 				 	   						<input name="link"  class="button_title" type="submit" value="'.$Brand.' '.$Model.'" />	
 										</form>
 										
-										<form id="myForm" name="postlink" action="'.$PREFIX.'/Product/product_description.php" method="post">
+										<form id="myForm" name="postlink" action="'.$PREFIX.'/product/product_description.php" method="post">
 					  						<input type="hidden" name="pid" value='.$productID.' />
-				  	    					<input type="image" src="'.$PREFIX.'/Product/product_image/'.$productID.'.jpg" width="210" height="150" input name="link"  class="button_image"  type="submit" value="'.$Brand.' '.$Model.'" />				  	
+				  	    					<input type="image" src="'.$PREFIX.'/product/product_image/'.$productID.'.jpg" width="210" height="150" input name="link"  class="button_image"  type="submit" value="'.$Brand.' '.$Model.'" />				  	
 										</form>  
 										
 										<div class="bid_current">
@@ -149,7 +149,7 @@ function LeadingZero(Time) {
 										}
 										else if($userid > 0 && $auctiontime >0)
 										{
-											echo '<form action="'.$PREFIX.'/Function/updatetimer.php" method="post">
+											echo '<form action="'.$PREFIX.'/function/updatetimer.php" method="post">
 							  		  			  <input type="hidden" name="uid" value='.$userid.' />
 							  		  			  <input type="hidden" name="pid" value='.$productID.' />
 						 	  		  			  <div class="bid_button">

@@ -45,7 +45,7 @@
 		
 		//insert to product_images
 		$productname="$productid.jpg";
-		move_uploaded_file($_FILES["image"]["tmp_name"],"$PREFIX/Product/product_image/$productname");
+		move_uploaded_file($_FILES["image"]["tmp_name"],"$PREFIX/product/product_image/$productname");
 	
 		if($productinsert == 1)
 		{
