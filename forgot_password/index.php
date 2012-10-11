@@ -19,7 +19,7 @@
 	<section id="content_container">
 	<h5>Identify Your Account</h5>
 		<section class="auction_container">
-		<form action="<?php echo $PREFIX; ?>/Forgot_Password/forgotpassword_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+		<form action="<?php echo $PREFIX; ?>/forgot_password/forgotpassword_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
 	
 			<section class="forgot">
 			<table>
