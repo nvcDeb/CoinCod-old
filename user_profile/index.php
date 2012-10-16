@@ -51,14 +51,14 @@
         <?php
         	if($userid == 1)
 			{
-				echo '<div id="admin_menu"><a href="'.$PREFIX.'/User_Profile/?id=' . $userid . '">' . $username . '</a>  &ndash;
+				echo '<div id="admin_menu"><a href="'.$PREFIX.'/user_profile/?id=' . $userid . '">' . $username . '</a>  &ndash;
         			<a href="'.$PREFIX.'/admin_site/product_form.php">Add Product </a>&ndash;
 					<a href="'.$PREFIX.'/admin_site/user_list.php">User Listing</a>&ndash;
 					<a href="'.$PREFIX.'/admin_site/sitestatus_updateform.php">Site Status</a></div>';
 			}
 		?>
 				<h5>User Profile Information</h5>
-        	<form action="<?php echo $PREFIX; ?>/User_Profile/user_update_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
+        	<form action="<?php echo $PREFIX; ?>/user_profile/user_update_func.php" enctype="multipart/form-data" name="myForm" id="myForm" method="post">
         		<br/><fieldset width="700">
 					<legend><font size="5"><strong>ID and Password</strong></legend>
 					<table width="650" cellpadding="0" cellspacing="10">
