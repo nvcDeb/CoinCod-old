@@ -64,7 +64,7 @@ h1,h2,h3,h4,h5,h6{
 	-webkit-border-radius: 5px;
 	-o-border-radius: 5px;
 	border-radius: 5px;	
-	background: url(template_image/menu_bg.png) repeat-x;
+	background: #3f3c3c;
 	position: absolute;
 	width: 1020px;
 	margin-top: 70px;
@@ -98,13 +98,29 @@ h1,h2,h3,h4,h5,h6{
 .top_nav a:hover{ /* (menu ++) mouseover design */
 	padding: 5px 20px 5px 19px;
 	border: 2px solid #636363;
-	background: url(template_image/menu_hover_bg.png) repeat-x;
+	
+	/* For WebKit (Safari, Google Chrome etc) */
+    background: -webkit-gradient(linear, left bottom, left top, from(#3a3a3a), to(#565656));
+    /* For Mozilla/Gecko (Firefox etc) */
+    background: -moz-linear-gradient(bottom, #3a3a3a, #565656);
+    /* For Opera */
+    background: -o-linear-gradient(bottom, #3a3a3a, #565656);
+    /* For Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3a3a3a, endColorstr=#565656);
 }
 
 .top_nav a:active{ /* (menu ++) on click design */
 	padding: 5px 20px 5px 19px;
 	border: 2px solid #2d2d2d;
-	background: url(template_image/menu_active_bg.png) repeat-x;
+	
+	/* For WebKit (Safari, Google Chrome etc) */
+    background: -webkit-gradient(linear, left bottom, left top, from(#353535), to(#171717));
+    /* For Mozilla/Gecko (Firefox etc) */
+    background: -moz-linear-gradient(bottom, #353535, #171717);
+    /* For Opera */
+    background: -o-linear-gradient(bottom, #353535, #171717);
+    /* For Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#353535, endColorstr=#171717);
 }
 
 #search{ /* the product search position */
@@ -731,15 +747,37 @@ fieldset { /* each fieldset spacing size */
 	border: 2px solid #039503;
 	min-width: 120px;
 	min-height: 35px;
-	background: url(template_image/button.png) repeat-x;
+	
+	/* For WebKit (Safari, Google Chrome etc) */
+    background: -webkit-gradient(linear, left bottom, left top, from(#04ce04), to(#76fc76));
+    /* For Mozilla/Gecko (Firefox etc) */
+    background: -moz-linear-gradient(bottom, #04ce04, #76fc76);
+    /* For Opera */
+    background: -o-linear-gradient(bottom, #04ce04, #76fc76);
+    /* For Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#04ce04, endColorstr=#76fc76);
 	}
 
 .button:hover { /* button design on mouseover */
-	background: url(template_image/button_hover.png) repeat-x;
+	/* For WebKit (Safari, Google Chrome etc) */
+    background: -webkit-gradient(linear, left bottom, left top, from(#099908), to(#44f444));
+    /* For Mozilla/Gecko (Firefox etc) */
+    background: -moz-linear-gradient(bottom, #099908, #44f444);
+    /* For Opera */
+    background: -o-linear-gradient(bottom, #099908, #44f444);
+    /* For Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#099908, endColorstr=#44f444);
 	}
 
 .button:active { /* button design on click */
-	background: url(template_image/button_active.png) repeat-x;
+	/* For WebKit (Safari, Google Chrome etc) */
+    background: -webkit-gradient(linear, left bottom, left top, from(#56e456), to(#d0ebcf));
+    /* For Mozilla/Gecko (Firefox etc) */
+    background: -moz-linear-gradient(bottom, #56e456, #d0ebcf);
+    /* For Opera */
+    background: -o-linear-gradient(bottom, #56e456, #d0ebcf);
+    /* For Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#56e456, endColorstr=#d0ebcf);
 	}
 /* bid/login button end */
 
