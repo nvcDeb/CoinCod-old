@@ -1,0 +1,1473 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	height: 100%;
+	}
+	
+body{ 
+	margin:0px;
+	background: #fefefe;  /* the body color */
+
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight:bold;
+}
+
+#wrapper{ /*entire page*/
+	height: auto;
+	min-height: 100%;
+}
+
+#content_container{ /*body container*/
+	overflow:none;
+	padding-bottom: 190px;	
+	width: 1015px; 
+	margin: 0px auto 0px auto;
+}
+
+/* ---------- HEADER ---------- */
+
+#header_content{ /* the header design */
+
+	position:relative;
+	background: #c5292c;
+	height: 60px;
+	border-bottom: 1px solid #9c9c9c;
+}
+
+#logo a{ /* header logo position & logo (beta) image */
+	margin-top: 15px;
+	position: absolute;
+	width: 215px;
+	height: 35px;
+	background: url(template_image/logo.png) no-repeat;
+	}
+
+#logo a:hover{ /* header logo (home) image */
+	background: url(template_image/logo_hover.png) no-repeat;
+	}
+
+/* ---------- HEADER END ---------- */
+
+
+
+/* ---------- NAVIGATION MENU ---------- */
+
+#header {
+	height: 101px; /* create a space between the navigation menu and auction container */ 		
+	}
+
+.menu{	/* the navigation menu design */
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;	
+	background: url(template_image/menu_bg.png) repeat-x;
+	position: absolute;
+	width: 1020px;
+	margin-top: 70px;
+	height: 40px;
+}
+		
+.top_nav{ /* the navigation menu (menu ++) position */
+	margin-left: -38px;
+	margin-top: -17px;
+	padding-top:16px;
+	list-style:none;
+	line-height:26px;	
+}
+
+.top_nav li{ /* (menu ++) arrange into a line */
+	float:left;
+}
+
+.top_nav a{ /* (menu ++) design */
+	display:block;
+	margin-top: 0px;
+	padding: 5px 21px 5px 21px;
+	font-size: 17px;
+	border-right: 1px double #919191;
+	font-family: Trebuchet MS;
+	color: #fff;
+	text-decoration: none;
+	/*text-shadow: 0 1px 0 rgba(255,255,255,0.5);*/
+}
+
+.top_nav a:hover{ /* (menu ++) mouseover design */
+	padding: 5px 20px 5px 19px;
+	border: 2px solid #636363;
+	background: url(template_image/menu_hover_bg.png) repeat-x;
+}
+
+.top_nav a:active{ /* (menu ++) on click design */
+	padding: 5px 20px 5px 19px;
+	border: 2px solid #2d2d2d;
+	background: url(template_image/menu_active_bg.png) repeat-x;
+}
+
+#search{ /* the product search position */
+	position: absolute;
+	margin-top: 76px;
+	margin-left: 830px;
+	max-width: 230px;
+	max-height: 50px;
+	z-index: 1;
+}
+
+#search .search_input {
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #f2efef;
+	border: 1px solid #000;
+	min-height: 22px;
+	margin top: 5px;
+	width: 115px;
+	-moz-transition: width 0.5s ease;
+	-webkit-transition: width 0.5s ease;
+	-o-transition: width 0.5s ease;
+}
+
+#search .search_input:focus {
+	width: 180px;
+	-moz-transition: width 0.5s ease;
+	-webkit-transition: width 0.5s ease;
+	-o-transition: width 0.5s ease;
+}
+
+/* ---------- NAVIGATION MENU END ---------- */
+
+
+
+/* ---------- LOGIN @ HEADER ---------- */
+
+.login_head{ /* login interface position */
+	margin-top: 11px;
+	float:right;
+	padding-top: -50px;
+	font-size:11px;
+	font-family: Trebuchet MS;
+}
+
+.login{ /* login interface position */
+	margin-top: -5px;
+	float:right;
+	padding-top: -50px;
+	font-size:11px;
+	font-family: Trebuchet MS;
+}
+
+/* login_function.php */
+.login_head table tr td{
+	padding:0pt 0pt 0pt 14px;
+}
+
+.login table tr td{
+	padding:0pt 0pt 0pt 14px;
+}
+
+ td,td.label{
+	font-size:13px;
+	text-align:left;
+}
+/* ----- ----- */
+
+
+.form_button{ /* login button */ /***************** share for logout and submit *****************/
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-top: 0px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #3f3f3f;
+	border: 1px solid #757575;
+	min-width: 60px;
+	min-height: 23px;
+	background: #d3d3d3;
+}
+
+.form_button:hover{ /* login button on mouseover */
+	color: #d3d3d3;
+	background: #4a4848;
+}
+
+.form_button:active{ /* login button on click*/
+	color: #d3d3d3;
+	background: #1c1c1c;
+}
+
+.login_label_field a{ /* the text below the login email/password box */
+	color:#ffdbdb;
+	padding-left:5px;
+	text-decoration: none;
+}
+
+.login_label_field a:hover{ /* the text below the login email/password box */
+	font-style:italic;
+	text-decoration:underline;
+}
+
+.inputtext { /* the login email/password box & content design */
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #f2efef;
+	border: 2px solid #9c9c9c;
+	height: 20px;
+	}
+	
+.inputtext:focus { /* the login email/password box & content on mouseover design */
+	
+	border: 2px solid #00D5FF;
+	-moz-box-shadow: 1px 1px 1px 1px #9c9c9c;
+	-webkit-box-shadow: 1px 1px 1px 1px #9c9c9c;
+	box-shadow: 1px 1px 1px 1px #9c9c9c;
+	}
+
+/* ---------- LOGIN @ HEADER END ---------- */
+
+
+
+/* ---------- AFTER LOGIN @ HEADER ---------- */
+
+#main_after_log {
+	margin-top: -16px;
+	}
+
+#after_log_in { /* after log in box container position */
+	margin-top: 15px;
+	}
+	
+#after_log_in a{ /* username font and style */
+	font-weight: bold;
+	font-size: 15px;
+	width: 250px;
+	color: #000;
+	}
+	
+#after_log_in .user_name a{ /* username position */
+	position: absolute;
+	margin-left: 5px;
+	margin-top: 10px;
+	text-decoration: none;
+	max-width: 100px;
+	}
+	
+.user_name img { /* "welcome back" & "token left" image position */
+	margin-top: 10px;
+	}
+
+#logout {
+	margin-top: -10px;	
+	margin-left: 170px;
+	}
+	
+#logout a {  /* logout button position and style */
+	font-size: 12px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-decoration:none;
+	padding: 2px 5px 2px 5px;
+	font-weight: bold;
+	border: 1px solid #757575;
+	background: #d3d3d3;
+	text-align: center;	
+	}
+	
+#logout a:hover { /* logout button on mouseover */
+	color: #9c9c9c;
+	background: #4a4848;
+	}
+	
+#logout a:active { /* logout button on click */
+	background: #1c1c1c;
+	}
+		
+.token_left { /* user token left position and font */
+	font-family: Trebuchet MS;
+	margin-top: -5px;
+	font-size: 12px;
+	}
+
+/* ---------- AFTER LOGIN @ HEADER END ---------- */
+
+
+
+/* ---------- spacing.html css  ---------- */
+
+#spacing{
+	position:relative;
+	bottom:0;
+	clear:both;
+}
+
+/* ---------- spacing.html css END ---------- */
+
+
+
+/*---------- SHARE CONTENT ----------*/
+
+.container{ /* header/footer width */
+	width: 1020px;
+	margin:0pt auto;
+}
+
+h1 { /* the h1 title position */
+	margin-left: 50px;
+	}
+	
+h5 { /* the h5 title design */
+	font-size: 35px;
+	font-family: 'Exo';
+	margin-top: 20px;
+	margin-bottom: 10px;	
+	margin-left: 30px;
+	text-shadow: 0 0 2px black, 3px 3px 0 #CCC;
+	}
+	
+#banner_image { /*adjusting the banner image on homepage */
+	margin-top: 25px;
+	min-width: 1000px;
+	min-height: 200px;
+	background: url(template_image/banner.png) no-repeat;
+	margin-left:10px;
+	}
+
+.auction_container { /*the content background */
+	/*-moz-border-radius: 30px;
+	box-shadow: 8px 8px 12px #666666;
+	background: #e3e8fd;
+	border-radius: 10px;
+	border-top: none;*/
+	/*position: absolute;	
+	box-shadow: 1px 1px 2px #666666;*/
+	border-top: 1px solid #9c9c9c;
+	background: none;
+	padding: 10px 150px 10px 150px;
+	margin-bottom: 20px;
+	text-align: justify;
+	font-family: Trebuchet MS;
+	font-size: 14px;
+	line-height: 20px;
+	min-width: 700px;
+	min-height: 150px;
+}
+	
+.auction_container .bottom {/* the bottom image position and size */
+	margin-left: 600px;
+	max-width: 180px;
+	}
+	
+.auction_container .location  img{ /* the location page image */
+	margin-left: 600px;
+	margin-top: -150px;
+	max-width: 180px;
+	}
+
+/*---------- SHARE CONTENT END ----------*/
+
+
+/*---------- LOGIN PAGE ----------*/
+
+#login { /* the login for width and position */
+	width: 400px;
+	margin-left: 200px;	
+	margin-top: -30px;
+	}
+	
+#login tr td { /* the form value position and size */
+	padding-top: 40px;
+	font-weight: bold;
+	font-size: 15px;
+	}
+	
+#login .text { /* the text area size */
+	position: absolute;
+	margin-top: 15px;
+	margin-left: -305px;
+	width: 300px;
+	height: 22px;
+	}
+	
+#login .form_button { /* button position */
+	margin-top: 10px;
+	margin-left: 240px;
+	}
+	
+/*---------- LOGIN PAGE END ----------*/
+
+
+/*---------- ADMIN/USER PROFILE PAGE ----------*/
+
+#admin_menu {
+	text-align: center;
+	}
+			
+#admin_menu a{ /* admin page menu */
+	color: #000;
+	font-size: 18px;
+	}
+
+#admin_menu a:hover{ /* admin page menu on mouseover */
+	color: #bdb9ba;
+	}
+	
+#admin_menu a:active{ /* admin page top menu on click */
+	color: #940404;
+	}
+
+#user_list #admin_menu{ /* user listing top menu position */
+	margin-left: 80px
+	}
+
+#user_list { /* user listing table position */
+	margin-left: -90px;
+	}
+	
+#user_list td{ /* user listing table container */
+	line-height: 20px;
+	min-width: 130px;
+	}
+
+#user_list .title_bold { /* user listing title style */
+	font-weight: bold;
+	}
+
+/*---------- ADMIN/USER PROFILE PAGE END ----------*/
+
+
+
+/*---------- REGISTRATION register form PAGE ----------*/	
+
+.registration legend { /* the legend text design */
+	font-size: 22px;
+	font-weight: bold;
+	color: #000;
+	}
+	
+.registration { /* form container style and position */
+	text-align: justify;
+	font-family: Trebuchet MS;
+	font-size: 14px;
+	padding-bottom: 20px;
+	border: 2px solid #9c9c9c;
+}
+
+.registration fieldset { /* the form width and position */
+	width: 500px;
+	margin-left: 100px;
+	padding-bottom: 10px;
+	}
+	
+.registration table { /* the form content position */
+	margin-left: 30px;
+	}
+	
+.registration #myForm td { /* form static word size */
+	font-size: 14px;
+	padding-top: 17px;
+	width: 150px;
+}
+
+.registration .smallfont { /* form sub title */
+	font-size: 14px;	
+	margin-left: 100px;
+}
+
+.registration #myForm smallfont { /* telephone number */
+	font-size: 11px;
+}
+
+/* text area size */	
+.registration .text {
+	width : 280px;
+	height: 22px;
+	}
+	
+.registration #date_birth_year{
+	margin-top: -10px;
+	margin-left: -30px;
+	height: 22px;
+	}
+
+.registration #date_birth_month {
+	margin-top: -10px;
+	margin-left: -40px;
+	height: 22px;
+	}
+	
+.registration #date_birth_day{
+	margin-top: -10px;
+	margin-left: -30px;
+	height: 22px;
+	}
+	
+.registration #gender{
+	height: 22px;
+	}
+	
+.registration #state {
+	height: 22px;
+	}
+	
+/* text area size end */
+
+
+/* the javascript notificatin position */
+.registration span { 
+	font-size: 11px;
+	position: absolute;
+	margin-top: 25px;
+	margin-left: -280px;
+	}
+
+.registration .gender span {
+	margin-top: 20px;
+	margin-left: -70px;
+	}
+	
+.registration .state span {
+	margin-top: 20px;
+	margin-left: -120px;
+	}
+	
+/* the javascript notificatin position end */
+
+fieldset { /* each fieldset spacing size */
+	margin-top: 20px;
+	}
+	
+.registration .form_button { /* the position of the button */
+	margin-top: 20px;
+	margin-left: 410px;
+	
+	}
+	
+#recaptcha span { /* the position of the recaptcha "type the two words" */
+	font-size: 14px;
+	position: relative;
+	top: -100px;
+	left: 198px;
+	
+	}
+	
+#recaptcha { /* position of the recaptcha */
+	margin-top: 42px;
+	margin-left: 90px;
+	}
+
+/*---------- REGISTRATION register form PAGE END ----------*/
+
+
+
+/*---------- FORGOT PASSWORD form PAGE ----------*/	
+
+.forgot td { /* the text content size and position */
+	width: 800px;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 10px;
+	}
+
+.forgot td .value { /* the form value text size and position */
+	text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: 175px;
+	margin-top: 0px;
+	padding-bottom: 5px;
+	}
+	
+.forgot .text { /* the text area size and position */
+	width: 350px;
+	height: 22px;
+	}
+
+.forgot span { /* the alert text position */
+	font-size: 11px;
+	position: absolute;
+	margin-top: 25px;
+	margin-left: -350px;
+	}
+	
+.forgot .form_button { /* the form button position */
+	margin-top: 10px;
+	margin-left: 250px;
+	}
+	
+/*---------- FORGOT PASSWORD form PAGE END ----------*/	
+
+
+
+/*------------ PRODUCT.php PAGE -------------*/
+
+.site_body { /*standardize for all page */
+	width:1000px;
+	margin:0pt auto;
+	padding-top: 20px;
+}
+
+.auction_box { /* the single box for each auction item */
+	-moz-border-radius: 20px;
+	box-shadow: 5px 5px 10px #666666;
+	border-radius: 20px;
+	margin-left: 14px;
+	float: left;
+	position: relative;
+	border: 2px solid #123456;
+	width: 190px;
+	height: 340px;
+	list-style: none;
+	background: #fedadc;
+	font-family: Trebuchet MS;
+}
+
+.auction_box:hover { /* the single box for each auction item mouseover color */
+	background: #02498D;
+	}
+	
+.auction_box:hover .button_title, .auction_box:hover .read_more , .auction_box:hover .bid_current, .auction_box:hover .bid_timer, .auction_box:hover .bid_spot, .auction_box:hover .bid_current_color { /* the single box title and read more text color change */
+	color: #fff;
+	}
+	
+.button_title { /* the position & design of each auction item title */
+	background: none;
+	border: none;
+	width: 190px;
+	font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+	white-space: normal;
+	cursor: pointer;
+	color: #000;
+	position: absolute;
+	top: 5px;
+	right: 20px;
+	}
+
+.button_title:hover { /* the text color for each auction item title when mouseover */
+	color: #9c9c9c;
+	}
+
+.button_image { /* the image position for each auction item */
+	margin-top: 50px;
+	margin-left: -30px;
+	}
+	
+.read_more { /* read more on mainpage position and style */
+	font-size: 11px;
+	font-weight: bold;
+	background: none;
+	border: none;
+	width: 100px;
+	text-align: center;
+	white-space: normal;
+	cursor: pointer;
+	color: #0F80AC;
+	position: absolute;
+	z-index: 1;
+	margin-top: 60px;
+	margin-left: 0px;
+	}
+	
+.read_more:hover { /* read more design on mouseover */
+	color: #529FBD;
+	}
+
+.image { /* the position & design of each auction item image */
+	position: absolute;
+	top: 50px;
+	right: 9px;
+	width: 210px;
+	height: 150px;	
+	text-align: center;
+	}
+	
+.bid_current{ /* the position & design of each auction item "current auction price" */
+	font-size: 15px;
+	font-weight: bold;
+	position: absolute;
+	top: 205px;
+	right: 10px;
+	width: 210px;
+	height: 40px;
+	text-align: center;
+	}
+
+.bid_current_color{ /* the text color for each auction item "current auction price" RM */
+	color: #dc8c00
+	}
+	
+.bid_box{ /* bid button & timer main container position for each auction item */
+	position: absolute;
+	top: 245px;
+	right: 3px;
+	width: 220px;
+	height: 25px;
+	}
+
+.bid_timer{	/* bid timer position for each auction item */
+	font-size: 18px;
+	margin-top: 10px;
+	margin-left: -10px;
+	float: left;
+	width: 95px;
+	text-align: center;
+	border-right: 1px solid #000;
+	}
+
+
+/* each auction item bid/login button */ /* admin edit button on each auction item */
+.button { /* the button position and design */
+	position: absolute;
+	top: 3px;
+	left: 95px;
+	-moz-border-radius: 10px;
+	box-shadow: 2px 2px 10px #666666;
+	border-radius: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	border: 2px solid #039503;
+	min-width: 120px;
+	min-height: 35px;
+	background: url(template_image/button.png) repeat-x;
+	}
+
+.button:hover { /* button design on mouseover */
+	background: url(template_image/button_hover.png) repeat-x;
+	}
+
+.button:active { /* button design on click */
+	background: url(template_image/button_active.png) repeat-x;
+	}
+/* bid/login button end */
+
+
+.bid_spot{ /* highest bidder position and style */
+	font-size: 12px;
+	position: absolute;
+	top: 48px;
+	right: 10px;
+	width: 100px;
+	height: 35px;
+	text-align: center;
+	}
+
+#auto_bidder{ /* auto bidder container position and style */
+	font-size: 12px;
+	position: absolute;
+	top: 48px;
+	left: 10px;
+	width: 80px;
+	height: 35px;
+	text-align: center;
+	}
+
+/*------------ PRODUCT.php PAGE END -------------*/
+
+
+
+/*------------PRODUCT_DESCRIPTION PAGE -------------*/	
+
+#description { /* product description container size and position */
+	width: 900px;
+	margin-top: 10px;
+	margin-left: -100px;
+	margin-bottom: 0px;
+	}
+	
+#product .name { /* product title font style */
+	font-size: 25px;
+	text-align: center;
+	min-width: 900px;
+	padding: 10px 10px 10px 10px;
+	font-weight: bold;
+	margin-left: -100px;
+	}
+	
+#description .product_image { /* product description image frame size */
+	width:410px;
+	height: 293px;
+	margin-left: 18px;
+	}
+	
+#description .product { /* the product description frame size */
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 10px #666666;
+	border: 1px solid #000;
+	width: 400px;
+	height: 550px;
+	}
+	
+.product .description { /* the product description font style and container */
+	font-size: 25px;
+	text-align: center;
+	width: 360px;
+	height: 500px;
+	padding: 10px 10px 10px 10px;
+	margin-left: 10px;
+	margin-top: 15px;
+	}
+
+#description .desc_bid_box { /* product price, button & highest bidder container */
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 10px #666666;
+	border: 1px solid #000;
+	width:400px;
+	height: 250px;
+	margin-top: -30px;
+	margin-left: 10px;
+	}
+	
+/* product price */
+.desc_bid_box .price { /* product price container size, position and style */
+	border: 1px solid #000;
+	width: 350px;
+	height: 40px;
+	margin-left: 15px;
+	margin-top: 20px;
+	padding: 10px 10px 10px 10px;
+	}
+
+.desc_bid_box .price .price_title{ /* product price title style */
+	font-size: 20px;
+	font-weight: normal;
+	color: #000;
+	}
+	
+.price .current_bid_price { /* current bid price style and position */
+	font-size: 23px;
+	width: 150px;
+	margin-top: -8px;
+	text-align: center;
+	font-weight: bold;
+	color: #dc8c00;
+	}
+	
+.price .market_price{ /* product retail price style and position */
+	font-size: 23px;
+	text-align: center;
+	width: 180px;
+	height: 40px;
+	padding-top: 10px;
+	margin-top: -63px;
+	float: right;
+	text-align: center;
+	font-weight: bold;
+	color: #ff0000;
+	}
+/* product price end */
+
+/* product highest bidder */	
+.desc_bid_box .highest_bidder { /*highest bidder position, content font style and frame size */
+	font-size: 14px;
+	text-align: center;
+	width: 180px;
+	height: 40px;
+	padding-top: 25px;
+	padding-bottom: 50px;
+	margin-top: -80px;
+	margin-left: 200px;
+	}
+	
+.desc_bid_box #top_highest_bidder { /* highest bidder title */
+	font-size: 22px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: -45px;
+	}
+/*product highest bidder end */
+	
+.desc_bid_box .timer { /* product timer style and position */
+	font-size: 25px;
+	text-align: center;
+	width: 130px;
+	padding: 10px 10px 10px 10px;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+.desc_bid_box  .bid_button{ /* production bid button/login position and style */
+	text-align: center;
+	width: 130px;
+	padding: 10px 10px 10px 10px;
+	position: relative;
+	margin-left: -60px;
+}
+
+/*------------PRODUCT_DESCRIPTION PAGE END -------------*/	
+
+
+
+/*---------- Buy_Tokens PAGE ----------*/
+
+#graphics {
+	text-align: center;
+	padding-bottom: 50px;
+	margin-left: -100px;
+	margin-top: -50px;
+	width: 1000px;
+	}
+	
+#graphics img {
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 10px solid #ccc;
+	width: 200px;
+	margin-top: 80px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+	
+#graphics a{
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-weight: bold;
+	color: #575857;
+	border: 1px solid #f4e831;
+	background: url(template_image/price_button.png) repeat-x;
+	padding: 5px 10px 5px 10px;
+	text-decoration: none;
+	position: relative;
+	top: 30px;
+	left: -140px;
+	}
+	
+#graphics a:hover { /* button on mouseover */
+	background: url(template_image/price_button_hover.png) repeat-x;
+	}
+	
+#graphics a:active { /*button on click */
+	background: url(template_image/price_button_active.png) repeat-x;
+	}
+	
+	
+
+
+/*---------- Buy_Tokens PAGE END ----------*/
+
+
+
+/*---------- Buy_Tokens PAGE ----------*/
+
+.buy_tokens { /* description sentence position and size */
+	min-width: 720px;
+	text-align:justify;
+	}
+	
+.package_value { /* the token package container width */
+	margin-left: 100px;	
+	}
+	
+.package_value .token_nav{ /* the token package border line and shadow */
+	box-shadow: 2px 2px 10px #666666;
+	border: 1px solid #000;	
+	list-style-type: none;
+	position:relative;
+	float:left;
+}
+	
+.package_value .token_nav h4{ /* token package title font, size and position */		
+	font-size: 15px;
+	border-bottom: 1px solid #000;
+	margin-left: -40px;
+	min-width: 240px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	text-align: center;
+	}
+
+
+.package_value .token_nav li{	/* token package content font, size and position */
+	font-size: 15px;
+	margin-left: -40px;
+	min-width: 240px;
+	padding-top: 0px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+.token_nav .token_value { /* content under "token packages" container size */
+	padding: 5px 20px 5px 20px;	
+	border: 2px solid #EDFBFD; /* to make the border same color with the background */
+	}
+
+/* price button for each package */
+.token_nav a { /* remove the token buy button underline text */
+	text-decoration: none;
+	}
+	
+.token_nav form { /* the paypal button image position */          
+	margin-bottom: 25px;
+	text-align: center;
+	margin-left: -40px;
+}  	
+		
+
+/* price button for each package end */
+	
+/*---------- Buy_Tokens PAGE END ----------*/
+
+
+
+/*---------- FAQ PAGE ----------*/
+
+.faq a{ /* font style */
+	color: #000;
+	text-decoration: none;
+	list-style: none outside none;/
+}
+
+.faq a:hover { /* font style on mouseover */
+	font-style:italic;
+	color: #8C1717;
+	text-decoration:underline;
+}
+
+.answer li{ /* font style for answers */
+	font-weight: bold;
+	padding-top: 20px;
+	}
+	
+.answer ol { /* adjust the position of the answers */
+	margin-top: -10px;
+	}
+
+.answer ul li { /* adjust the payment type on the answers */
+	margin-top: -10px;
+	}
+	
+
+
+
+/*---------- FAQ PAGE END ----------*/
+
+
+
+/*---------- FEEDBACK PAGE ----------*/	
+
+#feedback { /* feedback container */
+	min-width: 800px;
+	min-height: 500px;
+	}
+	
+#feedback ul{ /* feedback form and description side by side */
+	margin-top: -5px;
+	max-width: 350px;
+	float: left;
+	}
+	
+
+.column_first { /* feedback form container */
+	margin-left: -50px;
+	width: 350px;
+	}
+	
+.column_first dt { /* feedback title style */
+	font-weight: bold;
+	font-size: 15px;
+	margin-top: 20px;
+	}
+	
+.column_first dd { /* feedback textarea position */
+	margin-top: 0px;
+	margin-left: -2px;
+	}
+
+/* feedback textarea size */	
+.column_first #form_name { 
+	min-width: 350px;
+	min-height: 22px;
+	}
+	
+.column_first #form_email {
+	min-width: 350px;
+	min-height: 22px;
+	}
+	
+.column_first #form_subject {
+	min-width: 350px;
+	min-height: 22px;
+	}
+	
+.column_first #form_comments {
+	min-width: 350px;
+	min-height: 150px;
+	resize: none;
+	}
+
+/* feedback textarea size end */	
+
+.column_first .form-actions { /* submit button position */
+	clear:both;
+	float: right;
+	}
+	
+.column_last { /* feedback description position and left border */
+	clear: both;
+	padding-left: 30px;
+	border-left: 1px solid #9c9c9c;	
+	}
+
+.column_last ul{ /* making a space between the first and half tier */
+	padding-bottom: 30px;
+	}
+	
+.fisheart { /* the heart or fish logo position and size */
+	max-width: 70%;
+	margin-top: 20px;
+	margin-left: 80px;
+		}
+/*---------- FEEDBACK PAGE END ----------*/	
+
+
+
+/*---------- LOCATION PAGE ----------*/
+
+address ul {
+	list-style: none;
+	}
+
+/*---------- LOCATION PAGE END ----------*/	
+
+
+
+/* TERMS PAGE */
+
+terms ul {
+	list-style: none;
+	padding-top: 10px;
+	margin-left: -50px;
+	}
+	
+terms ul li {
+	padding-top: 5px;
+	}
+
+/* TERMS PAGE END */
+
+
+
+/* PRIVACY PAGE */
+
+privacy ul {
+	list-style: none;
+	padding-top: 10px;
+	margin-left: -50px;
+	}
+	
+privacy ul li {
+	padding-top: 5px;
+	}
+
+/* PRIVACY PAGE END */
+
+
+/*---------- SITE STATUS PAGE ----------*/
+
+.status_box{ /* container size */
+	height: 120px;
+	}
+	
+.status_left { /* background left image position and size */
+	background: url(template_image/left.png) no-repeat;
+	min-width: 270px;
+	min-height: 110px;
+	font-size: 18px;
+	padding: 20px 15px 0px 15px;
+	float: left;
+	}
+	
+.status_left .left{ /* background left image position and size */
+	max-width: 240px;
+	}
+	
+.status_right { /* background left image position and size */
+	background: url(template_image/right.png) no-repeat;
+	min-width: 300px;	
+	min-height: 110px;
+	font-size: 18px;
+	padding: 20px 15px 0px 15px;
+	float: right;
+	}
+
+.status_right .right {
+	max-width: 270px;
+	}
+
+/*---------- SITE STATUS PAGE END ----------*/
+
+
+
+/* back to top button */
+
+#footer_wrap #back-top {
+	position: fixed;
+	bottom: 80px;
+	margin-left: 1150px;
+}
+#footer_wrap #back-top a {
+	width: 60px;
+	display: block;
+	text-align: center;
+	font: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #3c3c3c;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	}
+	
+#footer_wrap #back-top a:hover {
+	color: #fff;	
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+#footer_wrap #back-top span {
+	width: 60px;
+	height: 60px;
+	border: none;
+	display: block;
+	margin-bottom: 7px;
+	background: url(template_image/back-top.png) no-repeat center center;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	}
+	
+#footer_wrap #back-top a:hover span {
+	background:url(template_image/back-top_hover.png) no-repeat center center;
+	}
+
+/* back to top button end */
+
+
+
+/*--------------- FOOTER ----------------*/
+
+#footer_wrap { /* footer position / sticky footer */
+	font-family: Trebuchet MS;
+	position: relative;
+	margin-top: -190px; /* negative value of footer height */
+	height: 190px;
+	clear:both;
+} 
+	
+/* upper footer content */
+#footer_wrap .upper_footer_wrap{ /* upper footer design */
+	overflow:hidden;
+	border-top: 1px solid #9c9c9c;
+	box-shadow:0pt -1px 0pt white inset;
+	background: #c5292c;;
+}
+
+#footer_wrap .upper_footer_wrap .ul { /* upper footer position */
+	margin-left: 130px;
+	margin-top: 5px;
+	}
+
+#footer_wrap .upper_footer_wrap ul.footer_nav{ /* upper footer menu position & design */
+	position:relative;
+	float:left;
+	width:164px;
+}
+
+#footer_wrap .upper_footer_wrap ul.footer_nav h4{ /* upper footer menu title design */
+	font-size:15px;
+	text-transform: uppercase;
+	color:#fff;
+	margin-top: -15px;
+	margin-bottom:5px;
+	padding-bottom:5px;
+	border-bottom:1px solid #fefefe;
+}
+
+#footer_wrap li{ /* upper menu sub menu design */
+	font-size:13px;
+	list-style:none outside none;
+}
+
+#footer_wrap a{ /* upper menu sub menu (with link) design */
+	line-height: 20px;
+	font-size: 13px;
+	color:#fff;
+	text-decoration:none;
+}
+
+#footer_wrap a:hover {  /* upper menu sub menu (with link) design based on mouseover */
+	font-style:italic;
+	text-decoration:underline;
+}
+/* upper footer content end */
+
+/* lower footer content*/
+#lower_footer_wrap{ /* lower footer design */
+	border-top: 1px solid #000;
+	margin-top: -10px;
+	font-size: 15px;
+	background: #000;
+}
+
+#lower_footer_wrap .logo_image { /* lower footer logo position */
+	position: absolute;
+	margin-top: -135px;
+	margin-left: 25px;
+	}
+	
+#lower_footer_wrap .payment_image { /* lower footer online payment image position */
+	margin-top: -10px;
+	text-align: center
+	}
+	
+#lower_footer_wrap .copyright { /* lower footer copyright issues */
+	font-size: 13px;
+	margin-top: -10px;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	}
+/* lower footer end */
+
+/* ---------- FOOTER END *----------*/
+
+
+
+
+/******************************************************************/
+            /* TO FIX THE CSS ON DIFFERENT BROWSER */
+/******************************************************************/
+/*------------ OPERA CSS----------*/
+@media not screen and (1)
+{
+   /*---------- FOOTER ----------*/
+	#footer_wrap li{
+	margin-top: 8px;
+}
+   /*----------Footer End ----------*/
+   
+   
+   /*--------------- Feedback Page ----------*/
+
+	.column_first dd { /* feedback title style */
+	margin-top: 5px;
+} 
+	
+   /*---------- Feedback Page End ----------*/
+   
+   
+	/*---------- REGISTRATION register form PAGE ----------*/	
+
+	.registration fieldset { /* the form width and position */
+	padding-bottom: 15px;
+	}	
+	
+	/* the javascript notificatin position */
+
+	.registration .gender span {
+	margin-left: -60px;
+	}
+	
+	.registration .state span {
+	margin-left: -110px;
+	}
+	
+	/* the javascript notificatin position end */
+	
+	/*---------- REGISTRATION register form PAGE END ----------*/	
+
+
+   
+   /*----------FAQ ----------*/
+	.faq a:hover {
+	font-style:normal;
+	color: #8C1717;
+	text-decoration:underline;
+}
+   /*----------FAQ End ----------*/
+
+   
+}
+
+
+/*---------- MOZILLA CSS ----------*/
+
+@-moz-document url-prefix() {
+    #main_content{
+	padding-bottom: 202px;
+}
+
+
+/* ---------- AFTER LOGIN @ HEADER ---------- */
+
+#main_after_log {
+	margin-top: -26px;
+	}
+
+#after_log_in { /* after log in box container position */
+	margin-top: 40px;
+	}
+	
+#after_log_in .user_name a{ /* username position */
+	margin-left: 20px;
+	margin-top:-10px;
+	}
+	
+.user_name img { /* "welcome back" & "token left" image position */
+	margin-top: -10px;
+	}
+
+/* ---------- AFTER LOGIN @ HEADER END ---------- */
+
+
+
+/*---------- Footer ----------*/
+
+	#footer_wrap {
+	margin-top: -202px; /* negative value of footer height */
+	height: 202px;
+} 
+
+/*---------- Footer End ----------*/
+
+
+/*---------- Feedback Page ----------*/
+
+	.column_first dd { /* feedback title style */
+	margin-top: 5px;
+	}
+	
+	#feedback .form_button { /* submit button position */
+	margin-top: 15px;
+	}
+	
+/*---------- Feedback Page End ----------*/
+
+
+
+/*---------- FORGOT PASSWORD form PAGE ----------*/	
+
+.forgot .form_button { /* the form button position */
+	font-size: 10px;
+	margin-left: 220px;
+	}
+	
+/*---------- FORGOT PASSWORD form PAGE END ----------*/	
+
+
+
+/*---------- REGISTRATION register form PAGE ----------*/	
+
+.registration fieldset { /* the form width and position */
+	padding-bottom: 15px;
+	}
+	
+/*---------- REGISTRATION register form PAGE END ----------*/	
+                    
+	}
+
